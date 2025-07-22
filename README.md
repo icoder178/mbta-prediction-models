@@ -19,7 +19,7 @@ Data from 5 previous days to be used. 5 each for a total of 5*12 = 60 experiment
 * Additional Weather, Day of Weak, Season
 * Additional Normalized Weather, Day of Week, Season
 * Additional Weather, Day of Week OHE, Season OHE
-* Additional Scaled Weather, Day of Week OHE, Season OHE
+* Additional Normalized Weather, Day of Week OHE, Season OHE
 
 ### To Display
 Bar graph, of 12 models. For each, RMSE for:
