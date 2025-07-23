@@ -58,10 +58,20 @@ def find_data():
     delay_data = delay_data.transpose()
     return gse_data,delay_data
 
-def display_data(data):
-    plt.figure(figsize=(10,6))
-    sns.barplot(data,errorbar=None)
+def display_data(data,title,xlabel,ylabel,top_n):
+    _data = data.reset_index()
+    _data.columns = ['Data','No Additional Data','Additional Data']
+    _data = _data[:top_n]
+    _data = _data.melt(id_vars='Data', var_name='Condition', value_name='Value')
+    plt.figure(figsize=(14,8))
+    sns.barplot(_data,x='Data',y='Value',hue='Condition',errorbar=None)
     sns.despine()
+    plt.title(title, fontsize=24)
+    plt.xlabel(xlabel, fontsize=18)
+    plt.ylabel(ylabel, fontsize=18)
+    plt.xticks(rotation=45, ha='right')
+    plt.legend(loc='upper right', bbox_to_anchor=(1.1, 1.1))
+    plt.tight_layout()
     plt.show()
 
 def main():
@@ -70,7 +80,7 @@ def main():
     print(gse_data)
     print("\nDelay data:")
     print(delay_data)
-    display_data(gse_data)
-    display_data(delay_data)
+    display_data(gse_data,"Top 8 Model Performance on Gated Station Entry Data","Model Name","Model RMSE",8)
+    display_data(delay_data,"Top 8 Model Performance on MBTA Delay Data","Model Name","Model RMSE",8)
 
 main()
