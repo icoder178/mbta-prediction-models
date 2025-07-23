@@ -4,3 +4,5 @@ numpy
 scikit-learn
 pmdarima
 tensorflow
+seaborn
+matplotlib

@@ -1,8 +1,10 @@
+GSE data:
 MultilayerPerceptron, no additional data: RMSE is 8076291.01.
 MultilayerPerceptron, additional weather, day of week, season: RMSE is 8042438.53.
 MultilayerPerceptron, additional normalized weather, day of week, season: RMSE is 7862231.98.
 MultilayerPerceptron, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 7899445.67.
 MultilayerPerceptron, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 7924006.19.
+Delay data:
 MultilayerPerceptron, no additional data: RMSE is 5319.44.
 MultilayerPerceptron, additional weather, day of week, season: RMSE is 4581.67.
 MultilayerPerceptron, additional normalized weather, day of week, season: RMSE is 4689.21.

@@ -1,0 +1,25 @@
+GSE data:
+Data                  No Additional Data  Additional Data
+RandomForest                  7742866.25       6519237.53
+kNearestNeighbor              7489152.30       7489152.30
+GradientBoost                 8295740.36       6938699.78
+MultilayerPerceptron          8076291.01       8042438.53
+Lasso                        13209495.69       8378601.11
+Linear                       13209495.69       8378653.39
+Ridge                        13209495.69       8380666.65
+MovingAverage                16117388.09      16117388.09
+SupportVector                21206724.73      21213176.45
+LSTM                         44440710.60      44423061.31
+
+Delay data:
+Data                  No Additional Data  Additional Data
+RandomForest                     4974.02          4126.75
+GradientBoost                    5140.94          4189.82
+kNearestNeighbor                 4948.47          4938.10
+Linear                           5509.52          4465.64
+Ridge                            5509.52          4466.68
+MultilayerPerceptron             5319.44          4689.21
+Lasso                            5510.01          4535.53
+LSTM                             5409.15          5164.14
+MovingAverage                    6567.37          6567.37
+SupportVector                    5771.03          7959.47

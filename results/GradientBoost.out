@@ -1,8 +1,10 @@
+GSE data:
 GradientBoost, no additional data: RMSE is 8295740.36.
 GradientBoost, additional weather, day of week, season: RMSE is 6855664.17.
 GradientBoost, additional normalized weather, day of week, season: RMSE is 6855664.17.
 GradientBoost, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 6938699.78.
 GradientBoost, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 6933649.52.
+Delay data:
 GradientBoost, no additional data: RMSE is 5140.94.
 GradientBoost, additional weather, day of week, season: RMSE is 4189.82.
 GradientBoost, additional normalized weather, day of week, season: RMSE is 4188.37.

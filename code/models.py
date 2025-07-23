@@ -175,5 +175,7 @@ def run_tests(source):
     _model_name = f"{sys.argv[1]}, additional normalized weather, day of week one-hot encoding, season one-hot encoding"
     )
 
+print("GSE data:")
 run_tests("../data/processed/GSE_inputs.csv")
+print("Delay data:")
 run_tests("../data/processed/delay_inputs.csv")
