@@ -1,0 +1,10 @@
+SupportVector, no additional data: RMSE is 21206724.73.
+SupportVector, additional weather, day of week, season: RMSE is 21212604.78.
+SupportVector, additional normalized weather, day of week, season: RMSE is 21212611.90.
+SupportVector, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 21213173.57.
+SupportVector, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 21213176.45.
+SupportVector, no additional data: RMSE is 5771.03.
+SupportVector, additional weather, day of week, season: RMSE is 7927.72.
+SupportVector, additional normalized weather, day of week, season: RMSE is 5759.17.
+SupportVector, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 7959.47.
+SupportVector, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 5763.36.

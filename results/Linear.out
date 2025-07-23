@@ -1,0 +1,10 @@
+Linear, no additional data: RMSE is 13209495.69.
+Linear, additional weather, day of week, season: RMSE is 8378653.39.
+Linear, additional normalized weather, day of week, season: RMSE is 8378653.39.
+Linear, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 7852623.38.
+Linear, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 7852623.38.
+Linear, no additional data: RMSE is 5509.52.
+Linear, additional weather, day of week, season: RMSE is 4465.64.
+Linear, additional normalized weather, day of week, season: RMSE is 4465.64.
+Linear, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 4319.48.
+Linear, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 4319.48.

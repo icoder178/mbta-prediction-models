@@ -1,0 +1,10 @@
+kNearestNeighbor, no additional data: RMSE is 7489152.30.
+kNearestNeighbor, additional weather, day of week, season: RMSE is 7489152.30.
+kNearestNeighbor, additional normalized weather, day of week, season: RMSE is 7489152.30.
+kNearestNeighbor, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 7489152.30.
+kNearestNeighbor, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 7489152.30.
+kNearestNeighbor, no additional data: RMSE is 4948.47.
+kNearestNeighbor, additional weather, day of week, season: RMSE is 4882.52.
+kNearestNeighbor, additional normalized weather, day of week, season: RMSE is 4938.10.
+kNearestNeighbor, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 4883.05.
+kNearestNeighbor, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 4900.76.

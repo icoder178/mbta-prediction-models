@@ -1,0 +1,10 @@
+MovingAverage, no additional data: RMSE is 16117388.09.
+MovingAverage, additional weather, day of week, season: RMSE is 16117388.09.
+MovingAverage, additional normalized weather, day of week, season: RMSE is 16117388.09.
+MovingAverage, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 16117388.09.
+MovingAverage, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 16117388.09.
+MovingAverage, no additional data: RMSE is 6567.37.
+MovingAverage, additional weather, day of week, season: RMSE is 6567.37.
+MovingAverage, additional normalized weather, day of week, season: RMSE is 6567.37.
+MovingAverage, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 6567.37.
+MovingAverage, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 6567.37.

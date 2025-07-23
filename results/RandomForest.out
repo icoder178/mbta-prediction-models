@@ -1,0 +1,10 @@
+RandomForest, no additional data: RMSE is 7742866.25.
+RandomForest, additional weather, day of week, season: RMSE is 6502435.55.
+RandomForest, additional normalized weather, day of week, season: RMSE is 6499942.38.
+RandomForest, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 6519237.53.
+RandomForest, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 6512470.81.
+RandomForest, no additional data: RMSE is 4974.02.
+RandomForest, additional weather, day of week, season: RMSE is 4075.68.
+RandomForest, additional normalized weather, day of week, season: RMSE is 4073.10.
+RandomForest, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 4122.00.
+RandomForest, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 4126.75.

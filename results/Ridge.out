@@ -1,0 +1,10 @@
+Ridge, no additional data: RMSE is 13209495.69.
+Ridge, additional weather, day of week, season: RMSE is 8379014.69.
+Ridge, additional normalized weather, day of week, season: RMSE is 8380666.65.
+Ridge, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 7852822.30.
+Ridge, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 7852311.89.
+Ridge, no additional data: RMSE is 5509.52.
+Ridge, additional weather, day of week, season: RMSE is 4466.26.
+Ridge, additional normalized weather, day of week, season: RMSE is 4466.68.
+Ridge, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 4320.89.
+Ridge, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 4318.90.
