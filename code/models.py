@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import root_mean_squared_error
-from sklearn.linear_model import LinearRegression, Ridge, Lasso
+from sklearn.linear_model import LinearRegression, Ridge, Lasso, PoissonRegressor
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.svm import SVR
 from sklearn.neural_network import MLPRegressor
@@ -51,7 +51,7 @@ class LSTM:
                 return_value = self.model.predict(_input)
         return return_value
 
-
+    
 model_collection = {
     "RandomForest": RandomForestRegressor(n_estimators=100, random_state=0),
     "Linear": LinearRegression(),
@@ -62,7 +62,9 @@ model_collection = {
     "MultilayerPerceptron": MLPRegressor(max_iter=1000, random_state=0),
     "kNearestNeighbor": KNeighborsRegressor(),
     "MovingAverage": MovingAverage(),
-    "LSTM": LSTM()
+    "LSTM": LSTM(),
+    "Poisson": PoissonRegressor(),
+
 }
 
 def process_data(source,input_rows,input_len,output_len,input_cols,output_cols):

@@ -1,0 +1,12 @@
+GSE data:
+Poisson, no additional data: RMSE is 18073044.56.
+Poisson, additional weather, day of week, season: RMSE is 18073044.56.
+Poisson, additional normalized weather, day of week, season: RMSE is 18073044.56.
+Poisson, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 18073044.56.
+Poisson, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 18073044.56.
+Delay data:
+Poisson, no additional data: RMSE is 6121.19.
+Poisson, additional weather, day of week, season: RMSE is 6075.30.
+Poisson, additional normalized weather, day of week, season: RMSE is 5868.92.
+Poisson, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 6360.56.
+Poisson, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 5840.39.
