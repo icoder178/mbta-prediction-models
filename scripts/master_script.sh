@@ -18,6 +18,8 @@ fi
 echo "conda environment done, starting data loading"
 cd scripts/processing_scripts
 python meteostat_import.py
+unzip ../../data/input_data/GSE_by_year.zip
+unzip ../../data/input_data/MBTA_Service_Alerts.csv.zip
 echo "data loading done, starting data processing; this may take a minute"
 python data_wrangling.py no_debug no_cheatsheet
 cd ../analysis_scripts
