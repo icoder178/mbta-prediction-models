@@ -10,14 +10,14 @@ Linear                        5177542.97       4952590.52
 MovingAverage                 7014826.94       7014826.94
 SupportVector                 7397404.26       7399634.16
 Poisson                      10602171.59      10602171.59
-LSTM                         23826836.79      23716370.45
+LSTM                         23822550.81      23716488.44
 
 Delay data:
 Data                  No Additional Data  Additional Data
 RandomForest                     3688.86          3011.08
 GradientBoost                    3877.25          2970.25
 MultilayerPerceptron             3913.10          3079.83
-LSTM                             4246.43          3184.31
+LSTM                             4074.50          2968.40
 Ridge                            4395.18          3152.58
 Linear                           4395.18          3153.55
 Lasso                            4396.08          3163.88

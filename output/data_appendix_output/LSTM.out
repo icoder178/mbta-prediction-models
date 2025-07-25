@@ -1,12 +1,12 @@
 GSE data:
-LSTM, no additional data: RMSE is 23826836.79.
-LSTM, additional weather, day of week, season: RMSE is 23809752.63.
-LSTM, additional normalized weather, day of week, season: RMSE is 23721035.84.
-LSTM, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 23717428.95.
-LSTM, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 23716370.45.
+LSTM, no additional data: RMSE is 23822550.81.
+LSTM, additional weather, day of week, season: RMSE is 23803110.74.
+LSTM, additional normalized weather, day of week, season: RMSE is 23719869.86.
+LSTM, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 23717022.06.
+LSTM, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 23716488.44.
 Delay data:
-LSTM, no additional data: RMSE is 4246.43.
-LSTM, additional weather, day of week, season: RMSE is 3946.48.
-LSTM, additional normalized weather, day of week, season: RMSE is 3184.31.
-LSTM, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 3310.46.
-LSTM, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 3232.15.
+LSTM, no additional data: RMSE is 4074.50.
+LSTM, additional weather, day of week, season: RMSE is 3559.08.
+LSTM, additional normalized weather, day of week, season: RMSE is 2968.40.
+LSTM, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 3191.58.
+LSTM, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 3158.71.

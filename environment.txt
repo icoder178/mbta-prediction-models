@@ -1,8 +1,7 @@
 python = 3.12
-pandas
-numpy
-scikit-learn
-pmdarima
-tensorflow
-seaborn
-matplotlib
+pandas = 2.3.1
+numpy = 2.0
+scikit-learn = 1.7.1
+tensorflow = 2.18.1
+seaborn = 0.13.2
+matplotlib = 3.10.0

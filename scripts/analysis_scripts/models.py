@@ -14,10 +14,6 @@ import sys
 import copy
 import os
 from contextlib import redirect_stdout
-import warnings
-
-# suppress warnings
-warnings.filterwarnings("ignore")
 
 # wrapper for moving average, to fit sklearn format
 class MovingAverage:
