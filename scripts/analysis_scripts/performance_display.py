@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# converts a human-readable line of the input data into the RMSE value it contains
 def line_to_num(line):
     line = line[:-2]
     position = len(line)-1
@@ -10,13 +11,13 @@ def line_to_num(line):
     line = line[position+1:]
     return float(line)
 
-# reads 6 lines from data, discards first and returns tuple of performance given no additional data and maximum of performance given additional data
+# reads 1 set of human-readable values and returns tuple of RMSE given no additional data and minimum RMSE given additional data
 def read_set(source):
     source.readline()
     nums = [line_to_num(source.readline()) for _ in range(5)]
     return [nums[0],min(nums[1],nums[2],nums[3],nums[4])]
 
-# reads from full file
+# reads data for full file
 def read_source(filepath):
     with open(filepath) as source:
         return read_set(source),read_set(source)
@@ -24,17 +25,17 @@ def read_source(filepath):
 # returns data, sorted ascdending by total of RMSE on two metrics
 def find_data():
     file_list = [
-    ["../results/RandomForest.out","RandomForest"],
-    ["../results/Linear.out","Linear"],
-    ["../results/Ridge.out","Ridge"],
-    ["../results/Lasso.out","Lasso"],
-    ["../results/GradientBoost.out","GradientBoost"],
-    ["../results/SupportVector.out","SupportVector"],
-    ["../results/MultilayerPerceptron.out","MultilayerPerceptron"],
-    ["../results/kNearestNeighbor.out","kNearestNeighbor"],
-    ["../results/MovingAverage.out","MovingAverage"],
-    ["../results/LSTM.out","LSTM"],
-    ["../results/Poisson.out","Poisson"]]
+    ["../../output/data_appendix_output/RandomForest.out","RandomForest"],
+    ["../../output/data_appendix_output/Linear.out","Linear"],
+    ["../../output/data_appendix_output/Ridge.out","Ridge"],
+    ["../../output/data_appendix_output/Lasso.out","Lasso"],
+    ["../../output/data_appendix_output/GradientBoost.out","GradientBoost"],
+    ["../../output/data_appendix_output/SupportVector.out","SupportVector"],
+    ["../../output/data_appendix_output/MultilayerPerceptron.out","MultilayerPerceptron"],
+    ["../../output/data_appendix_output/kNearestNeighbor.out","kNearestNeighbor"],
+    ["../../output/data_appendix_output/MovingAverage.out","MovingAverage"],
+    ["../../output/data_appendix_output/LSTM.out","LSTM"],
+    ["../../output/data_appendix_output/Poisson.out","Poisson"]]
     gse_array = []
     delay_array = []
     for file in file_list:
@@ -59,7 +60,8 @@ def find_data():
     delay_data = delay_data.transpose()
     return gse_data,delay_data
 
-def display_data(data,title,xlabel,ylabel,top_n):
+# saves data recieved to bar plot
+def display_data(data,title,xlabel,ylabel,top_n,name):
     _data = data.reset_index()
     _data.columns = ['Data','No Additional Data','Additional Data']
     _data = _data[:top_n]
@@ -73,15 +75,16 @@ def display_data(data,title,xlabel,ylabel,top_n):
     plt.xticks(rotation=45, ha='right')
     plt.legend(loc='upper right', bbox_to_anchor=(1.1, 1.1))
     plt.tight_layout()
-    plt.show()
+    plt.savefig(f"../../output/results/{name}.png")
 
+# run on both gated station entry data and delay data
 def main():
     gse_data,delay_data = find_data()
     print("GSE data:")
     print(gse_data)
     print("\nDelay data:")
     print(delay_data)
-    display_data(gse_data,"Top 8 Model Performance on Gated Station Entry Data","Model Name","Model RMSE",8)
-    display_data(delay_data,"Top 8 Model Performance on MBTA Delay Data","Model Name","Model RMSE",8)
+    display_data(gse_data,"Top 8 Model Performance on Gated Station Entry Data","Model Name","Model RMSE",8,"Delay_data")
+    display_data(delay_data,"Top 8 Model Performance on MBTA Delay Data","Model Name","Model RMSE",8,"GSE_data")
 
 main()

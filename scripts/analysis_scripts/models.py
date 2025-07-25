@@ -1,4 +1,4 @@
-# identical tests, sklearn models
+# Tests 11 models on performance in predicting delay data and gated station entry data.
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
@@ -15,6 +15,7 @@ import copy
 import os
 from contextlib import redirect_stdout
 
+# wrapper for moving average, to fit sklearn format
 class MovingAverage:
     def __init__(self):
         pass
@@ -28,6 +29,7 @@ class MovingAverage:
                 return_value[i][0] += input[i][j]/5
         return return_value
 
+# wrapper for Keras LSTM, to fit sklearn format
 class LSTM:
     def __init__(self):
         self.model = None
@@ -51,7 +53,7 @@ class LSTM:
                 return_value = self.model.predict(_input)
         return return_value
 
-    
+# list of models
 model_collection = {
     "RandomForest": RandomForestRegressor(n_estimators=100, random_state=0),
     "Linear": LinearRegression(),
@@ -63,10 +65,10 @@ model_collection = {
     "kNearestNeighbor": KNeighborsRegressor(),
     "MovingAverage": MovingAverage(),
     "LSTM": LSTM(),
-    "Poisson": PoissonRegressor(),
-
+    "Poisson": PoissonRegressor()
 }
 
+# read analysis data and convert into format required for ML training
 def process_data(source,input_rows,input_len,output_len,input_cols,output_cols):
     df = pd.read_csv(source)
     data_len = len(df)-input_rows
@@ -88,23 +90,27 @@ def process_data(source,input_rows,input_len,output_len,input_cols,output_cols):
         output[i] = output_curr
     return input,output
 
+# split data into train and test sets (prop is set to 0.1, or 90% train 10% test , when used); test set is the later segment of the data
 def split_data(input,output,prop):
-    input_split_pos = round(prop*len(input))
-    _input = np.split(input,[input_split_pos,len(input)-input_split_pos])
-    output_split_pos = round(prop*len(output))
-    _output = np.split(output,[output_split_pos,len(output)-output_split_pos])
-    return _input[1],_input[0],_output[1],_output[0]
+    input_split = round(prop*len(input))
+    _input = np.split(input,[len(input)-input_split,input_split])
+    output_split = round(prop*len(output))
+    _output = np.split(output,[len(output)-output_split,output_split])
+    return _input[0],_input[1],_output[0],_output[1]
 
-def train_model_1(input,output,base_model):
+# train model
+def train_model(input,output,base_model):
     output = output.ravel()
     base_model.fit(input,output)
     return base_model
 
+# test model, return RMSE
 def test_model(input,output,model):
     output = output.ravel()
     pred = model.predict(input)
     return root_mean_squared_error(output,pred)
 
+# try running model with some set of specs
 def try_running(_source,
                 _input_rows,
                 _input_cols,
@@ -116,10 +122,11 @@ def try_running(_source,
                 _model_name):
     raw_input,raw_output = process_data(_source,_input_rows,_input_len,_output_len,_input_cols,_output_cols)
     train_input,test_input,train_output,test_output = split_data(raw_input,raw_output,_split_prop)
-    model_1 = train_model_1(train_input,train_output,_base_model)
+    model_1 = train_model(train_input,train_output,_base_model)
     rmse_1 = test_model(test_input,test_output,model_1)
     print(f"{_model_name}: RMSE is {float(rmse_1)*100:.2f}.")
 
+# run a series of tests with differing specs
 def run_tests(source):
     try_running(
     source,
@@ -177,7 +184,11 @@ def run_tests(source):
     _model_name = f"{sys.argv[1]}, additional normalized weather, day of week one-hot encoding, season one-hot encoding"
     )
 
-print("GSE data:")
-run_tests("../data/processed/GSE_inputs.csv")
-print("Delay data:")
-run_tests("../data/processed/delay_inputs.csv")
+# run tests on both gated station entry and delay data
+def main():
+    print("GSE data:")
+    run_tests("../../data/analysis_data/GSE_inputs.csv")
+    print("Delay data:")
+    run_tests("../../data/analysis_data/delay_inputs.csv")
+
+main()

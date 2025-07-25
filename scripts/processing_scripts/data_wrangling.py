@@ -10,12 +10,12 @@ def print_debug(val):
         return
     print(val)
 
-# Monday is 0, Tuesday is 1, ..., Sunday is 6
+# computes day of week; Monday is 0, Tuesday is 1, ... Sunday is 6
 def compute_day_of_week(data):
     _data = pd.to_datetime(data)
     return _data.dt.dayofweek
 
-# Winter is 0, Spring is 1, Summer is 2, Autumn is 3
+# computes season; Winter is 0, Spring is 1, Summer is 2, Autumn is 3
 def compute_season(data):
     _data = pd.to_datetime(data)
     season = []
@@ -27,20 +27,23 @@ def compute_season(data):
         else: season.append(3)
     return pd.Series(season)
 
+# computes one-hot encoding of day
 def compute_day_ohe(data):
     one_hot_encoding = [(data == x) for x in range(0,7)]
     one_hot_encoding = [list(row) for row in zip(*one_hot_encoding)]
     one_hot_encoding = pd.DataFrame(one_hot_encoding,columns = ['Is_Monday','Is_Tuesday','Is_Wednesday','Is_Thursday','Is_Friday','Is_Saturday','Is_Sunday'])
     return one_hot_encoding
 
+# computes one-hot encoding of season
 def compute_season_ohe(data):
     one_hot_encoding = [(data == x) for x in range(0,4)]
     one_hot_encoding = [list(row) for row in zip(*one_hot_encoding)]
     one_hot_encoding = pd.DataFrame(one_hot_encoding,columns = ['Is_Winter','Is_Spring','Is_Summer','Is_Autumn'])
     return one_hot_encoding
 
+# loads GSE data and does aggregation and rearrangement
 def gse_data():
-    gse_file_names = [f"../data/raw/GSE_by_year/GSE_{year}.csv" for year in range(2014,2026)]
+    gse_file_names = [f"../../data/input_data/GSE_by_year/GSE_{year}.csv" for year in range(2014,2026)]
     totals_by_day = pd.DataFrame()
     for file_name in gse_file_names:
         current_file = pd.read_csv(file_name)
@@ -53,8 +56,9 @@ def gse_data():
     totals_by_day['Gated_Station_Entries'] = totals_by_day['Gated_Station_Entries'].round().astype(int)
     return totals_by_day
 
+# loads weather data and rearranges to necessary format
 def weather_data():
-    weather_file = pd.read_csv("../data/raw/boston_weather_data.csv")
+    weather_file = pd.read_csv("../../data/input_data/boston_weather_data.csv")
     needed_names = ['time','pres','wspd','tavg','prcp']
     to_concat = [weather_file[name] for name in needed_names]
     clipped_weather_file = pd.concat(to_concat,axis=1)
@@ -63,8 +67,9 @@ def weather_data():
     clipped_weather_file = clipped_weather_file.sort_index()
     return clipped_weather_file
 
+# loads delay data and does aggregation and rearrangement
 def delay_data():
-    service_alerts = pd.read_csv("../data/raw/MBTA_Service_Alerts.csv")
+    service_alerts = pd.read_csv("../../data/input_data/MBTA_Service_Alerts.csv")
     service_alerts['notif_start'] = service_alerts['notif_start'].str[:10]
     service_alerts['notif_end'] = service_alerts['notif_end'].str[:10]
     service_alerts['notif_start'] = pd.to_datetime(service_alerts['notif_start'],format="%Y/%m/%d",errors='coerce')
@@ -94,13 +99,14 @@ def delay_data():
     totaled_delays['Total_Delays'] = totaled_delays['Total_Delays'].round().astype(int)
     return totaled_delays
 
+# utility function for merging dataframes by index
 def merge_func(arr):
     return_value = arr[0]
     for i in range(1,len(arr)):
         return_value = pd.merge(return_value, arr[i], left_index=True, right_index=True, how='outer')
     return return_value.dropna()
 
-
+# collects all additional data and merges it together
 def additional_data():
     weather = weather_data()
     date_list = copy.deepcopy(pd.DataFrame(weather.index)['Date'])
@@ -114,6 +120,7 @@ def additional_data():
     return_value = merge_func([day_of_week,season,weather,day_of_week_ohe,season_ohe])
     return return_value.set_index('Date')
 
+# scales data recieved
 def scaled_data(data):
     scaler = StandardScaler()
     scaled = pd.DataFrame(scaler.fit_transform(data),columns="S_"+data.columns)
@@ -128,6 +135,7 @@ def output_cheatsheet(data):
         print(f"{i+1}: {data.columns[i]}")
     print("")
 
+# gets data, processes and outputs for gated station entries and delay counts
 def main():
     print_debug("Gated Station Entries:")
     gse = gse_data()
@@ -138,10 +146,10 @@ def main():
     scaled = scaled_data(additional)
 
     gse_result = merge_func([gse,additional,scaled])
-    gse_result.to_csv("../data/processed/GSE_inputs.csv")
+    gse_result.to_csv("../../data/analysis_data/GSE_inputs.csv")
     output_cheatsheet(gse_result)
     delay_result = merge_func([delay,additional,scaled])
-    delay_result.to_csv("../data/processed/delay_inputs.csv")
+    delay_result.to_csv("../../data/analysis_data/delay_inputs.csv")
     output_cheatsheet(delay_result)
 
 main()
