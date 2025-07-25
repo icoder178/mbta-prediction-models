@@ -14,7 +14,7 @@ def line_to_num(line):
 def read_set(source):
     source.readline()
     nums = [line_to_num(source.readline()) for _ in range(5)]
-    return [nums[0],max(nums[1],nums[2],nums[3],nums[4])]
+    return [nums[0],min(nums[1],nums[2],nums[3],nums[4])]
 
 # reads from full file
 def read_source(filepath):
@@ -33,7 +33,8 @@ def find_data():
     ["../results/MultilayerPerceptron.out","MultilayerPerceptron"],
     ["../results/kNearestNeighbor.out","kNearestNeighbor"],
     ["../results/MovingAverage.out","MovingAverage"],
-    ["../results/LSTM.out","LSTM"]]
+    ["../results/LSTM.out","LSTM"],
+    ["../results/Poisson.out","Poisson"]]
     gse_array = []
     delay_array = []
     for file in file_list:

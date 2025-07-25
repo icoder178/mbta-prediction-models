@@ -1,0 +1,1 @@
+Placeholder for codebooks explaining input data structure.
