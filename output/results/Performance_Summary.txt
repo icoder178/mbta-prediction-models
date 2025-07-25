@@ -1,25 +1,27 @@
 GSE data:
 Data                  No Additional Data  Additional Data
-RandomForest                  7742866.25       6519237.53
-kNearestNeighbor              7489152.30       7489152.30
-GradientBoost                 8295740.36       6938699.78
-MultilayerPerceptron          8076291.01       8042438.53
-Lasso                        13209495.69       8378601.11
-Linear                       13209495.69       8378653.39
-Ridge                        13209495.69       8380666.65
-MovingAverage                16117388.09      16117388.09
-SupportVector                21206724.73      21213176.45
-LSTM                         44440710.60      44423061.31
+RandomForest                  3753104.52       3083119.58
+kNearestNeighbor              3699413.35       3699413.35
+GradientBoost                 4440150.15       3191521.54
+MultilayerPerceptron          3874762.89       3820246.53
+Ridge                         5177542.97       4948318.34
+Lasso                         5177542.97       4951832.07
+Linear                        5177542.97       4952590.52
+MovingAverage                 7014826.94       7014826.94
+SupportVector                 7397404.26       7399634.16
+Poisson                      10602171.59      10602171.59
+LSTM                         23826836.79      23716370.45
 
 Delay data:
 Data                  No Additional Data  Additional Data
-RandomForest                     4974.02          4126.75
-GradientBoost                    5140.94          4189.82
-kNearestNeighbor                 4948.47          4938.10
-Linear                           5509.52          4465.64
-Ridge                            5509.52          4466.68
-MultilayerPerceptron             5319.44          4689.21
-Lasso                            5510.01          4535.53
-LSTM                             5409.15          5164.14
-MovingAverage                    6567.37          6567.37
-SupportVector                    5771.03          7959.47
+RandomForest                     3688.86          3011.08
+GradientBoost                    3877.25          2970.25
+MultilayerPerceptron             3913.10          3079.83
+LSTM                             4246.43          3184.31
+Ridge                            4395.18          3152.58
+Linear                           4395.18          3153.55
+Lasso                            4396.08          3163.88
+kNearestNeighbor                 3904.20          3784.89
+Poisson                          4656.76          3521.73
+SupportVector                    4440.23          4607.43
+MovingAverage                    5545.56          5545.56

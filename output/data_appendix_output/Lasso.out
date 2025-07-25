@@ -1,12 +1,12 @@
 GSE data:
-Lasso, no additional data: RMSE is 13209495.69.
-Lasso, additional weather, day of week, season: RMSE is 8378601.11.
-Lasso, additional normalized weather, day of week, season: RMSE is 8378559.99.
-Lasso, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 7852189.88.
-Lasso, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 7852305.22.
+Lasso, no additional data: RMSE is 5177542.97.
+Lasso, additional weather, day of week, season: RMSE is 5225864.36.
+Lasso, additional normalized weather, day of week, season: RMSE is 5225601.02.
+Lasso, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 4951832.07.
+Lasso, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 4952255.54.
 Delay data:
-Lasso, no additional data: RMSE is 5510.01.
-Lasso, additional weather, day of week, season: RMSE is 4500.34.
-Lasso, additional normalized weather, day of week, season: RMSE is 4535.53.
-Lasso, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 4414.34.
-Lasso, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 4279.91.
+Lasso, no additional data: RMSE is 4396.08.
+Lasso, additional weather, day of week, season: RMSE is 3195.39.
+Lasso, additional normalized weather, day of week, season: RMSE is 3221.20.
+Lasso, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 3254.36.
+Lasso, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 3163.88.

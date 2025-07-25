@@ -14,6 +14,10 @@ import sys
 import copy
 import os
 from contextlib import redirect_stdout
+import warnings
+
+# suppress warnings
+warnings.filterwarnings("ignore")
 
 # wrapper for moving average, to fit sklearn format
 class MovingAverage:
@@ -57,7 +61,7 @@ class LSTM:
 model_collection = {
     "RandomForest": RandomForestRegressor(n_estimators=100, random_state=0),
     "Linear": LinearRegression(),
-    "Ridge": Ridge(),
+    "Ridge": Ridge(max_iter=2500),
     "Lasso": Lasso(),
     "GradientBoost": GradientBoostingRegressor(random_state=0),
     "SupportVector": SVR(),
@@ -65,7 +69,7 @@ model_collection = {
     "kNearestNeighbor": KNeighborsRegressor(),
     "MovingAverage": MovingAverage(),
     "LSTM": LSTM(),
-    "Poisson": PoissonRegressor()
+    "Poisson": PoissonRegressor(max_iter=500)
 }
 
 # read analysis data and convert into format required for ML training
@@ -90,12 +94,12 @@ def process_data(source,input_rows,input_len,output_len,input_cols,output_cols):
         output[i] = output_curr
     return input,output
 
-# split data into train and test sets (prop is set to 0.1, or 90% train 10% test , when used); test set is the later segment of the data
+# split data into train and test sets (prop is set to 0.9, or 90% train 10% test, when used); test set is the later segment of the data
 def split_data(input,output,prop):
     input_split = round(prop*len(input))
-    _input = np.split(input,[len(input)-input_split,input_split])
+    _input = np.split(input,[input_split])
     output_split = round(prop*len(output))
-    _output = np.split(output,[len(output)-output_split,output_split])
+    _output = np.split(output,[output_split])
     return _input[0],_input[1],_output[0],_output[1]
 
 # train model
@@ -135,7 +139,7 @@ def run_tests(source):
     _output_cols = [1],
     _input_len = 5,
     _output_len = 1,
-    _split_prop = 0.1,
+    _split_prop = 0.9,
     _base_model = copy.deepcopy(model_collection[sys.argv[1]]),
     _model_name = f"{sys.argv[1]}, no additional data"
     )
@@ -146,7 +150,7 @@ def run_tests(source):
     _output_cols = [1],
     _input_len = 35,
     _output_len = 1,
-    _split_prop = 0.1,
+    _split_prop = 0.9,
     _base_model = copy.deepcopy(model_collection[sys.argv[1]]),
     _model_name = f"{sys.argv[1]}, additional weather, day of week, season"
     )
@@ -157,7 +161,7 @@ def run_tests(source):
     _output_cols = [1],
     _input_len = 35,
     _output_len = 1,
-    _split_prop = 0.1,
+    _split_prop = 0.9,
     _base_model = copy.deepcopy(model_collection[sys.argv[1]]),
     _model_name = f"{sys.argv[1]}, additional normalized weather, day of week, season"
     )
@@ -168,7 +172,7 @@ def run_tests(source):
     _output_cols = [1],
     _input_len = 80,
     _output_len = 1,
-    _split_prop = 0.1,
+    _split_prop = 0.9,
     _base_model = copy.deepcopy(model_collection[sys.argv[1]]),
     _model_name = f"{sys.argv[1]}, additional weather, day of week one-hot encoding, season one-hot encoding"
     )
@@ -179,7 +183,7 @@ def run_tests(source):
     _output_cols = [1],
     _input_len = 80,
     _output_len = 1,
-    _split_prop = 0.1,
+    _split_prop = 0.9,
     _base_model = copy.deepcopy(model_collection[sys.argv[1]]),
     _model_name = f"{sys.argv[1]}, additional normalized weather, day of week one-hot encoding, season one-hot encoding"
     )

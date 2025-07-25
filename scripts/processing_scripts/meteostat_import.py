@@ -1,7 +1,7 @@
 # loads daily Boston Logan International Airport weather data from January 1, 2010 to July 1, 2025 from the Meteostat API.
 # modified from script in https://www.kaggle.com/datasets/swaroopmeher/boston-weather-2013-2023
 from datetime import datetime
-from meteostat import Stations, Hourly, Daily
+from meteostat import Daily
 import pandas as pd
 
 # Set time period

@@ -1,12 +1,12 @@
 GSE data:
-GradientBoost, no additional data: RMSE is 8295740.36.
-GradientBoost, additional weather, day of week, season: RMSE is 6855664.17.
-GradientBoost, additional normalized weather, day of week, season: RMSE is 6855664.17.
-GradientBoost, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 6938699.78.
-GradientBoost, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 6933649.52.
+GradientBoost, no additional data: RMSE is 4440150.15.
+GradientBoost, additional weather, day of week, season: RMSE is 3191521.54.
+GradientBoost, additional normalized weather, day of week, season: RMSE is 3191521.54.
+GradientBoost, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 3325189.84.
+GradientBoost, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 3325189.84.
 Delay data:
-GradientBoost, no additional data: RMSE is 5140.94.
-GradientBoost, additional weather, day of week, season: RMSE is 4189.82.
-GradientBoost, additional normalized weather, day of week, season: RMSE is 4188.37.
-GradientBoost, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 4168.42.
-GradientBoost, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 4168.16.
+GradientBoost, no additional data: RMSE is 3877.25.
+GradientBoost, additional weather, day of week, season: RMSE is 2971.94.
+GradientBoost, additional normalized weather, day of week, season: RMSE is 2970.25.
+GradientBoost, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 3013.91.
+GradientBoost, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 3013.91.
