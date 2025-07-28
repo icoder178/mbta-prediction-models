@@ -1,4 +1,4 @@
-# Tests 11 models on performance in predicting delay data and gated station entry data.
+# Tests 10 models on performance in predicting delay data and gated station entry data.
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
