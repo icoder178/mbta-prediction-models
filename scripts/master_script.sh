@@ -27,7 +27,7 @@ python data_wrangling.py no_debug no_cheatsheet
 cd ../analysis_scripts
 echo "data wrangling done, starting model training; this will occupy significant computational resources and take 5-30 minutes"
 # edit if models change
-models=("RandomForest" "Linear" "Ridge" "Lasso" "GradientBoost" "SupportVector" "MultilayerPerceptron" "kNearestNeighbor" "MovingAverage" "LSTM" "Poisson")
+models=("RandomForest" "Linear" "Ridge" "Lasso" "GradientBoost" "SupportVector" "MultilayerPerceptron" "kNearestNeighbor" "MovingAverage" "Poisson")
 for model in "${models[@]}"
 do
   python -W ignore models.py $model > ../../output/data_appendix_output/$model.out &

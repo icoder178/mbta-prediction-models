@@ -1,12 +1,56 @@
 GSE data:
-Poisson, no additional data: RMSE is 10602171.59.
-Poisson, additional weather, day of week, season: RMSE is 10602171.59.
-Poisson, additional normalized weather, day of week, season: RMSE is 10602171.59.
-Poisson, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 10602171.59.
-Poisson, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 10602171.59.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 10602171.59.
 Delay data:
-Poisson, no additional data: RMSE is 4656.76.
-Poisson, additional weather, day of week, season: RMSE is 3619.09.
-Poisson, additional normalized weather, day of week, season: RMSE is 3561.50.
-Poisson, additional weather, day of week one-hot encoding, season one-hot encoding: RMSE is 3651.42.
-Poisson, additional normalized weather, day of week one-hot encoding, season one-hot encoding: RMSE is 3521.73.
+Using model (Poisson), inputs of previous 5-day (target metric) to predict target metric: RMSE is 4656.76.
+Using model (Poisson), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 3619.09.
+Using model (Poisson), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 3623.34.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 3561.50.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 3517.19.
+Using model (Poisson), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 3447.45.
+Using model (Poisson), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 3418.69.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 3440.08.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 3425.55.
+Using model (Poisson), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 4680.82.
+Using model (Poisson), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 4767.06.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 4678.62.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 4788.65.
+Using model (Poisson), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 4776.32.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 4767.68.
+Using model (Poisson), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 3569.26.
+Using model (Poisson), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 3458.36.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 3475.31.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 3470.88.
+Using model (Poisson), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 3591.16.
+Using model (Poisson), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 3497.82.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 3531.64.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 3504.51.
+Using model (Poisson), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 4780.81.
+Using model (Poisson), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 4804.50.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 4764.67.
+Using model (Poisson), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 4830.65.

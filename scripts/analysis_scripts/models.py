@@ -53,7 +53,7 @@ class LSTM:
                 return_value = self.model.predict(_input)
         return return_value
 
-# list of models
+# list of models; note LSTM was eventually discarded
 model_collection = {
     "RandomForest": RandomForestRegressor(n_estimators=100, random_state=0),
     "Linear": LinearRegression(),
@@ -61,7 +61,7 @@ model_collection = {
     "Lasso": Lasso(),
     "GradientBoost": GradientBoostingRegressor(random_state=0),
     "SupportVector": SVR(),
-    "MultilayerPerceptron": MLPRegressor(max_iter=1000, random_state=0),
+    "MultilayerPerceptron": MLPRegressor(max_iter=500, random_state=0),
     "kNearestNeighbor": KNeighborsRegressor(),
     "MovingAverage": MovingAverage(),
     "LSTM": LSTM(),
@@ -126,63 +126,89 @@ def try_running(_source,
     rmse_1 = test_model(test_input,test_output,model_1)
     print(f"{_model_name}: RMSE is {float(rmse_1)*100:.2f}.")
 
+# run given an array of strings corresponding to inputs
+def run_by_name(source,inputs):
+    corresponding_cols = {
+        "target metric": [1],
+        "day of week": [2],
+        "season": [3],
+        "weather": [4,5,6,7],
+        "day of week OHE": [8,9,10,11,12,13,14],
+        "season OHE": [15,16,17,18],
+        "scaled day of week": [19],
+        "scaled season": [20],
+        "scaled weather": [21,22,23,24],
+        "scaled day of week OHE": [25,26,27,28,29,30,31],
+        "scaled season OHE": [32,33,34,35]
+    }
+    for input_name in inputs:
+        if input_name not in corresponding_cols:
+            raise ValueError("Data name does not exist.")
+    model_name = f"Using model ({sys.argv[1]}), inputs of previous 5-day ("
+    for i in range(len(inputs)):
+        if i > 0:
+            model_name += ', '
+        model_name += inputs[i]
+    model_name += f") to predict target metric"
+    input_cols = []
+    for input_name in inputs:
+        input_cols += corresponding_cols[input_name]
+    try_running(
+    source,
+    _input_rows = 5,
+    _input_cols = input_cols,
+    _output_cols = [1],
+    _input_len = len(input_cols)*5,
+    _output_len = 1,
+    _split_prop = 0.9,
+    _base_model = copy.deepcopy(model_collection[sys.argv[1]]),
+    _model_name = model_name
+    )
+
 # run a series of tests with differing specs
 def run_tests(source):
-    try_running(
-    source,
-    _input_rows = 5,
-    _input_cols = [1],
-    _output_cols = [1],
-    _input_len = 5,
-    _output_len = 1,
-    _split_prop = 0.9,
-    _base_model = copy.deepcopy(model_collection[sys.argv[1]]),
-    _model_name = f"{sys.argv[1]}, no additional data"
-    )
-    try_running(  
-    source,  
-    _input_rows = 5,
-    _input_cols = [1,2,3,4,5,6,7],
-    _output_cols = [1],
-    _input_len = 35,
-    _output_len = 1,
-    _split_prop = 0.9,
-    _base_model = copy.deepcopy(model_collection[sys.argv[1]]),
-    _model_name = f"{sys.argv[1]}, additional weather, day of week, season"
-    )
-    try_running(    
-    source,
-    _input_rows = 5,
-    _input_cols = [1,19,20,21,22,23,24],
-    _output_cols = [1],
-    _input_len = 35,
-    _output_len = 1,
-    _split_prop = 0.9,
-    _base_model = copy.deepcopy(model_collection[sys.argv[1]]),
-    _model_name = f"{sys.argv[1]}, additional normalized weather, day of week, season"
-    )
-    try_running(
-    source,    
-    _input_rows = 5,
-    _input_cols = [1,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
-    _output_cols = [1],
-    _input_len = 80,
-    _output_len = 1,
-    _split_prop = 0.9,
-    _base_model = copy.deepcopy(model_collection[sys.argv[1]]),
-    _model_name = f"{sys.argv[1]}, additional weather, day of week one-hot encoding, season one-hot encoding"
-    )
-    try_running(
-    source,    
-    _input_rows = 5,
-    _input_cols = [1,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35],
-    _output_cols = [1],
-    _input_len = 80,
-    _output_len = 1,
-    _split_prop = 0.9,
-    _base_model = copy.deepcopy(model_collection[sys.argv[1]]),
-    _model_name = f"{sys.argv[1]}, additional normalized weather, day of week one-hot encoding, season one-hot encoding"
-    )
+    # test with no additional data
+    run_by_name(source,["target metric"])
+
+    # test with all additional data
+    run_by_name(source,["target metric","day of week","season","weather"])
+    run_by_name(source,["target metric","day of week OHE","season OHE","weather"])
+    run_by_name(source,["target metric","scaled day of week","scaled season","scaled weather"])
+    run_by_name(source,["target metric","scaled day of week OHE","scaled season OHE","scaled weather"])
+
+    # test with additional day of week data
+    run_by_name(source,["target metric","day of week"])
+    run_by_name(source,["target metric","day of week OHE"])
+    run_by_name(source,["target metric","scaled day of week"])
+    run_by_name(source,["target metric","scaled day of week OHE"])
+
+    # test with additional season data
+    run_by_name(source,["target metric","season"])
+    run_by_name(source,["target metric","season OHE"])
+    run_by_name(source,["target metric","scaled season"])
+    run_by_name(source,["target metric","scaled season OHE"])
+
+    # test with additional weather data
+    run_by_name(source,["target metric","weather"])
+    run_by_name(source,["target metric","scaled weather"])
+
+    # test with additional day of week, season data
+    run_by_name(source,["target metric","day of week","season"])
+    run_by_name(source,["target metric","day of week OHE","season OHE"])
+    run_by_name(source,["target metric","scaled day of week","scaled season"])
+    run_by_name(source,["target metric","scaled day of week OHE","scaled season OHE"])
+
+    # test with additional day of week, weather data
+    run_by_name(source,["target metric","day of week","weather"])
+    run_by_name(source,["target metric","day of week OHE","weather"])
+    run_by_name(source,["target metric","scaled day of week","scaled weather"])
+    run_by_name(source,["target metric","scaled day of week OHE","scaled weather"])
+    
+    # test with additional season, weather data
+    run_by_name(source,["target metric","season","weather"])
+    run_by_name(source,["target metric","season OHE","weather"])
+    run_by_name(source,["target metric","scaled season","scaled weather"])
+    run_by_name(source,["target metric","scaled season OHE","scaled weather"])
 
 # run tests on both gated station entry and delay data
 def main():

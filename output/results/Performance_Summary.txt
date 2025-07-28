@@ -1,27 +1,37 @@
 GSE data:
-Data                  No Additional Data  Additional Data
-RandomForest                  3753104.52       3083119.58
-kNearestNeighbor              3699413.35       3699413.35
-GradientBoost                 4440150.15       3191521.54
-MultilayerPerceptron          3874762.89       3820246.53
-Ridge                         5177542.97       4948318.34
-Lasso                         5177542.97       4951832.07
-Linear                        5177542.97       4952590.52
-MovingAverage                 7014826.94       7014826.94
-SupportVector                 7397404.26       7399634.16
-Poisson                      10602171.59      10602171.59
-LSTM                         23834040.47      23716450.84
+Data                     Any Data  No Additional Data  Day of Week Data  Season Data  Weather Data
+GradientBoost          2998493.98          4440150.15        3013858.32   4417164.75    4780446.02
+RandomForest           3084982.00          3753104.52        3160229.99   3726637.45    3804495.63
+MultilayerPerceptron   3681416.65          3874762.89        3880427.70   3893934.96    3745253.80
+kNearestNeighbor       3699413.35          3699413.35        3699413.35   3699413.35    3699413.35
+Ridge                  4944367.75          5177542.97        4957883.16   5180521.56    5259027.82
+Lasso                  4946703.12          5177542.97        4960252.74   5180581.90    5259183.87
+Linear                 4946883.78          5177542.97        4960408.83   5180532.11    5259345.34
+MovingAverage          7014826.94          7014826.94        7014826.94   7014826.94    7014826.94
+SupportVector          7397404.26          7397404.26        7399710.83   7399796.18    7399810.33
+Poisson               10602171.59         10602171.59       10602171.59  10602171.59   10602171.59
 
 Delay data:
-Data                  No Additional Data  Additional Data
-RandomForest                     3688.86          3011.08
-GradientBoost                    3877.25          2970.25
-MultilayerPerceptron             3913.10          3079.83
-LSTM                             4206.37          3051.36
-Ridge                            4395.18          3152.58
-Linear                           4395.18          3153.55
-Lasso                            4396.08          3163.88
-kNearestNeighbor                 3904.20          3784.89
-Poisson                          4656.76          3521.73
-SupportVector                    4440.23          4607.43
-MovingAverage                    5545.56          5545.56
+Data                  Any Data  No Additional Data  Day of Week Data  Season Data  Weather Data
+RandomForest           2951.89             3688.86           2951.89      3714.36       3766.74
+GradientBoost          2968.14             3877.25           2997.25      3841.12       3947.99
+MultilayerPerceptron   2985.63             3913.10           2985.63      3876.28       4103.44
+Linear                 3105.48             4395.18           3105.48      4423.23       4447.04
+Ridge                  3105.54             4395.18           3105.54      4421.53       4446.74
+Lasso                  3160.07             4396.08           3160.90      4396.70       4403.21
+Poisson                3418.69             4656.76           3418.69      4678.62       4767.68
+kNearestNeighbor       3773.96             3904.20           3825.73      3891.39       3825.80
+SupportVector          4440.23             4440.23           4505.23      4511.26       4601.20
+MovingAverage          5545.56             5545.56           5545.56      5545.56       5545.56
+
+Improvement on gated station entry data:
+Percentage improvement off No Additional Data for Any Data: 5.3%.
+Percentage improvement off No Additional Data for Day of Week Data: 4.7%.
+Percentage improvement off No Additional Data for Season Data: 0.0%.
+Percentage improvement off No Additional Data for Weather Data: -0.9%.
+
+Improvement on delay data:
+Percentage improvement off No Additional Data for Any Data: 18.0%.
+Percentage improvement off No Additional Data for Day of Week Data: 17.6%.
+Percentage improvement off No Additional Data for Season Data: -0.2%.
+Percentage improvement off No Additional Data for Weather Data: -1.5%.
