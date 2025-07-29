@@ -6,9 +6,12 @@ echo "Starting model training; this will occupy significant computational resour
 models=("RandomForest" "Linear" "Ridge" "Lasso" "GradientBoost" "SupportVector" "MultilayerPerceptron" "kNearestNeighbor" "MovingAverage" "Poisson")
 for model in "${models[@]}"
 do
-  python models.py $model > ../../output/data_appendix_output/$model.out &
+  python -W ignore models.py $model &
 done
 wait
 echo "model training done, outputting final results to output/results/"
 python performance_display.py > ../../output/results/performance_summary.txt
-echo "output done, analysis script done!"
+echo "output done, selecting best model and placing in output/data_appendix_output"
+python select_best_model.py delay
+python select_best_model.py gse
+echo "selection done, analysis script done!"

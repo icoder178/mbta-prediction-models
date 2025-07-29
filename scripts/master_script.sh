@@ -25,14 +25,6 @@ cd ../../scripts/processing_scripts
 echo "data loading done, starting data processing; this may take a minute"
 python data_wrangling.py no_debug no_cheatsheet
 cd ../analysis_scripts
-echo "data wrangling done, starting model training; this will occupy significant computational resources and take 5-30 minutes"
-# edit if models change
-models=("RandomForest" "Linear" "Ridge" "Lasso" "GradientBoost" "SupportVector" "MultilayerPerceptron" "kNearestNeighbor" "MovingAverage" "Poisson")
-for model in "${models[@]}"
-do
-  python -W ignore models.py $model > ../../output/data_appendix_output/$model.out &
-done
-wait
-echo "model training done, outputting final results to output/results/"
-python performance_display.py > ../../output/results/performance_summary.txt
-echo "output done, master script done!"
+echo "data processing done, starting analysis script"
+./run_analysis.sh
+echo "analysis script done, master script done!"

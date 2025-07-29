@@ -1,0 +1,56 @@
+GSE data:
+Using model (MovingAverage), inputs of previous 5-day (target metric) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 70148.26943743664.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 70148.26943743664.
+Delay data:
+Using model (MovingAverage), inputs of previous 5-day (target metric) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 55.45562610832077.
+Using model (MovingAverage), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 55.45562610832077.

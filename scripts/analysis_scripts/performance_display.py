@@ -30,16 +30,16 @@ def read_source(filepath):
 # returns data, sorted ascending by total of RMSE on two metrics
 def find_data():
     file_list = [
-    ["../../output/data_appendix_output/RandomForest.out","RandomForest"],
-    ["../../output/data_appendix_output/Linear.out","Linear"],
-    ["../../output/data_appendix_output/Ridge.out","Ridge"],
-    ["../../output/data_appendix_output/Lasso.out","Lasso"],
-    ["../../output/data_appendix_output/GradientBoost.out","GradientBoost"],
-    ["../../output/data_appendix_output/SupportVector.out","SupportVector"],
-    ["../../output/data_appendix_output/MultilayerPerceptron.out","MultilayerPerceptron"],
-    ["../../output/data_appendix_output/kNearestNeighbor.out","kNearestNeighbor"],
-    ["../../output/data_appendix_output/MovingAverage.out","MovingAverage"],
-    ["../../output/data_appendix_output/Poisson.out","Poisson"]]
+    ["../../data/intermediate_data/RandomForest_readable.txt","RandomForest"],
+    ["../../data/intermediate_data/Linear_readable.txt","Linear"],
+    ["../../data/intermediate_data/Ridge_readable.txt","Ridge"],
+    ["../../data/intermediate_data/Lasso_readable.txt","Lasso"],
+    ["../../data/intermediate_data/GradientBoost_readable.txt","GradientBoost"],
+    ["../../data/intermediate_data/SupportVector_readable.txt","SupportVector"],
+    ["../../data/intermediate_data/MultilayerPerceptron_readable.txt","MultilayerPerceptron"],
+    ["../../data/intermediate_data/kNearestNeighbor_readable.txt","kNearestNeighbor"],
+    ["../../data/intermediate_data/MovingAverage_readable.txt","MovingAverage"],
+    ["../../data/intermediate_data/Poisson_readable.txt","Poisson"]]
     gse_array = []
     delay_array = []
     for file in file_list:
@@ -93,15 +93,15 @@ def compute_improvement(data,name):
 # run on both gated station entry data and delay data
 def main():
     gse_data,delay_data = find_data()
-    print("GSE data:")
+    print("gse data:")
     print(gse_data.to_string())
     print("\nDelay data:")
     print(delay_data.to_string())
 
     gse_data_plot = gse_data.drop(['Day of Week Data','Season Data','Weather Data'],axis=1)
     delay_data_plot = delay_data.drop(['Day of Week Data','Season Data','Weather Data'],axis=1)
-    display_data(gse_data_plot,"Model Performance on Gated Station Entry Data","Model Name","Model RMSE","delay_data")
-    display_data(delay_data_plot,"Model Performance on MBTA Delay Data","Model Name","Model RMSE","GSE_data")
+    display_data(gse_data_plot,"Model Performance on Gated Station Entry Data","Model Name","Model RMSE","gse_data")
+    display_data(delay_data_plot,"Model Performance on MBTA Delay Data","Model Name","Model RMSE","delay_data")
 
     compute_improvement(gse_data,"Improvement on gated station entry data:")
     compute_improvement(delay_data,"Improvement on delay data:")

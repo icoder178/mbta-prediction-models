@@ -1,0 +1,56 @@
+GSE data:
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 36994.13350947098.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 36994.13350947098.
+Delay data:
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric) to predict target metric: RMSE is 39.04196728625286.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 37.848940215666566.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 37.85910532867127.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 38.45950043425805.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 38.41503261145202.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 38.25731349595975.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 38.713299019304515.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 38.761311657851905.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 38.53194957077245.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 38.95186035544003.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 39.079124402574024.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 38.95186035544003.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 38.9138554208212.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 38.25798026415163.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 38.96896969131203.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 38.05677762703108.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 38.75413673109563.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 38.62624840530418.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 38.663201028529116.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 37.73961847177591.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 37.841829657883714.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 38.49243179365551.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 38.3392952059141.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 38.279116740634365.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 38.15941977238739.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 38.85196224207833.
+Using model (kNearestNeighbor), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 39.05096623736545.
