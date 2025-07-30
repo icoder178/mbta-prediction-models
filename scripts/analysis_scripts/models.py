@@ -106,8 +106,8 @@ def process_data(_source,_input_rows,_input_len,_output_len,_input_cols,_output_
             cnt += 1
         input[i] = input_curr
         output[i] = output_curr
-    if sys.argv[3] != "NO_BOOTSTRAP":
-        random.seed(sys.argv[3])
+    if sys.argv[4] != "NO_BOOTSTRAP":
+        random.seed(sys.argv[4])
         selections = np.array([random.randint(0,len(input)-1) for _ in range(len(input))])
         selections.sort()
         input = input[selections]
@@ -287,7 +287,7 @@ def main():
     current_desc,delay_model_data,delay_model,delay_rmse = run_tests("../../data/analysis_data/delay_inputs.csv",target_name,target_model)
     descriptions += current_desc
 
-    if sys.argv[3] == 'NO_BOOTSTRAP':
+    if sys.argv[4] == 'NO_BOOTSTRAP':
         #output readable results
         with open(target_path+"_readable.txt","w") as f:
             print(descriptions,end='',file=f)
