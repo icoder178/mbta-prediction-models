@@ -1,3 +1,4 @@
 data/input_data/GSE_by_year
 data/input_data/MBTA_Service_Alerts.csv
-data/intermediate_data/
+data/intermediate_data/*
+!data/intermediate_data/.placeholder
