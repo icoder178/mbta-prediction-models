@@ -1,13 +1,13 @@
 ,Model,Data,RMSE
 0,RandomForest,No Additional Data,40881.427056882705
 1,RandomForest,Any Data,28711.530692320568
-2,Linear,No Additional Data,51130.424189598576
-3,Linear,Any Data,51130.424189598576
-4,Ridge,No Additional Data,53085.76918458673
-5,Ridge,Any Data,53085.76918458673
-6,Lasso,No Additional Data,52653.579261322426
+2,Linear,No Additional Data,51130.42418959859
+3,Linear,Any Data,51130.42418959859
+4,Ridge,No Additional Data,53085.76918458678
+5,Ridge,Any Data,53085.76918458678
+6,Lasso,No Additional Data,52653.57926132245
 7,Lasso,Any Data,52624.79952090987
-8,GradientBoost,No Additional Data,43607.16776033276
+8,GradientBoost,No Additional Data,43607.16776033277
 9,GradientBoost,Any Data,29260.082233645444
 10,SupportVector,No Additional Data,95288.87132443821
 11,SupportVector,Any Data,95231.28672662067
@@ -21,14 +21,14 @@
 19,Poisson,Any Data,119834.17000427177
 20,RandomForest,No Additional Data,36046.37257981611
 21,RandomForest,Any Data,28584.190766429783
-22,Linear,No Additional Data,52218.72738355075
-23,Linear,Any Data,52199.74129290458
-24,Ridge,No Additional Data,54033.172739142654
-25,Ridge,Any Data,54033.172739142654
-26,Lasso,No Additional Data,52170.694128476345
-27,Lasso,Any Data,52170.694128476345
-28,GradientBoost,No Additional Data,56059.41494985604
-29,GradientBoost,Any Data,38154.90543006727
+22,Linear,No Additional Data,52218.727383550715
+23,Linear,Any Data,52199.74129274771
+24,Ridge,No Additional Data,54033.17273914268
+25,Ridge,Any Data,54033.17273914268
+26,Lasso,No Additional Data,52170.694128476374
+27,Lasso,Any Data,52170.694128476374
+28,GradientBoost,No Additional Data,56059.41494985602
+29,GradientBoost,Any Data,38154.90543006728
 30,SupportVector,No Additional Data,94633.97271958893
 31,SupportVector,Any Data,94573.77196949846
 32,MultilayerPerceptron,No Additional Data,35251.54477837306
@@ -39,3 +39,1963 @@
 37,MovingAverage,Any Data,68950.38250949777
 38,Poisson,No Additional Data,123466.44883852417
 39,Poisson,Any Data,123466.44883852417
+40,RandomForest,No Additional Data,38992.98562964675
+41,RandomForest,Any Data,29140.998928390996
+42,Linear,No Additional Data,51977.593104025895
+43,Linear,Any Data,51919.99257515262
+44,Ridge,No Additional Data,53311.87990461148
+45,Ridge,Any Data,49563.678530501704
+46,Lasso,No Additional Data,51845.940113029996
+47,Lasso,Any Data,51739.96934897923
+48,GradientBoost,No Additional Data,51803.98053508492
+49,GradientBoost,Any Data,33994.367011009264
+50,SupportVector,No Additional Data,86423.49104266033
+51,SupportVector,Any Data,86423.49104266033
+52,MultilayerPerceptron,No Additional Data,41531.664065719095
+53,MultilayerPerceptron,Any Data,36837.72186063272
+54,kNearestNeighbor,No Additional Data,38029.944369242454
+55,kNearestNeighbor,Any Data,38029.944369242454
+56,MovingAverage,No Additional Data,67539.71990995546
+57,MovingAverage,Any Data,67539.71990995546
+58,Poisson,No Additional Data,114759.31684652231
+59,Poisson,Any Data,114759.31684652231
+60,RandomForest,No Additional Data,43787.49595960028
+61,RandomForest,Any Data,32690.736464206337
+62,Linear,No Additional Data,51836.40542575204
+63,Linear,Any Data,51145.12234806734
+64,Ridge,No Additional Data,50503.810263962674
+65,Ridge,Any Data,50411.23519847987
+66,Lasso,No Additional Data,52348.53402190142
+67,Lasso,Any Data,52348.53402190142
+68,GradientBoost,No Additional Data,48435.773530369755
+69,GradientBoost,Any Data,33324.117208532174
+70,SupportVector,No Additional Data,81964.30551428604
+71,SupportVector,Any Data,81964.30551428604
+72,MultilayerPerceptron,No Additional Data,39826.947875018595
+73,MultilayerPerceptron,Any Data,35408.47251194589
+74,kNearestNeighbor,No Additional Data,38981.83530822183
+75,kNearestNeighbor,Any Data,38981.83530822183
+76,MovingAverage,No Additional Data,69133.7113688397
+77,MovingAverage,Any Data,69133.7113688397
+78,Poisson,No Additional Data,111640.90659867265
+79,Poisson,Any Data,111640.90659867265
+80,RandomForest,No Additional Data,38873.7562486469
+81,RandomForest,Any Data,32814.998653093884
+82,Linear,No Additional Data,52256.79639475512
+83,Linear,Any Data,52256.79639475512
+84,Ridge,No Additional Data,52374.508273385385
+85,Ridge,Any Data,52374.508273385385
+86,Lasso,No Additional Data,52400.668652061424
+87,Lasso,Any Data,52400.668652061424
+88,GradientBoost,No Additional Data,47621.0443618657
+89,GradientBoost,Any Data,31583.874575865637
+90,SupportVector,No Additional Data,80858.74242442945
+91,SupportVector,Any Data,80858.74242442945
+92,MultilayerPerceptron,No Additional Data,39773.59592913873
+93,MultilayerPerceptron,Any Data,36231.173200190526
+94,kNearestNeighbor,No Additional Data,37601.04803846105
+95,kNearestNeighbor,Any Data,37601.04803846105
+96,MovingAverage,No Additional Data,69517.40230430537
+97,MovingAverage,Any Data,69517.40230430537
+98,Poisson,No Additional Data,121713.98994700023
+99,Poisson,Any Data,121713.98994700023
+100,RandomForest,No Additional Data,37576.259088646
+101,RandomForest,Any Data,28239.47955546814
+102,Linear,No Additional Data,52999.468629660405
+103,Linear,Any Data,52953.3965999371
+104,Ridge,No Additional Data,54142.94729610696
+105,Ridge,Any Data,54142.94729610696
+106,Lasso,No Additional Data,52004.261242145265
+107,Lasso,Any Data,52004.261242145265
+108,GradientBoost,No Additional Data,49766.4919543802
+109,GradientBoost,Any Data,30057.704038324006
+110,SupportVector,No Additional Data,78855.88186916636
+111,SupportVector,Any Data,78849.36631829344
+112,MultilayerPerceptron,No Additional Data,38666.74209510203
+113,MultilayerPerceptron,Any Data,35514.61313641023
+114,kNearestNeighbor,No Additional Data,36812.87392881377
+115,kNearestNeighbor,Any Data,36812.87392881377
+116,MovingAverage,No Additional Data,68830.42897112775
+117,MovingAverage,Any Data,68830.42897112775
+118,Poisson,No Additional Data,113440.76517790872
+119,Poisson,Any Data,113440.76517790872
+120,RandomForest,No Additional Data,39424.08145237272
+121,RandomForest,Any Data,28412.10409123771
+122,Linear,No Additional Data,53541.418200402775
+123,Linear,Any Data,53157.997596768466
+124,Ridge,No Additional Data,55233.567942694055
+125,Ridge,Any Data,55233.567942694055
+126,Lasso,No Additional Data,52368.31907844956
+127,Lasso,Any Data,52368.31907844956
+128,GradientBoost,No Additional Data,51917.70212619325
+129,GradientBoost,Any Data,35151.84916232933
+130,SupportVector,No Additional Data,90504.96429129901
+131,SupportVector,Any Data,90497.54037285036
+132,MultilayerPerceptron,No Additional Data,40189.60761955646
+133,MultilayerPerceptron,Any Data,36155.468908204835
+134,kNearestNeighbor,No Additional Data,38631.35310874064
+135,kNearestNeighbor,Any Data,38631.35310874064
+136,MovingAverage,No Additional Data,69246.16717715697
+137,MovingAverage,Any Data,69246.16717715697
+138,Poisson,No Additional Data,119612.68223135833
+139,Poisson,Any Data,119612.68223135833
+140,RandomForest,No Additional Data,36659.12631743283
+141,RandomForest,Any Data,29736.704543322725
+142,Linear,No Additional Data,52125.88230025989
+143,Linear,Any Data,52125.88230025989
+144,Ridge,No Additional Data,53126.41315634013
+145,Ridge,Any Data,52849.492163424344
+146,Lasso,No Additional Data,52462.60431720868
+147,Lasso,Any Data,52134.07334010254
+148,GradientBoost,No Additional Data,48386.698310910004
+149,GradientBoost,Any Data,33948.385360815104
+150,SupportVector,No Additional Data,82348.29647705119
+151,SupportVector,Any Data,82327.18337671539
+152,MultilayerPerceptron,No Additional Data,41172.899140320165
+153,MultilayerPerceptron,Any Data,37164.06370303488
+154,kNearestNeighbor,No Additional Data,40487.241596251995
+155,kNearestNeighbor,Any Data,40487.241596251995
+156,MovingAverage,No Additional Data,67428.67297740039
+157,MovingAverage,Any Data,67428.67297740039
+158,Poisson,No Additional Data,119104.57678765837
+159,Poisson,Any Data,119104.57678765837
+160,RandomForest,No Additional Data,40384.10731634706
+161,RandomForest,Any Data,31930.871384535614
+162,Linear,No Additional Data,50992.54230344066
+163,Linear,Any Data,49346.6613129989
+164,Ridge,No Additional Data,50715.49613014487
+165,Ridge,Any Data,50677.470066859
+166,Lasso,No Additional Data,53478.241125397115
+167,Lasso,Any Data,53478.241125397115
+168,GradientBoost,No Additional Data,50778.28326596209
+169,GradientBoost,Any Data,35162.97041025213
+170,SupportVector,No Additional Data,82164.3374856806
+171,SupportVector,Any Data,82164.3374856806
+172,MultilayerPerceptron,No Additional Data,40008.231040570696
+173,MultilayerPerceptron,Any Data,36913.16004635956
+174,kNearestNeighbor,No Additional Data,41193.176569244846
+175,kNearestNeighbor,Any Data,41193.176569244846
+176,MovingAverage,No Additional Data,70734.52720926658
+177,MovingAverage,Any Data,70734.52720926658
+178,Poisson,No Additional Data,118650.15731860984
+179,Poisson,Any Data,118650.15731860984
+180,RandomForest,No Additional Data,38077.78880739046
+181,RandomForest,Any Data,30535.925348964483
+182,Linear,No Additional Data,52107.59902023704
+183,Linear,Any Data,51776.5106472715
+184,Ridge,No Additional Data,53576.49126182152
+185,Ridge,Any Data,53576.49126182152
+186,Lasso,No Additional Data,54103.44224916765
+187,Lasso,Any Data,53784.36922905351
+188,GradientBoost,No Additional Data,46145.07424908822
+189,GradientBoost,Any Data,29972.81632764224
+190,SupportVector,No Additional Data,80737.10546262331
+191,SupportVector,Any Data,80721.96519837047
+192,MultilayerPerceptron,No Additional Data,45414.66162130807
+193,MultilayerPerceptron,Any Data,39376.36897604603
+194,kNearestNeighbor,No Additional Data,35836.02538379414
+195,kNearestNeighbor,Any Data,35836.02538379414
+196,MovingAverage,No Additional Data,69803.8176659382
+197,MovingAverage,Any Data,69803.8176659382
+198,Poisson,No Additional Data,113988.29771721938
+199,Poisson,Any Data,113988.29771721938
+200,RandomForest,No Additional Data,40239.78599385616
+201,RandomForest,Any Data,29083.736282452915
+202,Linear,No Additional Data,54688.3279977304
+203,Linear,Any Data,53929.35684114677
+204,Ridge,No Additional Data,50601.67486634112
+205,Ridge,Any Data,50410.624038800976
+206,Lasso,No Additional Data,50458.7729855197
+207,Lasso,Any Data,50176.45906724361
+208,GradientBoost,No Additional Data,49869.49470870219
+209,GradientBoost,Any Data,30938.98344140839
+210,SupportVector,No Additional Data,80544.81698615271
+211,SupportVector,Any Data,80527.19013920486
+212,MultilayerPerceptron,No Additional Data,40446.6246022844
+213,MultilayerPerceptron,Any Data,36747.74143220326
+214,kNearestNeighbor,No Additional Data,38724.52376673138
+215,kNearestNeighbor,Any Data,38724.52376673138
+216,MovingAverage,No Additional Data,70025.08756125365
+217,MovingAverage,Any Data,70025.08756125365
+218,Poisson,No Additional Data,119493.61605788018
+219,Poisson,Any Data,119493.61605788018
+220,RandomForest,No Additional Data,38420.557887600335
+221,RandomForest,Any Data,31125.171735677275
+222,Linear,No Additional Data,52952.262858186834
+223,Linear,Any Data,52685.11378564749
+224,Ridge,No Additional Data,52575.267120305645
+225,Ridge,Any Data,52384.60501497214
+226,Lasso,No Additional Data,51469.77526993233
+227,Lasso,Any Data,51469.77526993233
+228,GradientBoost,No Additional Data,56641.46607601302
+229,GradientBoost,Any Data,38157.855837813026
+230,SupportVector,No Additional Data,95264.64502503765
+231,SupportVector,Any Data,95264.64502503765
+232,MultilayerPerceptron,No Additional Data,41420.22749585226
+233,MultilayerPerceptron,Any Data,35117.278709849255
+234,kNearestNeighbor,No Additional Data,34858.84173388487
+235,kNearestNeighbor,Any Data,34858.84173388487
+236,MovingAverage,No Additional Data,71127.36100558244
+237,MovingAverage,Any Data,71127.36100558244
+238,Poisson,No Additional Data,118792.09522131142
+239,Poisson,Any Data,118792.09522131142
+240,RandomForest,No Additional Data,41671.93027065677
+241,RandomForest,Any Data,32856.14453937885
+242,Linear,No Additional Data,53082.46694348734
+243,Linear,Any Data,52837.48351251122
+244,Ridge,No Additional Data,52179.988518080136
+245,Ridge,Any Data,51969.97854574463
+246,Lasso,No Additional Data,53459.59492605806
+247,Lasso,Any Data,52509.64447488937
+248,GradientBoost,No Additional Data,54019.413392547875
+249,GradientBoost,Any Data,32282.055500580274
+250,SupportVector,No Additional Data,77187.64179936239
+251,SupportVector,Any Data,77187.64179936239
+252,MultilayerPerceptron,No Additional Data,40261.88266408245
+253,MultilayerPerceptron,Any Data,36198.90510615198
+254,kNearestNeighbor,No Additional Data,38158.96408603219
+255,kNearestNeighbor,Any Data,38158.96408603219
+256,MovingAverage,No Additional Data,69512.51959965928
+257,MovingAverage,Any Data,69512.51959965928
+258,Poisson,No Additional Data,119794.61641694955
+259,Poisson,Any Data,119794.61641694955
+260,RandomForest,No Additional Data,41983.80748277879
+261,RandomForest,Any Data,32959.503003061145
+262,Linear,No Additional Data,51515.930281922
+263,Linear,Any Data,51515.930281922
+264,Ridge,No Additional Data,52301.8341225489
+265,Ridge,Any Data,52301.8341225489
+266,Lasso,No Additional Data,50614.15845517314
+267,Lasso,Any Data,50614.15845517314
+268,GradientBoost,No Additional Data,52522.497710788935
+269,GradientBoost,Any Data,33994.483207058256
+270,SupportVector,No Additional Data,90195.89663018798
+271,SupportVector,Any Data,90195.89663018798
+272,MultilayerPerceptron,No Additional Data,42841.761230507516
+273,MultilayerPerceptron,Any Data,37641.26172740001
+274,kNearestNeighbor,No Additional Data,36104.70034328861
+275,kNearestNeighbor,Any Data,36104.70034328861
+276,MovingAverage,No Additional Data,70369.2052629539
+277,MovingAverage,Any Data,70369.2052629539
+278,Poisson,No Additional Data,122707.00842027723
+279,Poisson,Any Data,122707.00842027723
+280,RandomForest,No Additional Data,47948.95550426275
+281,RandomForest,Any Data,30682.09249204074
+282,Linear,No Additional Data,51575.59577356631
+283,Linear,Any Data,50849.794912632824
+284,Ridge,No Additional Data,53212.034174237524
+285,Ridge,Any Data,53212.034174237524
+286,Lasso,No Additional Data,50961.66772851251
+287,Lasso,Any Data,50624.497853456625
+288,GradientBoost,No Additional Data,56023.246347267035
+289,GradientBoost,Any Data,37774.382784967594
+290,SupportVector,No Additional Data,81932.31212254746
+291,SupportVector,Any Data,81932.31212254746
+292,MultilayerPerceptron,No Additional Data,40634.69165589626
+293,MultilayerPerceptron,Any Data,36272.25827025036
+294,kNearestNeighbor,No Additional Data,36392.1897355487
+295,kNearestNeighbor,Any Data,36392.1897355487
+296,MovingAverage,No Additional Data,67266.65151032628
+297,MovingAverage,Any Data,67266.65151032628
+298,Poisson,No Additional Data,125307.45281301787
+299,Poisson,Any Data,125307.45281301787
+300,RandomForest,No Additional Data,39425.5799535521
+301,RandomForest,Any Data,29451.92759315993
+302,Linear,No Additional Data,55493.43465030228
+303,Linear,Any Data,53182.38780725979
+304,Ridge,No Additional Data,53111.024347575934
+305,Ridge,Any Data,53048.27769132873
+306,Lasso,No Additional Data,50580.15332821204
+307,Lasso,Any Data,50453.008385847614
+308,GradientBoost,No Additional Data,52189.90099885854
+309,GradientBoost,Any Data,34512.476491119145
+310,SupportVector,No Additional Data,81524.43847613584
+311,SupportVector,Any Data,81524.43847613584
+312,MultilayerPerceptron,No Additional Data,34722.760167361084
+313,MultilayerPerceptron,Any Data,33999.048219280274
+314,kNearestNeighbor,No Additional Data,37520.54458699077
+315,kNearestNeighbor,Any Data,37520.54458699077
+316,MovingAverage,No Additional Data,69691.76594242829
+317,MovingAverage,Any Data,69691.76594242829
+318,Poisson,No Additional Data,120023.33964468868
+319,Poisson,Any Data,120023.33964468868
+320,RandomForest,No Additional Data,36634.71115261555
+321,RandomForest,Any Data,27700.644678841578
+322,Linear,No Additional Data,50463.97505708428
+323,Linear,Any Data,50463.97505708428
+324,Ridge,No Additional Data,50141.76626321762
+325,Ridge,Any Data,50141.76626321762
+326,Lasso,No Additional Data,50488.70544460747
+327,Lasso,Any Data,50488.70544460747
+328,GradientBoost,No Additional Data,50863.96858841249
+329,GradientBoost,Any Data,31349.730114534308
+330,SupportVector,No Additional Data,98704.66691644695
+331,SupportVector,Any Data,98645.26459315572
+332,MultilayerPerceptron,No Additional Data,40349.747644436145
+333,MultilayerPerceptron,Any Data,35587.58269706083
+334,kNearestNeighbor,No Additional Data,36429.50815778032
+335,kNearestNeighbor,Any Data,36429.50815778032
+336,MovingAverage,No Additional Data,68995.49044301471
+337,MovingAverage,Any Data,68995.49044301471
+338,Poisson,No Additional Data,115144.06487819958
+339,Poisson,Any Data,115144.06487819958
+340,RandomForest,No Additional Data,41264.20693003006
+341,RandomForest,Any Data,28687.76895808054
+342,Linear,No Additional Data,51947.55712697093
+343,Linear,Any Data,51947.55712697093
+344,Ridge,No Additional Data,53222.90514612585
+345,Ridge,Any Data,53222.90514612585
+346,Lasso,No Additional Data,52321.79632722889
+347,Lasso,Any Data,52321.79632722889
+348,GradientBoost,No Additional Data,51130.71335371701
+349,GradientBoost,Any Data,30930.29411850788
+350,SupportVector,No Additional Data,90778.96348741632
+351,SupportVector,Any Data,90765.87203358242
+352,MultilayerPerceptron,No Additional Data,38179.19418339895
+353,MultilayerPerceptron,Any Data,36480.628366069934
+354,kNearestNeighbor,No Additional Data,34646.19176726998
+355,kNearestNeighbor,Any Data,34646.19176726998
+356,MovingAverage,No Additional Data,69330.03907553121
+357,MovingAverage,Any Data,69330.03907553121
+358,Poisson,No Additional Data,113592.53580262253
+359,Poisson,Any Data,113592.53580262253
+360,RandomForest,No Additional Data,36068.10686144272
+361,RandomForest,Any Data,28700.650006264736
+362,Linear,No Additional Data,55346.94465830821
+363,Linear,Any Data,55272.12448968834
+364,Ridge,No Additional Data,50172.55035685452
+365,Ridge,Any Data,49991.88248128641
+366,Lasso,No Additional Data,53881.751099400004
+367,Lasso,Any Data,53872.87414712063
+368,GradientBoost,No Additional Data,52030.40130617923
+369,GradientBoost,Any Data,35368.81753951129
+370,SupportVector,No Additional Data,78168.19718803889
+371,SupportVector,Any Data,78168.19718803889
+372,MultilayerPerceptron,No Additional Data,36767.86254549314
+373,MultilayerPerceptron,Any Data,34583.36184113712
+374,kNearestNeighbor,No Additional Data,36411.20287189845
+375,kNearestNeighbor,Any Data,36411.20287189845
+376,MovingAverage,No Additional Data,71011.93087456077
+377,MovingAverage,Any Data,71011.93087456077
+378,Poisson,No Additional Data,118787.58098314007
+379,Poisson,Any Data,118787.58098314007
+380,RandomForest,No Additional Data,38456.68636662244
+381,RandomForest,Any Data,26347.797291266404
+382,Linear,No Additional Data,52899.281695258294
+383,Linear,Any Data,52682.715236324104
+384,Ridge,No Additional Data,53356.75172174341
+385,Ridge,Any Data,53356.75172174341
+386,Lasso,No Additional Data,53152.47925775276
+387,Lasso,Any Data,52178.94990187776
+388,GradientBoost,No Additional Data,48407.41579234598
+389,GradientBoost,Any Data,30070.804118727556
+390,SupportVector,No Additional Data,80496.06856043753
+391,SupportVector,Any Data,80496.06856043753
+392,MultilayerPerceptron,No Additional Data,35744.68641979662
+393,MultilayerPerceptron,Any Data,35444.26593677525
+394,kNearestNeighbor,No Additional Data,36645.455652436416
+395,kNearestNeighbor,Any Data,36645.455652436416
+396,MovingAverage,No Additional Data,70141.05023012478
+397,MovingAverage,Any Data,70141.05023012478
+398,Poisson,No Additional Data,122328.40379765457
+399,Poisson,Any Data,122328.40379765457
+400,RandomForest,No Additional Data,36217.12929845684
+401,RandomForest,Any Data,28821.840221161245
+402,Linear,No Additional Data,52492.08762063028
+403,Linear,Any Data,52492.08762063028
+404,Ridge,No Additional Data,51461.8485362549
+405,Ridge,Any Data,51255.5899527498
+406,Lasso,No Additional Data,52823.76893634388
+407,Lasso,Any Data,50186.980635286796
+408,GradientBoost,No Additional Data,52155.94317108814
+409,GradientBoost,Any Data,36344.03255791128
+410,SupportVector,No Additional Data,82458.65140837542
+411,SupportVector,Any Data,82435.75558384378
+412,MultilayerPerceptron,No Additional Data,42191.51212756582
+413,MultilayerPerceptron,Any Data,39058.511300763625
+414,kNearestNeighbor,No Additional Data,36888.306386321245
+415,kNearestNeighbor,Any Data,36888.306386321245
+416,MovingAverage,No Additional Data,67594.55251008837
+417,MovingAverage,Any Data,67594.55251008837
+418,Poisson,No Additional Data,115864.39029034576
+419,Poisson,Any Data,115864.39029034576
+420,RandomForest,No Additional Data,39680.23239462102
+421,RandomForest,Any Data,32452.979417982522
+422,Linear,No Additional Data,54370.79772850833
+423,Linear,Any Data,54270.00229599911
+424,Ridge,No Additional Data,52415.29309321397
+425,Ridge,Any Data,52415.29309321397
+426,Lasso,No Additional Data,54105.55316153595
+427,Lasso,Any Data,54105.55316153595
+428,GradientBoost,No Additional Data,47710.33073655545
+429,GradientBoost,Any Data,32247.928946382963
+430,SupportVector,No Additional Data,84534.10317344691
+431,SupportVector,Any Data,84534.10317344691
+432,MultilayerPerceptron,No Additional Data,39118.705070647
+433,MultilayerPerceptron,Any Data,37275.995217922755
+434,kNearestNeighbor,No Additional Data,39477.27216605465
+435,kNearestNeighbor,Any Data,39477.27216605465
+436,MovingAverage,No Additional Data,69724.4562698399
+437,MovingAverage,Any Data,69724.4562698399
+438,Poisson,No Additional Data,122034.92812986702
+439,Poisson,Any Data,122034.92812986702
+440,RandomForest,No Additional Data,39047.62752901268
+441,RandomForest,Any Data,29490.31424568183
+442,Linear,No Additional Data,51664.15891858984
+443,Linear,Any Data,51495.43487310484
+444,Ridge,No Additional Data,53184.17394168556
+445,Ridge,Any Data,53184.17394168556
+446,Lasso,No Additional Data,52421.862070975985
+447,Lasso,Any Data,52395.42287265664
+448,GradientBoost,No Additional Data,49783.499624361866
+449,GradientBoost,Any Data,33449.764231759305
+450,SupportVector,No Additional Data,81918.28765293547
+451,SupportVector,Any Data,81918.28765293547
+452,MultilayerPerceptron,No Additional Data,39833.82658875515
+453,MultilayerPerceptron,Any Data,38040.12465834472
+454,kNearestNeighbor,No Additional Data,35569.3823588187
+455,kNearestNeighbor,Any Data,35569.3823588187
+456,MovingAverage,No Additional Data,70170.55077431233
+457,MovingAverage,Any Data,70170.55077431233
+458,Poisson,No Additional Data,122488.9286278019
+459,Poisson,Any Data,122488.9286278019
+460,RandomForest,No Additional Data,39249.22869572343
+461,RandomForest,Any Data,29791.660970959678
+462,Linear,No Additional Data,50260.79073915079
+463,Linear,Any Data,50073.633722886894
+464,Ridge,No Additional Data,53972.25812642681
+465,Ridge,Any Data,51646.10704621372
+466,Lasso,No Additional Data,50132.33847553269
+467,Lasso,Any Data,50132.33847553269
+468,GradientBoost,No Additional Data,47509.945928484056
+469,GradientBoost,Any Data,31258.856824685165
+470,SupportVector,No Additional Data,81503.65867721682
+471,SupportVector,Any Data,81502.76733588085
+472,MultilayerPerceptron,No Additional Data,36141.591477129674
+473,MultilayerPerceptron,Any Data,35740.07915425862
+474,kNearestNeighbor,No Additional Data,38937.168375943715
+475,kNearestNeighbor,Any Data,38937.168375943715
+476,MovingAverage,No Additional Data,70495.9072308215
+477,MovingAverage,Any Data,70495.9072308215
+478,Poisson,No Additional Data,124519.0297578863
+479,Poisson,Any Data,124519.0297578863
+480,RandomForest,No Additional Data,35238.78375565638
+481,RandomForest,Any Data,27670.25774191457
+482,Linear,No Additional Data,54403.982365054035
+483,Linear,Any Data,52685.01981743352
+484,Ridge,No Additional Data,52171.13471135178
+485,Ridge,Any Data,52171.13471135178
+486,Lasso,No Additional Data,53400.495127355236
+487,Lasso,Any Data,53400.495127355236
+488,GradientBoost,No Additional Data,51803.34957547086
+489,GradientBoost,Any Data,32767.579628336025
+490,SupportVector,No Additional Data,79400.03484302331
+491,SupportVector,Any Data,79399.31456399972
+492,MultilayerPerceptron,No Additional Data,40460.887946682225
+493,MultilayerPerceptron,Any Data,35974.314062716934
+494,kNearestNeighbor,No Additional Data,41331.45759002855
+495,kNearestNeighbor,Any Data,41331.45759002855
+496,MovingAverage,No Additional Data,68329.41377464155
+497,MovingAverage,Any Data,68329.41377464155
+498,Poisson,No Additional Data,117385.34551966528
+499,Poisson,Any Data,117385.34551966528
+500,RandomForest,No Additional Data,40544.59729927784
+501,RandomForest,Any Data,30684.074380916085
+502,Linear,No Additional Data,52555.231229932266
+503,Linear,Any Data,52555.231229932266
+504,Ridge,No Additional Data,51829.84770720715
+505,Ridge,Any Data,51829.84770720715
+506,Lasso,No Additional Data,53068.20160803964
+507,Lasso,Any Data,53068.20160803964
+508,GradientBoost,No Additional Data,50678.93459313618
+509,GradientBoost,Any Data,33494.75403406731
+510,SupportVector,No Additional Data,82227.57582448477
+511,SupportVector,Any Data,82227.57582448477
+512,MultilayerPerceptron,No Additional Data,40940.33368025081
+513,MultilayerPerceptron,Any Data,38069.15579834386
+514,kNearestNeighbor,No Additional Data,39992.176700945725
+515,kNearestNeighbor,Any Data,39992.176700945725
+516,MovingAverage,No Additional Data,70414.79516916709
+517,MovingAverage,Any Data,70414.79516916709
+518,Poisson,No Additional Data,118918.39031320262
+519,Poisson,Any Data,118918.39031320262
+520,RandomForest,No Additional Data,43643.567705495334
+521,RandomForest,Any Data,32165.321466389934
+522,Linear,No Additional Data,53764.36878058971
+523,Linear,Any Data,53130.690838868395
+524,Ridge,No Additional Data,49626.39488737522
+525,Ridge,Any Data,49556.684732708716
+526,Lasso,No Additional Data,51770.843074712044
+527,Lasso,Any Data,51770.843074712044
+528,GradientBoost,No Additional Data,47969.83951351056
+529,GradientBoost,Any Data,32945.58673621137
+530,SupportVector,No Additional Data,80038.3378043346
+531,SupportVector,Any Data,80038.3378043346
+532,MultilayerPerceptron,No Additional Data,42166.80180489582
+533,MultilayerPerceptron,Any Data,38748.03024436022
+534,kNearestNeighbor,No Additional Data,38594.36357180115
+535,kNearestNeighbor,Any Data,38594.36357180115
+536,MovingAverage,No Additional Data,68728.46295986652
+537,MovingAverage,Any Data,68728.46295986652
+538,Poisson,No Additional Data,114759.46596306328
+539,Poisson,Any Data,114759.46596306328
+540,RandomForest,No Additional Data,39971.531630129335
+541,RandomForest,Any Data,28618.396819137637
+542,Linear,No Additional Data,54464.82690195983
+543,Linear,Any Data,54464.82690195983
+544,Ridge,No Additional Data,52859.16984819792
+545,Ridge,Any Data,52633.1686804523
+546,Lasso,No Additional Data,51231.674895804084
+547,Lasso,Any Data,50858.77630068441
+548,GradientBoost,No Additional Data,48259.658472404124
+549,GradientBoost,Any Data,34145.32166440705
+550,SupportVector,No Additional Data,90228.58437945198
+551,SupportVector,Any Data,90228.58437945198
+552,MultilayerPerceptron,No Additional Data,41173.87689924138
+553,MultilayerPerceptron,Any Data,36833.49110132744
+554,kNearestNeighbor,No Additional Data,38734.88440981976
+555,kNearestNeighbor,Any Data,38734.88440981976
+556,MovingAverage,No Additional Data,69864.01143743712
+557,MovingAverage,Any Data,69864.01143743712
+558,Poisson,No Additional Data,120895.47817160217
+559,Poisson,Any Data,120895.47817160217
+560,RandomForest,No Additional Data,36543.78061218069
+561,RandomForest,Any Data,31624.987508271523
+562,Linear,No Additional Data,53757.37831845885
+563,Linear,Any Data,53732.746665660154
+564,Ridge,No Additional Data,49651.790287755
+565,Ridge,Any Data,49651.790287755
+566,Lasso,No Additional Data,51400.18242855712
+567,Lasso,Any Data,50992.60752548646
+568,GradientBoost,No Additional Data,47369.588079418754
+569,GradientBoost,Any Data,30428.80921604924
+570,SupportVector,No Additional Data,91234.40950708197
+571,SupportVector,Any Data,91234.40950708197
+572,MultilayerPerceptron,No Additional Data,39841.20578981764
+573,MultilayerPerceptron,Any Data,36114.94637331455
+574,kNearestNeighbor,No Additional Data,35807.74867378709
+575,kNearestNeighbor,Any Data,35807.74867378709
+576,MovingAverage,No Additional Data,68179.76561359932
+577,MovingAverage,Any Data,68179.76561359932
+578,Poisson,No Additional Data,118200.69852514575
+579,Poisson,Any Data,118200.69852514575
+580,RandomForest,No Additional Data,38215.34524751793
+581,RandomForest,Any Data,30824.767656807726
+582,Linear,No Additional Data,51968.6388575849
+583,Linear,Any Data,51740.48584979362
+584,Ridge,No Additional Data,51076.90115321343
+585,Ridge,Any Data,51076.90115321343
+586,Lasso,No Additional Data,51250.057978410885
+587,Lasso,Any Data,51217.90548613202
+588,GradientBoost,No Additional Data,46106.897248807465
+589,GradientBoost,Any Data,32863.15399242609
+590,SupportVector,No Additional Data,76623.88211455265
+591,SupportVector,Any Data,76619.07926513428
+592,MultilayerPerceptron,No Additional Data,39960.53782740541
+593,MultilayerPerceptron,Any Data,35458.864979588885
+594,kNearestNeighbor,No Additional Data,36757.736960649134
+595,kNearestNeighbor,Any Data,36757.736960649134
+596,MovingAverage,No Additional Data,69690.36149995029
+597,MovingAverage,Any Data,69690.36149995029
+598,Poisson,No Additional Data,116228.79720833332
+599,Poisson,Any Data,116228.79720833332
+600,RandomForest,No Additional Data,36282.755021330806
+601,RandomForest,Any Data,27835.377244705003
+602,Linear,No Additional Data,56284.113666832156
+603,Linear,Any Data,54555.1090439181
+604,Ridge,No Additional Data,50932.929068691694
+605,Ridge,Any Data,50873.5544761291
+606,Lasso,No Additional Data,52061.03725897065
+607,Lasso,Any Data,50653.58209371127
+608,GradientBoost,No Additional Data,50279.90773267536
+609,GradientBoost,Any Data,32028.45976737851
+610,SupportVector,No Additional Data,89316.68530902505
+611,SupportVector,Any Data,89316.68530902505
+612,MultilayerPerceptron,No Additional Data,39549.00616511316
+613,MultilayerPerceptron,Any Data,37994.87836379194
+614,kNearestNeighbor,No Additional Data,37266.999579553056
+615,kNearestNeighbor,Any Data,37266.999579553056
+616,MovingAverage,No Additional Data,70123.90248524258
+617,MovingAverage,Any Data,70123.90248524258
+618,Poisson,No Additional Data,128099.83573554402
+619,Poisson,Any Data,128099.83573554402
+620,RandomForest,No Additional Data,42729.3756429397
+621,RandomForest,Any Data,28639.983644400894
+622,Linear,No Additional Data,50943.65883781328
+623,Linear,Any Data,50612.887799780154
+624,Ridge,No Additional Data,53198.54517712514
+625,Ridge,Any Data,53062.95331021192
+626,Lasso,No Additional Data,50901.291394706765
+627,Lasso,Any Data,50870.84440818304
+628,GradientBoost,No Additional Data,49756.34031421648
+629,GradientBoost,Any Data,32631.75851499297
+630,SupportVector,No Additional Data,80890.27007163934
+631,SupportVector,Any Data,80866.03675705
+632,MultilayerPerceptron,No Additional Data,41274.92101074573
+633,MultilayerPerceptron,Any Data,35832.21480466046
+634,kNearestNeighbor,No Additional Data,40702.02521312097
+635,kNearestNeighbor,Any Data,40702.02521312097
+636,MovingAverage,No Additional Data,68433.4424610671
+637,MovingAverage,Any Data,68433.4424610671
+638,Poisson,No Additional Data,120415.188503634
+639,Poisson,Any Data,120415.188503634
+640,RandomForest,No Additional Data,41532.95031205013
+641,RandomForest,Any Data,28881.938508109684
+642,Linear,No Additional Data,53493.7289296363
+643,Linear,Any Data,53459.6843184751
+644,Ridge,No Additional Data,51299.484554931005
+645,Ridge,Any Data,51299.484554931005
+646,Lasso,No Additional Data,55121.72525585077
+647,Lasso,Any Data,54279.087255741535
+648,GradientBoost,No Additional Data,46623.46305548439
+649,GradientBoost,Any Data,33046.56801670597
+650,SupportVector,No Additional Data,80268.64533805542
+651,SupportVector,Any Data,80268.64533805542
+652,MultilayerPerceptron,No Additional Data,39484.501754623525
+653,MultilayerPerceptron,Any Data,36987.55717077239
+654,kNearestNeighbor,No Additional Data,35354.60747655479
+655,kNearestNeighbor,Any Data,35354.60747655479
+656,MovingAverage,No Additional Data,69231.31522304662
+657,MovingAverage,Any Data,69231.31522304662
+658,Poisson,No Additional Data,115529.06071118289
+659,Poisson,Any Data,115529.06071118289
+660,RandomForest,No Additional Data,37185.68150370194
+661,RandomForest,Any Data,29115.466746267153
+662,Linear,No Additional Data,50691.07820008263
+663,Linear,Any Data,50691.07820008263
+664,Ridge,No Additional Data,51559.80842095966
+665,Ridge,Any Data,51409.928060209284
+666,Lasso,No Additional Data,52591.87883550662
+667,Lasso,Any Data,52591.87883550662
+668,GradientBoost,No Additional Data,49600.474832639185
+669,GradientBoost,Any Data,34088.352615397474
+670,SupportVector,No Additional Data,81250.88946943283
+671,SupportVector,Any Data,81233.20165067843
+672,MultilayerPerceptron,No Additional Data,39304.254877679065
+673,MultilayerPerceptron,Any Data,37679.85942965337
+674,kNearestNeighbor,No Additional Data,38823.16921123329
+675,kNearestNeighbor,Any Data,38823.16921123329
+676,MovingAverage,No Additional Data,68307.78919214675
+677,MovingAverage,Any Data,68307.78919214675
+678,Poisson,No Additional Data,124064.1276602307
+679,Poisson,Any Data,124064.1276602307
+680,RandomForest,No Additional Data,43142.66169507256
+681,RandomForest,Any Data,28142.382711473387
+682,Linear,No Additional Data,52993.599734867545
+683,Linear,Any Data,52904.83102484801
+684,Ridge,No Additional Data,51208.42732192641
+685,Ridge,Any Data,50955.59213356269
+686,Lasso,No Additional Data,51857.38195606281
+687,Lasso,Any Data,51857.38195606281
+688,GradientBoost,No Additional Data,47163.38347230422
+689,GradientBoost,Any Data,30361.269475173824
+690,SupportVector,No Additional Data,86591.86779274888
+691,SupportVector,Any Data,86542.21501139813
+692,MultilayerPerceptron,No Additional Data,41340.053597843646
+693,MultilayerPerceptron,Any Data,37978.19820002753
+694,kNearestNeighbor,No Additional Data,33230.212435695175
+695,kNearestNeighbor,Any Data,33230.212435695175
+696,MovingAverage,No Additional Data,69187.24193527758
+697,MovingAverage,Any Data,69187.24193527758
+698,Poisson,No Additional Data,117154.36845844348
+699,Poisson,Any Data,117154.36845844348
+700,RandomForest,No Additional Data,39092.01957200569
+701,RandomForest,Any Data,29755.015960016462
+702,Linear,No Additional Data,53088.38551560345
+703,Linear,Any Data,52683.14116133254
+704,Ridge,No Additional Data,51104.56588965599
+705,Ridge,Any Data,50947.19980448297
+706,Lasso,No Additional Data,53019.18056224598
+707,Lasso,Any Data,51601.14852044901
+708,GradientBoost,No Additional Data,51242.21703727839
+709,GradientBoost,Any Data,31419.336012854008
+710,SupportVector,No Additional Data,83856.514214951
+711,SupportVector,Any Data,83856.514214951
+712,MultilayerPerceptron,No Additional Data,37674.66137498282
+713,MultilayerPerceptron,Any Data,34791.50724306967
+714,kNearestNeighbor,No Additional Data,38608.87201513529
+715,kNearestNeighbor,Any Data,38608.87201513529
+716,MovingAverage,No Additional Data,72699.66926608793
+717,MovingAverage,Any Data,72699.66926608793
+718,Poisson,No Additional Data,123931.36763006405
+719,Poisson,Any Data,123931.36763006405
+720,RandomForest,No Additional Data,40019.332811169006
+721,RandomForest,Any Data,30171.174924945095
+722,Linear,No Additional Data,52884.1658983305
+723,Linear,Any Data,52884.1658983305
+724,Ridge,No Additional Data,52450.618771063
+725,Ridge,Any Data,50088.98180500876
+726,Lasso,No Additional Data,51308.61077178635
+727,Lasso,Any Data,51181.38502354098
+728,GradientBoost,No Additional Data,47097.22450742184
+729,GradientBoost,Any Data,31938.744389552812
+730,SupportVector,No Additional Data,92527.28717660489
+731,SupportVector,Any Data,92527.28717660489
+732,MultilayerPerceptron,No Additional Data,43231.76127780386
+733,MultilayerPerceptron,Any Data,37907.971263620646
+734,kNearestNeighbor,No Additional Data,41089.20121228737
+735,kNearestNeighbor,Any Data,41089.20121228737
+736,MovingAverage,No Additional Data,69238.98586041699
+737,MovingAverage,Any Data,69238.98586041699
+738,Poisson,No Additional Data,114753.4369837893
+739,Poisson,Any Data,114753.4369837893
+740,RandomForest,No Additional Data,36167.82448850813
+741,RandomForest,Any Data,29331.214496598146
+742,Linear,No Additional Data,55017.71218551321
+743,Linear,Any Data,55017.71218551321
+744,Ridge,No Additional Data,49607.79268253363
+745,Ridge,Any Data,49607.79268253363
+746,Lasso,No Additional Data,54126.12212303772
+747,Lasso,Any Data,54126.12212303772
+748,GradientBoost,No Additional Data,48458.7118601267
+749,GradientBoost,Any Data,30846.85710425236
+750,SupportVector,No Additional Data,78894.44276855962
+751,SupportVector,Any Data,78894.44276855962
+752,MultilayerPerceptron,No Additional Data,36868.292984044056
+753,MultilayerPerceptron,Any Data,34973.42039100087
+754,kNearestNeighbor,No Additional Data,37152.59052197619
+755,kNearestNeighbor,Any Data,37152.59052197619
+756,MovingAverage,No Additional Data,70124.38734467885
+757,MovingAverage,Any Data,70124.38734467885
+758,Poisson,No Additional Data,116751.98159994878
+759,Poisson,Any Data,116751.98159994878
+760,RandomForest,No Additional Data,37834.38140786637
+761,RandomForest,Any Data,28705.57774551864
+762,Linear,No Additional Data,49930.508449145644
+763,Linear,Any Data,49930.508449145644
+764,Ridge,No Additional Data,51607.06608842066
+765,Ridge,Any Data,51607.06608842066
+766,Lasso,No Additional Data,54489.07612650835
+767,Lasso,Any Data,51813.49295853743
+768,GradientBoost,No Additional Data,52904.09791172198
+769,GradientBoost,Any Data,33961.90566843679
+770,SupportVector,No Additional Data,90605.11575649733
+771,SupportVector,Any Data,90567.01411622879
+772,MultilayerPerceptron,No Additional Data,39354.91109878095
+773,MultilayerPerceptron,Any Data,34539.98690926819
+774,kNearestNeighbor,No Additional Data,36254.370479179765
+775,kNearestNeighbor,Any Data,36254.370479179765
+776,MovingAverage,No Additional Data,69092.8269006832
+777,MovingAverage,Any Data,69092.8269006832
+778,Poisson,No Additional Data,121094.64189904729
+779,Poisson,Any Data,121094.64189904729
+780,RandomForest,No Additional Data,42386.92276188506
+781,RandomForest,Any Data,30643.044344444734
+782,Linear,No Additional Data,53842.45168638957
+783,Linear,Any Data,53839.30571806794
+784,Ridge,No Additional Data,51906.308010140645
+785,Ridge,Any Data,51684.77884262601
+786,Lasso,No Additional Data,53157.86764188222
+787,Lasso,Any Data,53023.88865095662
+788,GradientBoost,No Additional Data,46312.899169284006
+789,GradientBoost,Any Data,29440.213678506934
+790,SupportVector,No Additional Data,85681.34801994913
+791,SupportVector,Any Data,85681.34801994913
+792,MultilayerPerceptron,No Additional Data,45806.15009169341
+793,MultilayerPerceptron,Any Data,37571.53185883262
+794,kNearestNeighbor,No Additional Data,37502.40597628514
+795,kNearestNeighbor,Any Data,37502.40597628514
+796,MovingAverage,No Additional Data,70351.61452179147
+797,MovingAverage,Any Data,70351.61452179147
+798,Poisson,No Additional Data,123898.62683651176
+799,Poisson,Any Data,123898.62683651176
+800,RandomForest,No Additional Data,39966.585772775725
+801,RandomForest,Any Data,32186.28876974501
+802,Linear,No Additional Data,51293.2163816417
+803,Linear,Any Data,51293.2163816417
+804,Ridge,No Additional Data,50784.41868403094
+805,Ridge,Any Data,50716.62226646782
+806,Lasso,No Additional Data,51233.18291565675
+807,Lasso,Any Data,51233.18291565675
+808,GradientBoost,No Additional Data,47744.45974552257
+809,GradientBoost,Any Data,32288.52270289901
+810,SupportVector,No Additional Data,82490.6894497046
+811,SupportVector,Any Data,82490.6894497046
+812,MultilayerPerceptron,No Additional Data,40445.422588222376
+813,MultilayerPerceptron,Any Data,33808.01032147916
+814,kNearestNeighbor,No Additional Data,37714.29623006641
+815,kNearestNeighbor,Any Data,37714.29623006641
+816,MovingAverage,No Additional Data,67566.44785673244
+817,MovingAverage,Any Data,67566.44785673244
+818,Poisson,No Additional Data,124770.09956993419
+819,Poisson,Any Data,124770.09956993419
+820,RandomForest,No Additional Data,39919.03630664592
+821,RandomForest,Any Data,30052.017022440414
+822,Linear,No Additional Data,54938.770186041926
+823,Linear,Any Data,53269.7935931875
+824,Ridge,No Additional Data,51643.75885519989
+825,Ridge,Any Data,51550.645177298196
+826,Lasso,No Additional Data,50589.64973650874
+827,Lasso,Any Data,50550.67065972075
+828,GradientBoost,No Additional Data,48979.8054129321
+829,GradientBoost,Any Data,32473.022554216626
+830,SupportVector,No Additional Data,81554.89356053963
+831,SupportVector,Any Data,81554.89356053963
+832,MultilayerPerceptron,No Additional Data,42436.198090046506
+833,MultilayerPerceptron,Any Data,38193.72244063905
+834,kNearestNeighbor,No Additional Data,36323.06088375808
+835,kNearestNeighbor,Any Data,36323.06088375808
+836,MovingAverage,No Additional Data,69149.89578937092
+837,MovingAverage,Any Data,69149.89578937092
+838,Poisson,No Additional Data,116993.77622078986
+839,Poisson,Any Data,116993.77622078986
+840,RandomForest,No Additional Data,36766.114032173035
+841,RandomForest,Any Data,27839.59832463713
+842,Linear,No Additional Data,50366.16201137251
+843,Linear,Any Data,50366.16201137251
+844,Ridge,No Additional Data,51920.06273237576
+845,Ridge,Any Data,51900.247170710994
+846,Lasso,No Additional Data,53325.98910222591
+847,Lasso,Any Data,53325.98910222591
+848,GradientBoost,No Additional Data,47685.36523167599
+849,GradientBoost,Any Data,31313.172091614866
+850,SupportVector,No Additional Data,78334.73528386171
+851,SupportVector,Any Data,78332.86194261917
+852,MultilayerPerceptron,No Additional Data,38641.76717018536
+853,MultilayerPerceptron,Any Data,35040.81578533059
+854,kNearestNeighbor,No Additional Data,39518.69154855516
+855,kNearestNeighbor,Any Data,39518.69154855516
+856,MovingAverage,No Additional Data,71777.97467951642
+857,MovingAverage,Any Data,71777.97467951642
+858,Poisson,No Additional Data,117013.32643214791
+859,Poisson,Any Data,117013.32643214791
+860,RandomForest,No Additional Data,39084.98493495887
+861,RandomForest,Any Data,29349.77597182138
+862,Linear,No Additional Data,51112.60002334218
+863,Linear,Any Data,51112.60002334218
+864,Ridge,No Additional Data,52168.02232381843
+865,Ridge,Any Data,52168.02232381843
+866,Lasso,No Additional Data,51930.31653431825
+867,Lasso,Any Data,51499.616580181
+868,GradientBoost,No Additional Data,53254.51508461644
+869,GradientBoost,Any Data,32806.60133397249
+870,SupportVector,No Additional Data,84347.7638985065
+871,SupportVector,Any Data,84333.59842608415
+872,MultilayerPerceptron,No Additional Data,40108.380147613425
+873,MultilayerPerceptron,Any Data,35208.49671907928
+874,kNearestNeighbor,No Additional Data,36604.116051922334
+875,kNearestNeighbor,Any Data,36604.116051922334
+876,MovingAverage,No Additional Data,69618.36472185771
+877,MovingAverage,Any Data,69618.36472185771
+878,Poisson,No Additional Data,121141.74588663774
+879,Poisson,Any Data,121141.74588663774
+880,RandomForest,No Additional Data,38455.987394922784
+881,RandomForest,Any Data,29610.68708735628
+882,Linear,No Additional Data,54251.37368967356
+883,Linear,Any Data,54219.07545721141
+884,Ridge,No Additional Data,52588.03345620282
+885,Ridge,Any Data,52490.83262549721
+886,Lasso,No Additional Data,51294.77963152878
+887,Lasso,Any Data,51272.88846074616
+888,GradientBoost,No Additional Data,47508.962792079845
+889,GradientBoost,Any Data,31839.32459825778
+890,SupportVector,No Additional Data,82299.74074474837
+891,SupportVector,Any Data,82278.3027528765
+892,MultilayerPerceptron,No Additional Data,39500.70230361964
+893,MultilayerPerceptron,Any Data,37045.88078449966
+894,kNearestNeighbor,No Additional Data,35739.17026635661
+895,kNearestNeighbor,Any Data,35739.17026635661
+896,MovingAverage,No Additional Data,68576.21440034335
+897,MovingAverage,Any Data,68576.21440034335
+898,Poisson,No Additional Data,118417.23930603034
+899,Poisson,Any Data,118417.23930603034
+900,RandomForest,No Additional Data,42620.285859440795
+901,RandomForest,Any Data,28156.53874917683
+902,Linear,No Additional Data,52522.1288786996
+903,Linear,Any Data,50142.782729820196
+904,Ridge,No Additional Data,51212.32220628189
+905,Ridge,Any Data,51212.32220628189
+906,Lasso,No Additional Data,52977.44341311711
+907,Lasso,Any Data,51796.84393730285
+908,GradientBoost,No Additional Data,47622.70180058587
+909,GradientBoost,Any Data,32771.15837335307
+910,SupportVector,No Additional Data,78132.57964889228
+911,SupportVector,Any Data,78119.2604735663
+912,MultilayerPerceptron,No Additional Data,42492.21895550221
+913,MultilayerPerceptron,Any Data,37053.66310056568
+914,kNearestNeighbor,No Additional Data,40977.33622660778
+915,kNearestNeighbor,Any Data,40977.33622660778
+916,MovingAverage,No Additional Data,67466.4919049043
+917,MovingAverage,Any Data,67466.4919049043
+918,Poisson,No Additional Data,120395.88804352832
+919,Poisson,Any Data,120395.88804352832
+920,RandomForest,No Additional Data,39320.05747696555
+921,RandomForest,Any Data,28614.823268595355
+922,Linear,No Additional Data,50458.503070775994
+923,Linear,Any Data,48608.68211586336
+924,Ridge,No Additional Data,53722.962316330566
+925,Ridge,Any Data,53722.962316330566
+926,Lasso,No Additional Data,52293.039303822916
+927,Lasso,Any Data,52293.039303822916
+928,GradientBoost,No Additional Data,54786.286066508335
+929,GradientBoost,Any Data,35205.0790629861
+930,SupportVector,No Additional Data,84027.74303211915
+931,SupportVector,Any Data,84008.57883548643
+932,MultilayerPerceptron,No Additional Data,39031.77872483736
+933,MultilayerPerceptron,Any Data,36166.98636058786
+934,kNearestNeighbor,No Additional Data,39596.6090619736
+935,kNearestNeighbor,Any Data,39596.6090619736
+936,MovingAverage,No Additional Data,68693.71339918482
+937,MovingAverage,Any Data,68693.71339918482
+938,Poisson,No Additional Data,121198.41269499497
+939,Poisson,Any Data,121198.41269499497
+940,RandomForest,No Additional Data,43114.21385685105
+941,RandomForest,Any Data,31251.267142724453
+942,Linear,No Additional Data,53199.67209981441
+943,Linear,Any Data,53199.67209981441
+944,Ridge,No Additional Data,52572.414164031725
+945,Ridge,Any Data,51507.68708426645
+946,Lasso,No Additional Data,53769.66217084961
+947,Lasso,Any Data,53581.41519235154
+948,GradientBoost,No Additional Data,50618.5529691708
+949,GradientBoost,Any Data,30886.692754369564
+950,SupportVector,No Additional Data,82392.996208186
+951,SupportVector,Any Data,82392.996208186
+952,MultilayerPerceptron,No Additional Data,42423.3431236615
+953,MultilayerPerceptron,Any Data,37077.086366362775
+954,kNearestNeighbor,No Additional Data,35755.23725595664
+955,kNearestNeighbor,Any Data,35755.23725595664
+956,MovingAverage,No Additional Data,68707.45296237605
+957,MovingAverage,Any Data,68707.45296237605
+958,Poisson,No Additional Data,125710.00839183974
+959,Poisson,Any Data,125710.00839183974
+960,RandomForest,No Additional Data,36202.611860198886
+961,RandomForest,Any Data,29746.8386037948
+962,Linear,No Additional Data,50722.770510843795
+963,Linear,Any Data,50647.89078276893
+964,Ridge,No Additional Data,51077.6460920112
+965,Ridge,Any Data,50996.29101149815
+966,Lasso,No Additional Data,53133.2732148136
+967,Lasso,Any Data,53133.2732148136
+968,GradientBoost,No Additional Data,51868.52932036541
+969,GradientBoost,Any Data,35828.17527930271
+970,SupportVector,No Additional Data,86224.21645856017
+971,SupportVector,Any Data,86224.21645856017
+972,MultilayerPerceptron,No Additional Data,38235.45080277854
+973,MultilayerPerceptron,Any Data,36109.65953335888
+974,kNearestNeighbor,No Additional Data,36701.91171843693
+975,kNearestNeighbor,Any Data,36701.91171843693
+976,MovingAverage,No Additional Data,69702.20315652079
+977,MovingAverage,Any Data,69702.20315652079
+978,Poisson,No Additional Data,117923.0919778205
+979,Poisson,Any Data,117923.0919778205
+980,RandomForest,No Additional Data,38331.4668669609
+981,RandomForest,Any Data,32658.55323304726
+982,Linear,No Additional Data,51204.97507284945
+983,Linear,Any Data,51204.97507284945
+984,Ridge,No Additional Data,50326.48172983362
+985,Ridge,Any Data,50238.78861869044
+986,Lasso,No Additional Data,50589.160273362686
+987,Lasso,Any Data,50589.160273362686
+988,GradientBoost,No Additional Data,48729.81239509942
+989,GradientBoost,Any Data,32961.67674104206
+990,SupportVector,No Additional Data,78028.38785536388
+991,SupportVector,Any Data,78019.4400298018
+992,MultilayerPerceptron,No Additional Data,40157.56328913432
+993,MultilayerPerceptron,Any Data,37841.91458109512
+994,kNearestNeighbor,No Additional Data,37885.56219128724
+995,kNearestNeighbor,Any Data,37885.56219128724
+996,MovingAverage,No Additional Data,67562.73373245753
+997,MovingAverage,Any Data,67562.73373245753
+998,Poisson,No Additional Data,117746.70708535383
+999,Poisson,Any Data,117746.70708535383
+1000,RandomForest,No Additional Data,39353.71188073678
+1001,RandomForest,Any Data,29581.553349484006
+1002,Linear,No Additional Data,51858.6066708465
+1003,Linear,Any Data,51858.6066708465
+1004,Ridge,No Additional Data,51225.85269824134
+1005,Ridge,Any Data,51125.60252324128
+1006,Lasso,No Additional Data,52117.62143458381
+1007,Lasso,Any Data,52016.842085552336
+1008,GradientBoost,No Additional Data,49640.09464268047
+1009,GradientBoost,Any Data,32130.65956567017
+1010,SupportVector,No Additional Data,80578.6715143967
+1011,SupportVector,Any Data,80566.03726567564
+1012,MultilayerPerceptron,No Additional Data,41197.902571196166
+1013,MultilayerPerceptron,Any Data,36088.00985713859
+1014,kNearestNeighbor,No Additional Data,32566.045720256338
+1015,kNearestNeighbor,Any Data,32566.045720256338
+1016,MovingAverage,No Additional Data,70350.22754521146
+1017,MovingAverage,Any Data,70350.22754521146
+1018,Poisson,No Additional Data,115378.6659157391
+1019,Poisson,Any Data,115378.6659157391
+1020,RandomForest,No Additional Data,40562.29408339758
+1021,RandomForest,Any Data,30305.219634589597
+1022,Linear,No Additional Data,54224.90762033687
+1023,Linear,Any Data,54222.06447964416
+1024,Ridge,No Additional Data,54505.99487762934
+1025,Ridge,Any Data,54505.99487762934
+1026,Lasso,No Additional Data,51190.79274287344
+1027,Lasso,Any Data,51190.79274287344
+1028,GradientBoost,No Additional Data,47177.15342659749
+1029,GradientBoost,Any Data,36247.63484611989
+1030,SupportVector,No Additional Data,80643.44527645904
+1031,SupportVector,Any Data,80616.78887551952
+1032,MultilayerPerceptron,No Additional Data,41717.261863350395
+1033,MultilayerPerceptron,Any Data,38140.97170598875
+1034,kNearestNeighbor,No Additional Data,40114.84241367874
+1035,kNearestNeighbor,Any Data,40114.84241367874
+1036,MovingAverage,No Additional Data,70673.05952786958
+1037,MovingAverage,Any Data,70673.05952786958
+1038,Poisson,No Additional Data,116615.10030322139
+1039,Poisson,Any Data,116615.10030322139
+1040,RandomForest,No Additional Data,38058.038533176616
+1041,RandomForest,Any Data,27089.104062767827
+1042,Linear,No Additional Data,52486.81007446307
+1043,Linear,Any Data,52486.81007446307
+1044,Ridge,No Additional Data,53776.49288480013
+1045,Ridge,Any Data,53776.49288480013
+1046,Lasso,No Additional Data,50585.09138890367
+1047,Lasso,Any Data,50347.42029703088
+1048,GradientBoost,No Additional Data,48955.26019216317
+1049,GradientBoost,Any Data,31305.00351002852
+1050,SupportVector,No Additional Data,82743.97909291605
+1051,SupportVector,Any Data,82743.97909291605
+1052,MultilayerPerceptron,No Additional Data,40359.98352301206
+1053,MultilayerPerceptron,Any Data,37251.41303621952
+1054,kNearestNeighbor,No Additional Data,40182.462620796454
+1055,kNearestNeighbor,Any Data,40182.462620796454
+1056,MovingAverage,No Additional Data,68734.21504176524
+1057,MovingAverage,Any Data,68734.21504176524
+1058,Poisson,No Additional Data,117929.6009162535
+1059,Poisson,Any Data,117929.6009162535
+1060,RandomForest,No Additional Data,40686.754710275665
+1061,RandomForest,Any Data,29723.93273532436
+1062,Linear,No Additional Data,51080.12928254571
+1063,Linear,Any Data,51080.12928254571
+1064,Ridge,No Additional Data,50177.52104335835
+1065,Ridge,Any Data,50177.52104335835
+1066,Lasso,No Additional Data,51486.460064988736
+1067,Lasso,Any Data,51476.29173511611
+1068,GradientBoost,No Additional Data,48771.030123658114
+1069,GradientBoost,Any Data,32555.30946054831
+1070,SupportVector,No Additional Data,77127.49538093037
+1071,SupportVector,Any Data,77112.51369617789
+1072,MultilayerPerceptron,No Additional Data,41854.88907753477
+1073,MultilayerPerceptron,Any Data,37903.11638011511
+1074,kNearestNeighbor,No Additional Data,36109.39969722984
+1075,kNearestNeighbor,Any Data,36109.39969722984
+1076,MovingAverage,No Additional Data,67728.07159580286
+1077,MovingAverage,Any Data,67728.07159580286
+1078,Poisson,No Additional Data,124643.17318721174
+1079,Poisson,Any Data,124643.17318721174
+1080,RandomForest,No Additional Data,36382.12283998
+1081,RandomForest,Any Data,30444.54986554532
+1082,Linear,No Additional Data,51687.01382097004
+1083,Linear,Any Data,51687.01382097004
+1084,Ridge,No Additional Data,50734.65069038865
+1085,Ridge,Any Data,50734.65069038865
+1086,Lasso,No Additional Data,51214.63566850457
+1087,Lasso,Any Data,51103.544356686645
+1088,GradientBoost,No Additional Data,46599.567694327256
+1089,GradientBoost,Any Data,31300.635229759104
+1090,SupportVector,No Additional Data,83656.98742513424
+1091,SupportVector,Any Data,83656.98742513424
+1092,MultilayerPerceptron,No Additional Data,42543.280959809286
+1093,MultilayerPerceptron,Any Data,37778.6658248793
+1094,kNearestNeighbor,No Additional Data,36141.577150616555
+1095,kNearestNeighbor,Any Data,36141.577150616555
+1096,MovingAverage,No Additional Data,68371.95990296033
+1097,MovingAverage,Any Data,68371.95990296033
+1098,Poisson,No Additional Data,119493.27729738945
+1099,Poisson,Any Data,119493.27729738945
+1100,RandomForest,No Additional Data,41130.29859186714
+1101,RandomForest,Any Data,29533.87150612491
+1102,Linear,No Additional Data,54326.189141756426
+1103,Linear,Any Data,54308.103279692834
+1104,Ridge,No Additional Data,49845.10275119892
+1105,Ridge,Any Data,49731.55900594539
+1106,Lasso,No Additional Data,51029.622588037986
+1107,Lasso,Any Data,50714.44214920002
+1108,GradientBoost,No Additional Data,52054.824934203556
+1109,GradientBoost,Any Data,32025.32957308589
+1110,SupportVector,No Additional Data,90377.72543592482
+1111,SupportVector,Any Data,90345.57235829066
+1112,MultilayerPerceptron,No Additional Data,40984.577417089204
+1113,MultilayerPerceptron,Any Data,36329.43946393931
+1114,kNearestNeighbor,No Additional Data,35950.69899039281
+1115,kNearestNeighbor,Any Data,35950.69899039281
+1116,MovingAverage,No Additional Data,68763.50858013498
+1117,MovingAverage,Any Data,68763.50858013498
+1118,Poisson,No Additional Data,119130.30477405534
+1119,Poisson,Any Data,119130.30477405534
+1120,RandomForest,No Additional Data,37961.5852295881
+1121,RandomForest,Any Data,28868.943864641315
+1122,Linear,No Additional Data,53828.784554252394
+1123,Linear,Any Data,53816.33210435593
+1124,Ridge,No Additional Data,52833.145164996364
+1125,Ridge,Any Data,52833.145164996364
+1126,Lasso,No Additional Data,51670.6031744573
+1127,Lasso,Any Data,51670.6031744573
+1128,GradientBoost,No Additional Data,50599.24105565118
+1129,GradientBoost,Any Data,32486.645228358695
+1130,SupportVector,No Additional Data,84044.65930124476
+1131,SupportVector,Any Data,84027.23778228759
+1132,MultilayerPerceptron,No Additional Data,39424.11028610821
+1133,MultilayerPerceptron,Any Data,36037.53031827856
+1134,kNearestNeighbor,No Additional Data,38806.9557512672
+1135,kNearestNeighbor,Any Data,38806.9557512672
+1136,MovingAverage,No Additional Data,68786.32669579987
+1137,MovingAverage,Any Data,68786.32669579987
+1138,Poisson,No Additional Data,113996.82887348637
+1139,Poisson,Any Data,113996.82887348637
+1140,RandomForest,No Additional Data,42024.44812799456
+1141,RandomForest,Any Data,30172.846890406207
+1142,Linear,No Additional Data,49977.92543322047
+1143,Linear,Any Data,49977.92543322047
+1144,Ridge,No Additional Data,50590.41519803633
+1145,Ridge,Any Data,50590.41519803633
+1146,Lasso,No Additional Data,48911.601458938145
+1147,Lasso,Any Data,48911.601458938145
+1148,GradientBoost,No Additional Data,44986.48373487616
+1149,GradientBoost,Any Data,31949.719177015693
+1150,SupportVector,No Additional Data,86771.55349538938
+1151,SupportVector,Any Data,86771.55349538938
+1152,MultilayerPerceptron,No Additional Data,40513.0251950938
+1153,MultilayerPerceptron,Any Data,38300.79764703268
+1154,kNearestNeighbor,No Additional Data,39166.66182977449
+1155,kNearestNeighbor,Any Data,39166.66182977449
+1156,MovingAverage,No Additional Data,70822.94171678528
+1157,MovingAverage,Any Data,70822.94171678528
+1158,Poisson,No Additional Data,115080.18318410093
+1159,Poisson,Any Data,115080.18318410093
+1160,RandomForest,No Additional Data,34971.57780896838
+1161,RandomForest,Any Data,28538.342183202338
+1162,Linear,No Additional Data,54012.53838126309
+1163,Linear,Any Data,54007.58601381713
+1164,Ridge,No Additional Data,53853.36814477685
+1165,Ridge,Any Data,53286.651109403014
+1166,Lasso,No Additional Data,52966.36491207977
+1167,Lasso,Any Data,52842.269361325154
+1168,GradientBoost,No Additional Data,47887.33053064445
+1169,GradientBoost,Any Data,32258.727529865642
+1170,SupportVector,No Additional Data,87207.43981667749
+1171,SupportVector,Any Data,87207.43981667749
+1172,MultilayerPerceptron,No Additional Data,40383.88912073384
+1173,MultilayerPerceptron,Any Data,35515.08108432919
+1174,kNearestNeighbor,No Additional Data,40828.695726007034
+1175,kNearestNeighbor,Any Data,40828.695726007034
+1176,MovingAverage,No Additional Data,70480.96416017377
+1177,MovingAverage,Any Data,70480.96416017377
+1178,Poisson,No Additional Data,122382.84786952366
+1179,Poisson,Any Data,122382.84786952366
+1180,RandomForest,No Additional Data,37642.03624519697
+1181,RandomForest,Any Data,29065.3496893599
+1182,Linear,No Additional Data,53195.61159469674
+1183,Linear,Any Data,53195.61159469674
+1184,Ridge,No Additional Data,52349.25616060482
+1185,Ridge,Any Data,52349.25616060482
+1186,Lasso,No Additional Data,49752.457727800356
+1187,Lasso,Any Data,49752.457727800356
+1188,GradientBoost,No Additional Data,51029.967125635456
+1189,GradientBoost,Any Data,33316.21330139236
+1190,SupportVector,No Additional Data,84523.23852440773
+1191,SupportVector,Any Data,84523.23852440773
+1192,MultilayerPerceptron,No Additional Data,41136.49283816889
+1193,MultilayerPerceptron,Any Data,36046.55044879209
+1194,kNearestNeighbor,No Additional Data,37695.35892294412
+1195,kNearestNeighbor,Any Data,37695.35892294412
+1196,MovingAverage,No Additional Data,68931.00242114111
+1197,MovingAverage,Any Data,68931.00242114111
+1198,Poisson,No Additional Data,124044.58836568709
+1199,Poisson,Any Data,124044.58836568709
+1200,RandomForest,No Additional Data,43264.7536114917
+1201,RandomForest,Any Data,28309.23224654014
+1202,Linear,No Additional Data,52698.91448369994
+1203,Linear,Any Data,52698.91448369994
+1204,Ridge,No Additional Data,51582.79265388825
+1205,Ridge,Any Data,51582.79265388825
+1206,Lasso,No Additional Data,50493.97796683978
+1207,Lasso,Any Data,50493.97796683978
+1208,GradientBoost,No Additional Data,47094.87375438689
+1209,GradientBoost,Any Data,32693.233808598296
+1210,SupportVector,No Additional Data,82165.06852949194
+1211,SupportVector,Any Data,82141.45587577327
+1212,MultilayerPerceptron,No Additional Data,37042.006239613824
+1213,MultilayerPerceptron,Any Data,35634.31711103921
+1214,kNearestNeighbor,No Additional Data,36468.10562615216
+1215,kNearestNeighbor,Any Data,36468.10562615216
+1216,MovingAverage,No Additional Data,69601.81179363039
+1217,MovingAverage,Any Data,69601.81179363039
+1218,Poisson,No Additional Data,115603.26254114305
+1219,Poisson,Any Data,115603.26254114305
+1220,RandomForest,No Additional Data,39661.72028764411
+1221,RandomForest,Any Data,27692.742575919885
+1222,Linear,No Additional Data,52119.648962191604
+1223,Linear,Any Data,52119.648962191604
+1224,Ridge,No Additional Data,53091.16668933373
+1225,Ridge,Any Data,53091.16668933373
+1226,Lasso,No Additional Data,52284.43121764636
+1227,Lasso,Any Data,52284.43121764636
+1228,GradientBoost,No Additional Data,51907.009430471684
+1229,GradientBoost,Any Data,31668.943926684107
+1230,SupportVector,No Additional Data,80753.7345617774
+1231,SupportVector,Any Data,80753.7345617774
+1232,MultilayerPerceptron,No Additional Data,39856.76220758462
+1233,MultilayerPerceptron,Any Data,36501.03713564044
+1234,kNearestNeighbor,No Additional Data,37611.14672403231
+1235,kNearestNeighbor,Any Data,37611.14672403231
+1236,MovingAverage,No Additional Data,69864.14652382408
+1237,MovingAverage,Any Data,69864.14652382408
+1238,Poisson,No Additional Data,119536.29315323987
+1239,Poisson,Any Data,119536.29315323987
+1240,RandomForest,No Additional Data,42040.000006661845
+1241,RandomForest,Any Data,29481.56922839523
+1242,Linear,No Additional Data,51920.93097729525
+1243,Linear,Any Data,51920.93097729525
+1244,Ridge,No Additional Data,52352.17445772447
+1245,Ridge,Any Data,52352.17445772447
+1246,Lasso,No Additional Data,49678.309969097754
+1247,Lasso,Any Data,49678.309969097754
+1248,GradientBoost,No Additional Data,52161.246829321106
+1249,GradientBoost,Any Data,34476.42159735154
+1250,SupportVector,No Additional Data,82524.42477892824
+1251,SupportVector,Any Data,82524.42477892824
+1252,MultilayerPerceptron,No Additional Data,39582.36970069832
+1253,MultilayerPerceptron,Any Data,36815.21016563419
+1254,kNearestNeighbor,No Additional Data,37618.94044766046
+1255,kNearestNeighbor,Any Data,37618.94044766046
+1256,MovingAverage,No Additional Data,68311.03404690823
+1257,MovingAverage,Any Data,68311.03404690823
+1258,Poisson,No Additional Data,114434.38886407408
+1259,Poisson,Any Data,114434.38886407408
+1260,RandomForest,No Additional Data,38526.321877159324
+1261,RandomForest,Any Data,28052.70302997576
+1262,Linear,No Additional Data,53183.703425446794
+1263,Linear,Any Data,53183.703425446794
+1264,Ridge,No Additional Data,52334.84425204551
+1265,Ridge,Any Data,52334.84425204551
+1266,Lasso,No Additional Data,52407.57706733827
+1267,Lasso,Any Data,52407.57706733827
+1268,GradientBoost,No Additional Data,47735.914538548175
+1269,GradientBoost,Any Data,31463.392126270443
+1270,SupportVector,No Additional Data,84856.42294977736
+1271,SupportVector,Any Data,84848.4374238915
+1272,MultilayerPerceptron,No Additional Data,37968.99010012438
+1273,MultilayerPerceptron,Any Data,35216.969217140984
+1274,kNearestNeighbor,No Additional Data,38469.89206763262
+1275,kNearestNeighbor,Any Data,38469.89206763262
+1276,MovingAverage,No Additional Data,69720.45900858288
+1277,MovingAverage,Any Data,69720.45900858288
+1278,Poisson,No Additional Data,120251.2187562145
+1279,Poisson,Any Data,120251.2187562145
+1280,RandomForest,No Additional Data,46403.08127454393
+1281,RandomForest,Any Data,30189.216557848387
+1282,Linear,No Additional Data,52352.219001109006
+1283,Linear,Any Data,52352.219001109006
+1284,Ridge,No Additional Data,49953.061563574935
+1285,Ridge,Any Data,49953.061563574935
+1286,Lasso,No Additional Data,51326.29607430656
+1287,Lasso,Any Data,51326.29607430656
+1288,GradientBoost,No Additional Data,50108.27872332966
+1289,GradientBoost,Any Data,31942.684992055372
+1290,SupportVector,No Additional Data,80811.08851169753
+1291,SupportVector,Any Data,80800.08608287177
+1292,MultilayerPerceptron,No Additional Data,43490.65275943055
+1293,MultilayerPerceptron,Any Data,39077.09938168382
+1294,kNearestNeighbor,No Additional Data,37052.66620328505
+1295,kNearestNeighbor,Any Data,37052.66620328505
+1296,MovingAverage,No Additional Data,68592.28436258422
+1297,MovingAverage,Any Data,68592.28436258422
+1298,Poisson,No Additional Data,116574.71322205357
+1299,Poisson,Any Data,116574.71322205357
+1300,RandomForest,No Additional Data,35362.31718318627
+1301,RandomForest,Any Data,28067.681986935277
+1302,Linear,No Additional Data,51187.89274341686
+1303,Linear,Any Data,51187.89274341686
+1304,Ridge,No Additional Data,51884.2103581762
+1305,Ridge,Any Data,51837.13511876899
+1306,Lasso,No Additional Data,53068.11372255487
+1307,Lasso,Any Data,53068.11372255487
+1308,GradientBoost,No Additional Data,49064.97004914602
+1309,GradientBoost,Any Data,33476.74787014513
+1310,SupportVector,No Additional Data,79280.68033746161
+1311,SupportVector,Any Data,79280.68033746161
+1312,MultilayerPerceptron,No Additional Data,43718.65881016477
+1313,MultilayerPerceptron,Any Data,37749.95791485503
+1314,kNearestNeighbor,No Additional Data,38578.80115899678
+1315,kNearestNeighbor,Any Data,38578.80115899678
+1316,MovingAverage,No Additional Data,70486.34415261279
+1317,MovingAverage,Any Data,70486.34415261279
+1318,Poisson,No Additional Data,116989.54249247687
+1319,Poisson,Any Data,116989.54249247687
+1320,RandomForest,No Additional Data,38966.17648516464
+1321,RandomForest,Any Data,28293.370353427057
+1322,Linear,No Additional Data,52722.57357819157
+1323,Linear,Any Data,52722.57357819157
+1324,Ridge,No Additional Data,51199.026287376815
+1325,Ridge,Any Data,51199.026287376815
+1326,Lasso,No Additional Data,52940.40435391128
+1327,Lasso,Any Data,52940.40435391128
+1328,GradientBoost,No Additional Data,47992.65615485756
+1329,GradientBoost,Any Data,32437.278055297113
+1330,SupportVector,No Additional Data,77779.7624699749
+1331,SupportVector,Any Data,77779.63760374721
+1332,MultilayerPerceptron,No Additional Data,37921.14059865857
+1333,MultilayerPerceptron,Any Data,36447.09543168914
+1334,kNearestNeighbor,No Additional Data,37695.90824042146
+1335,kNearestNeighbor,Any Data,37695.90824042146
+1336,MovingAverage,No Additional Data,68794.28925764898
+1337,MovingAverage,Any Data,68794.28925764898
+1338,Poisson,No Additional Data,118331.72633526179
+1339,Poisson,Any Data,118331.72633526179
+1340,RandomForest,No Additional Data,35792.51597837357
+1341,RandomForest,Any Data,30596.307501526593
+1342,Linear,No Additional Data,53637.905029577865
+1343,Linear,Any Data,53637.905029577865
+1344,Ridge,No Additional Data,51993.675530197295
+1345,Ridge,Any Data,51887.955686427966
+1346,Lasso,No Additional Data,50853.30701275731
+1347,Lasso,Any Data,50853.30701275731
+1348,GradientBoost,No Additional Data,45846.17746095923
+1349,GradientBoost,Any Data,32186.586222701157
+1350,SupportVector,No Additional Data,83236.12705450112
+1351,SupportVector,Any Data,83209.92777201305
+1352,MultilayerPerceptron,No Additional Data,42092.1949470323
+1353,MultilayerPerceptron,Any Data,36802.49672797165
+1354,kNearestNeighbor,No Additional Data,35526.96390273145
+1355,kNearestNeighbor,Any Data,35526.96390273145
+1356,MovingAverage,No Additional Data,67338.53583012501
+1357,MovingAverage,Any Data,67338.53583012501
+1358,Poisson,No Additional Data,110289.06480025724
+1359,Poisson,Any Data,110289.06480025724
+1360,RandomForest,No Additional Data,40427.24853849306
+1361,RandomForest,Any Data,29414.668720473474
+1362,Linear,No Additional Data,52678.048391302254
+1363,Linear,Any Data,52417.45110820007
+1364,Ridge,No Additional Data,50729.39461561072
+1365,Ridge,Any Data,50729.106212630904
+1366,Lasso,No Additional Data,51994.62701794644
+1367,Lasso,Any Data,51994.62701794644
+1368,GradientBoost,No Additional Data,46276.38102090771
+1369,GradientBoost,Any Data,31376.18826998118
+1370,SupportVector,No Additional Data,85955.1737166464
+1371,SupportVector,Any Data,85943.30242858155
+1372,MultilayerPerceptron,No Additional Data,38531.012058733446
+1373,MultilayerPerceptron,Any Data,33160.22227130469
+1374,kNearestNeighbor,No Additional Data,37343.98539321976
+1375,kNearestNeighbor,Any Data,37343.98539321976
+1376,MovingAverage,No Additional Data,67522.83149900274
+1377,MovingAverage,Any Data,67522.83149900274
+1378,Poisson,No Additional Data,117197.32613988311
+1379,Poisson,Any Data,117197.32613988311
+1380,RandomForest,No Additional Data,39738.21578702315
+1381,RandomForest,Any Data,28587.274602949856
+1382,Linear,No Additional Data,53920.87739053739
+1383,Linear,Any Data,53851.0288384767
+1384,Ridge,No Additional Data,54011.900536502595
+1385,Ridge,Any Data,52922.982559569726
+1386,Lasso,No Additional Data,51469.0880301314
+1387,Lasso,Any Data,51469.0880301314
+1388,GradientBoost,No Additional Data,49796.23674617272
+1389,GradientBoost,Any Data,33700.621239752705
+1390,SupportVector,No Additional Data,84798.0287121753
+1391,SupportVector,Any Data,84793.25706499405
+1392,MultilayerPerceptron,No Additional Data,39866.129554912986
+1393,MultilayerPerceptron,Any Data,36524.14592076647
+1394,kNearestNeighbor,No Additional Data,37212.31350624425
+1395,kNearestNeighbor,Any Data,37212.31350624425
+1396,MovingAverage,No Additional Data,68670.26854635915
+1397,MovingAverage,Any Data,68670.26854635915
+1398,Poisson,No Additional Data,118501.22897322681
+1399,Poisson,Any Data,118501.22897322681
+1400,RandomForest,No Additional Data,40814.47268572403
+1401,RandomForest,Any Data,30343.94966458952
+1402,Linear,No Additional Data,52965.69088270995
+1403,Linear,Any Data,50807.06421418458
+1404,Ridge,No Additional Data,53307.684639404004
+1405,Ridge,Any Data,53307.684639404004
+1406,Lasso,No Additional Data,51874.06239318057
+1407,Lasso,Any Data,51714.630332984096
+1408,GradientBoost,No Additional Data,50185.65548953895
+1409,GradientBoost,Any Data,34728.84539524354
+1410,SupportVector,No Additional Data,81360.931994642
+1411,SupportVector,Any Data,81339.24430388471
+1412,MultilayerPerceptron,No Additional Data,43278.081951802575
+1413,MultilayerPerceptron,Any Data,36319.35125937134
+1414,kNearestNeighbor,No Additional Data,39119.55249623027
+1415,kNearestNeighbor,Any Data,39119.55249623027
+1416,MovingAverage,No Additional Data,66451.19049603806
+1417,MovingAverage,Any Data,66451.19049603806
+1418,Poisson,No Additional Data,119346.10651500002
+1419,Poisson,Any Data,119346.10651500002
+1420,RandomForest,No Additional Data,38896.74562916206
+1421,RandomForest,Any Data,28510.357343123072
+1422,Linear,No Additional Data,52169.14147894725
+1423,Linear,Any Data,52169.14147894725
+1424,Ridge,No Additional Data,54907.28351733635
+1425,Ridge,Any Data,53071.18232473944
+1426,Lasso,No Additional Data,54972.78977089335
+1427,Lasso,Any Data,54972.78977089335
+1428,GradientBoost,No Additional Data,53512.90334237126
+1429,GradientBoost,Any Data,37569.97288639582
+1430,SupportVector,No Additional Data,81977.85998849389
+1431,SupportVector,Any Data,81977.85998849389
+1432,MultilayerPerceptron,No Additional Data,38240.56940742439
+1433,MultilayerPerceptron,Any Data,36185.84769989008
+1434,kNearestNeighbor,No Additional Data,36393.10980231736
+1435,kNearestNeighbor,Any Data,36393.10980231736
+1436,MovingAverage,No Additional Data,70479.89567021733
+1437,MovingAverage,Any Data,70479.89567021733
+1438,Poisson,No Additional Data,117812.33225512596
+1439,Poisson,Any Data,117812.33225512596
+1440,RandomForest,No Additional Data,44255.77846619014
+1441,RandomForest,Any Data,27764.75688804047
+1442,Linear,No Additional Data,51990.54628021603
+1443,Linear,Any Data,51099.748955185605
+1444,Ridge,No Additional Data,53296.488116916844
+1445,Ridge,Any Data,52472.465549268774
+1446,Lasso,No Additional Data,49983.79262295664
+1447,Lasso,Any Data,49983.79262295664
+1448,GradientBoost,No Additional Data,45529.84843576671
+1449,GradientBoost,Any Data,29276.874066328714
+1450,SupportVector,No Additional Data,89466.85864010082
+1451,SupportVector,Any Data,89445.58325789671
+1452,MultilayerPerceptron,No Additional Data,41697.9375344053
+1453,MultilayerPerceptron,Any Data,35500.17879658641
+1454,kNearestNeighbor,No Additional Data,39828.0008757981
+1455,kNearestNeighbor,Any Data,39828.0008757981
+1456,MovingAverage,No Additional Data,69412.48499826576
+1457,MovingAverage,Any Data,69412.48499826576
+1458,Poisson,No Additional Data,122646.71392923684
+1459,Poisson,Any Data,122646.71392923684
+1460,RandomForest,No Additional Data,38860.86094665875
+1461,RandomForest,Any Data,29473.613465458107
+1462,Linear,No Additional Data,54425.92823393591
+1463,Linear,Any Data,53682.545842580024
+1464,Ridge,No Additional Data,51778.63647075237
+1465,Ridge,Any Data,51778.63647075237
+1466,Lasso,No Additional Data,50246.86479817089
+1467,Lasso,Any Data,50246.86479817089
+1468,GradientBoost,No Additional Data,46677.2219311661
+1469,GradientBoost,Any Data,31158.647748558607
+1470,SupportVector,No Additional Data,81902.28123855102
+1471,SupportVector,Any Data,81884.22746769017
+1472,MultilayerPerceptron,No Additional Data,39365.84654493182
+1473,MultilayerPerceptron,Any Data,35887.253076469584
+1474,kNearestNeighbor,No Additional Data,37200.05086810574
+1475,kNearestNeighbor,Any Data,37200.05086810574
+1476,MovingAverage,No Additional Data,70738.52107079858
+1477,MovingAverage,Any Data,70738.52107079858
+1478,Poisson,No Additional Data,115393.06374716265
+1479,Poisson,Any Data,115393.06374716265
+1480,RandomForest,No Additional Data,36222.58290713509
+1481,RandomForest,Any Data,27716.05028819504
+1482,Linear,No Additional Data,50536.53761099949
+1483,Linear,Any Data,50536.53761099949
+1484,Ridge,No Additional Data,54109.92355961574
+1485,Ridge,Any Data,54096.69399459486
+1486,Lasso,No Additional Data,53213.02301312377
+1487,Lasso,Any Data,50694.96020206014
+1488,GradientBoost,No Additional Data,48204.12604926781
+1489,GradientBoost,Any Data,29919.30472306098
+1490,SupportVector,No Additional Data,83516.70708271358
+1491,SupportVector,Any Data,83502.5672318803
+1492,MultilayerPerceptron,No Additional Data,38828.98460230578
+1493,MultilayerPerceptron,Any Data,35502.55106061348
+1494,kNearestNeighbor,No Additional Data,38613.865041936086
+1495,kNearestNeighbor,Any Data,38613.865041936086
+1496,MovingAverage,No Additional Data,70351.4011557171
+1497,MovingAverage,Any Data,70351.4011557171
+1498,Poisson,No Additional Data,119131.13883236301
+1499,Poisson,Any Data,119131.13883236301
+1500,RandomForest,No Additional Data,36651.65310735902
+1501,RandomForest,Any Data,28041.29445204451
+1502,Linear,No Additional Data,50957.6698227567
+1503,Linear,Any Data,50943.93250887467
+1504,Ridge,No Additional Data,54137.04191360683
+1505,Ridge,Any Data,53294.19069562794
+1506,Lasso,No Additional Data,53643.560935848895
+1507,Lasso,Any Data,53643.560935848895
+1508,GradientBoost,No Additional Data,52058.67214409011
+1509,GradientBoost,Any Data,31848.15806271732
+1510,SupportVector,No Additional Data,77285.29242347462
+1511,SupportVector,Any Data,77281.40737002176
+1512,MultilayerPerceptron,No Additional Data,40927.85531927549
+1513,MultilayerPerceptron,Any Data,37089.034820638975
+1514,kNearestNeighbor,No Additional Data,44263.710637112825
+1515,kNearestNeighbor,Any Data,44263.710637112825
+1516,MovingAverage,No Additional Data,69839.18913409907
+1517,MovingAverage,Any Data,69839.18913409907
+1518,Poisson,No Additional Data,118396.4578906591
+1519,Poisson,Any Data,118396.4578906591
+1520,RandomForest,No Additional Data,41597.31844279417
+1521,RandomForest,Any Data,28379.67504164859
+1522,Linear,No Additional Data,56493.50352567456
+1523,Linear,Any Data,54032.14333169804
+1524,Ridge,No Additional Data,52742.688247003
+1525,Ridge,Any Data,52742.688247003
+1526,Lasso,No Additional Data,51513.56470775437
+1527,Lasso,Any Data,51294.89927553095
+1528,GradientBoost,No Additional Data,51512.01329822063
+1529,GradientBoost,Any Data,31995.17730860141
+1530,SupportVector,No Additional Data,90252.25821554953
+1531,SupportVector,Any Data,90252.25821554953
+1532,MultilayerPerceptron,No Additional Data,35666.048890293336
+1533,MultilayerPerceptron,Any Data,34768.79132355111
+1534,kNearestNeighbor,No Additional Data,39219.1879801253
+1535,kNearestNeighbor,Any Data,39219.1879801253
+1536,MovingAverage,No Additional Data,66696.49440111632
+1537,MovingAverage,Any Data,66696.49440111632
+1538,Poisson,No Additional Data,114921.36183544357
+1539,Poisson,Any Data,114921.36183544357
+1540,RandomForest,No Additional Data,36243.85032905746
+1541,RandomForest,Any Data,28952.023540152604
+1542,Linear,No Additional Data,51267.150536853194
+1543,Linear,Any Data,51267.150536853194
+1544,Ridge,No Additional Data,53385.07456580321
+1545,Ridge,Any Data,53385.07456580321
+1546,Lasso,No Additional Data,53245.2198385706
+1547,Lasso,Any Data,53245.2198385706
+1548,GradientBoost,No Additional Data,54586.7098407493
+1549,GradientBoost,Any Data,31182.213084723637
+1550,SupportVector,No Additional Data,85835.10381134052
+1551,SupportVector,Any Data,85835.10381134052
+1552,MultilayerPerceptron,No Additional Data,41361.013398502975
+1553,MultilayerPerceptron,Any Data,35202.10920800273
+1554,kNearestNeighbor,No Additional Data,39733.8119973021
+1555,kNearestNeighbor,Any Data,39733.8119973021
+1556,MovingAverage,No Additional Data,69268.29021338461
+1557,MovingAverage,Any Data,69268.29021338461
+1558,Poisson,No Additional Data,116811.3295438639
+1559,Poisson,Any Data,116811.3295438639
+1560,RandomForest,No Additional Data,39846.24830874863
+1561,RandomForest,Any Data,26930.640455477926
+1562,Linear,No Additional Data,53382.598855696844
+1563,Linear,Any Data,53225.99046193736
+1564,Ridge,No Additional Data,52205.257350566935
+1565,Ridge,Any Data,52205.257350566935
+1566,Lasso,No Additional Data,53066.09031417931
+1567,Lasso,Any Data,51427.3985060893
+1568,GradientBoost,No Additional Data,51029.19930714866
+1569,GradientBoost,Any Data,31250.54167760135
+1570,SupportVector,No Additional Data,84605.27111566195
+1571,SupportVector,Any Data,84605.27111566195
+1572,MultilayerPerceptron,No Additional Data,41269.32151132993
+1573,MultilayerPerceptron,Any Data,36472.38190914689
+1574,kNearestNeighbor,No Additional Data,40691.448480012674
+1575,kNearestNeighbor,Any Data,40691.448480012674
+1576,MovingAverage,No Additional Data,68771.82912328934
+1577,MovingAverage,Any Data,68771.82912328934
+1578,Poisson,No Additional Data,116027.1906330192
+1579,Poisson,Any Data,116027.1906330192
+1580,RandomForest,No Additional Data,36505.0081035074
+1581,RandomForest,Any Data,28299.296178393102
+1582,Linear,No Additional Data,50270.8705207393
+1583,Linear,Any Data,50270.8705207393
+1584,Ridge,No Additional Data,51769.3691900659
+1585,Ridge,Any Data,51769.3691900659
+1586,Lasso,No Additional Data,52012.129609011005
+1587,Lasso,Any Data,52012.129609011005
+1588,GradientBoost,No Additional Data,47426.34705537966
+1589,GradientBoost,Any Data,29444.70445248319
+1590,SupportVector,No Additional Data,89715.21883927846
+1591,SupportVector,Any Data,89684.5583331473
+1592,MultilayerPerceptron,No Additional Data,39115.14044912446
+1593,MultilayerPerceptron,Any Data,36961.19264414089
+1594,kNearestNeighbor,No Additional Data,37760.18210791095
+1595,kNearestNeighbor,Any Data,37760.18210791095
+1596,MovingAverage,No Additional Data,69479.01294040639
+1597,MovingAverage,Any Data,69479.01294040639
+1598,Poisson,No Additional Data,116052.37645527069
+1599,Poisson,Any Data,116052.37645527069
+1600,RandomForest,No Additional Data,39798.454854357136
+1601,RandomForest,Any Data,30861.290986379037
+1602,Linear,No Additional Data,51114.33057475384
+1603,Linear,Any Data,51114.33057475384
+1604,Ridge,No Additional Data,50744.15511485718
+1605,Ridge,Any Data,50744.15511485718
+1606,Lasso,No Additional Data,53094.21325926167
+1607,Lasso,Any Data,53094.21325926167
+1608,GradientBoost,No Additional Data,50230.92886230528
+1609,GradientBoost,Any Data,28038.05400099441
+1610,SupportVector,No Additional Data,82484.71027110379
+1611,SupportVector,Any Data,82478.63619648898
+1612,MultilayerPerceptron,No Additional Data,41098.33197552206
+1613,MultilayerPerceptron,Any Data,37469.29368831958
+1614,kNearestNeighbor,No Additional Data,36920.357580193406
+1615,kNearestNeighbor,Any Data,36920.357580193406
+1616,MovingAverage,No Additional Data,71422.34936392895
+1617,MovingAverage,Any Data,71422.34936392895
+1618,Poisson,No Additional Data,117717.75107757926
+1619,Poisson,Any Data,117717.75107757926
+1620,RandomForest,No Additional Data,42835.96334368248
+1621,RandomForest,Any Data,29376.07394967108
+1622,Linear,No Additional Data,53308.528953496716
+1623,Linear,Any Data,53030.857316285204
+1624,Ridge,No Additional Data,52379.65284977194
+1625,Ridge,Any Data,52379.65284977194
+1626,Lasso,No Additional Data,54167.72483432916
+1627,Lasso,Any Data,54167.72483432916
+1628,GradientBoost,No Additional Data,51987.696891737236
+1629,GradientBoost,Any Data,37012.51306173258
+1630,SupportVector,No Additional Data,83566.96000905597
+1631,SupportVector,Any Data,83563.0216562996
+1632,MultilayerPerceptron,No Additional Data,37330.61251029246
+1633,MultilayerPerceptron,Any Data,34408.40173528407
+1634,kNearestNeighbor,No Additional Data,36563.54506475096
+1635,kNearestNeighbor,Any Data,36563.54506475096
+1636,MovingAverage,No Additional Data,67802.65544646491
+1637,MovingAverage,Any Data,67802.65544646491
+1638,Poisson,No Additional Data,117808.58610671638
+1639,Poisson,Any Data,117808.58610671638
+1640,RandomForest,No Additional Data,38479.39441987551
+1641,RandomForest,Any Data,30630.079033631326
+1642,Linear,No Additional Data,55544.62016695445
+1643,Linear,Any Data,55477.67442551789
+1644,Ridge,No Additional Data,53958.00720808467
+1645,Ridge,Any Data,52392.492901956175
+1646,Lasso,No Additional Data,52796.68267074634
+1647,Lasso,Any Data,52796.68267074634
+1648,GradientBoost,No Additional Data,50513.683924900375
+1649,GradientBoost,Any Data,32940.14820854039
+1650,SupportVector,No Additional Data,82307.51805874746
+1651,SupportVector,Any Data,82306.93252135767
+1652,MultilayerPerceptron,No Additional Data,41344.50227612001
+1653,MultilayerPerceptron,Any Data,38531.62059519915
+1654,kNearestNeighbor,No Additional Data,37183.98363341224
+1655,kNearestNeighbor,Any Data,37183.98363341224
+1656,MovingAverage,No Additional Data,70132.8157777611
+1657,MovingAverage,Any Data,70132.8157777611
+1658,Poisson,No Additional Data,120359.46410412443
+1659,Poisson,Any Data,120359.46410412443
+1660,RandomForest,No Additional Data,40253.11373788987
+1661,RandomForest,Any Data,30336.561615031427
+1662,Linear,No Additional Data,50539.238936876565
+1663,Linear,Any Data,50539.238936876565
+1664,Ridge,No Additional Data,52022.780954986316
+1665,Ridge,Any Data,51931.476860309325
+1666,Lasso,No Additional Data,52630.17474522948
+1667,Lasso,Any Data,52630.17474522948
+1668,GradientBoost,No Additional Data,47643.03172096052
+1669,GradientBoost,Any Data,32499.30656739838
+1670,SupportVector,No Additional Data,83332.4687703777
+1671,SupportVector,Any Data,83332.4687703777
+1672,MultilayerPerceptron,No Additional Data,37535.70135127595
+1673,MultilayerPerceptron,Any Data,33896.47699607402
+1674,kNearestNeighbor,No Additional Data,38360.38610359615
+1675,kNearestNeighbor,Any Data,38360.38610359615
+1676,MovingAverage,No Additional Data,71137.22679437588
+1677,MovingAverage,Any Data,71137.22679437588
+1678,Poisson,No Additional Data,118423.7737748131
+1679,Poisson,Any Data,118423.7737748131
+1680,RandomForest,No Additional Data,36227.46594674876
+1681,RandomForest,Any Data,27482.586869261904
+1682,Linear,No Additional Data,52102.85598252073
+1683,Linear,Any Data,52024.01682347686
+1684,Ridge,No Additional Data,54598.055877695115
+1685,Ridge,Any Data,53395.90769590684
+1686,Lasso,No Additional Data,51441.47426020552
+1687,Lasso,Any Data,51318.634694847766
+1688,GradientBoost,No Additional Data,49687.80426688348
+1689,GradientBoost,Any Data,30238.822057993733
+1690,SupportVector,No Additional Data,85183.0365783148
+1691,SupportVector,Any Data,85171.42211889484
+1692,MultilayerPerceptron,No Additional Data,37327.4016515771
+1693,MultilayerPerceptron,Any Data,35711.01346955617
+1694,kNearestNeighbor,No Additional Data,34389.11531790165
+1695,kNearestNeighbor,Any Data,34389.11531790165
+1696,MovingAverage,No Additional Data,70084.28435723446
+1697,MovingAverage,Any Data,70084.28435723446
+1698,Poisson,No Additional Data,123079.1986283443
+1699,Poisson,Any Data,123079.1986283443
+1700,RandomForest,No Additional Data,33860.20741151641
+1701,RandomForest,Any Data,25199.72159280226
+1702,Linear,No Additional Data,51220.91508068535
+1703,Linear,Any Data,50888.05603631521
+1704,Ridge,No Additional Data,49884.4729633936
+1705,Ridge,Any Data,49884.4729633936
+1706,Lasso,No Additional Data,52160.928166180776
+1707,Lasso,Any Data,52160.928166180776
+1708,GradientBoost,No Additional Data,50754.000261472596
+1709,GradientBoost,Any Data,35202.812070802014
+1710,SupportVector,No Additional Data,83717.61108038151
+1711,SupportVector,Any Data,83717.61108038151
+1712,MultilayerPerceptron,No Additional Data,40659.38262183304
+1713,MultilayerPerceptron,Any Data,36089.80040723812
+1714,kNearestNeighbor,No Additional Data,34424.76578633477
+1715,kNearestNeighbor,Any Data,34424.76578633477
+1716,MovingAverage,No Additional Data,70680.01358582053
+1717,MovingAverage,Any Data,70680.01358582053
+1718,Poisson,No Additional Data,114020.62381577397
+1719,Poisson,Any Data,114020.62381577397
+1720,RandomForest,No Additional Data,38454.81869919708
+1721,RandomForest,Any Data,30079.509033371756
+1722,Linear,No Additional Data,52882.39582069745
+1723,Linear,Any Data,52882.39582069745
+1724,Ridge,No Additional Data,51866.52806576422
+1725,Ridge,Any Data,51866.52806576422
+1726,Lasso,No Additional Data,52271.90774078827
+1727,Lasso,Any Data,52127.07353166157
+1728,GradientBoost,No Additional Data,50347.43167772287
+1729,GradientBoost,Any Data,31782.625792349918
+1730,SupportVector,No Additional Data,81339.47500477824
+1731,SupportVector,Any Data,81324.98883970767
+1732,MultilayerPerceptron,No Additional Data,40315.16368830807
+1733,MultilayerPerceptron,Any Data,36160.256305038856
+1734,kNearestNeighbor,No Additional Data,39528.59203738024
+1735,kNearestNeighbor,Any Data,39528.59203738024
+1736,MovingAverage,No Additional Data,69479.99294759193
+1737,MovingAverage,Any Data,69479.99294759193
+1738,Poisson,No Additional Data,119196.55577037347
+1739,Poisson,Any Data,119196.55577037347
+1740,RandomForest,No Additional Data,39604.70181898599
+1741,RandomForest,Any Data,30264.875379419416
+1742,Linear,No Additional Data,50827.09961354238
+1743,Linear,Any Data,50595.831552369214
+1744,Ridge,No Additional Data,52471.91248067822
+1745,Ridge,Any Data,52468.633501066215
+1746,Lasso,No Additional Data,52442.574862420726
+1747,Lasso,Any Data,52383.897982540184
+1748,GradientBoost,No Additional Data,56985.46420444509
+1749,GradientBoost,Any Data,36345.44414312089
+1750,SupportVector,No Additional Data,81179.5199937607
+1751,SupportVector,Any Data,81179.5199937607
+1752,MultilayerPerceptron,No Additional Data,39123.62242436087
+1753,MultilayerPerceptron,Any Data,34882.14241840725
+1754,kNearestNeighbor,No Additional Data,34474.68009012101
+1755,kNearestNeighbor,Any Data,34474.68009012101
+1756,MovingAverage,No Additional Data,70382.99996430868
+1757,MovingAverage,Any Data,70382.99996430868
+1758,Poisson,No Additional Data,118109.49624518648
+1759,Poisson,Any Data,118109.49624518648
+1760,RandomForest,No Additional Data,39908.97256677141
+1761,RandomForest,Any Data,27996.09742306896
+1762,Linear,No Additional Data,52751.53793427433
+1763,Linear,Any Data,52751.53793427433
+1764,Ridge,No Additional Data,53435.08868321053
+1765,Ridge,Any Data,52675.5463460345
+1766,Lasso,No Additional Data,49606.27234848741
+1767,Lasso,Any Data,49606.27234848741
+1768,GradientBoost,No Additional Data,50532.414590674976
+1769,GradientBoost,Any Data,32151.500330909774
+1770,SupportVector,No Additional Data,89419.00108466853
+1771,SupportVector,Any Data,89396.13312202707
+1772,MultilayerPerceptron,No Additional Data,37233.12175707313
+1773,MultilayerPerceptron,Any Data,36202.91576350868
+1774,kNearestNeighbor,No Additional Data,38465.11025848275
+1775,kNearestNeighbor,Any Data,38465.11025848275
+1776,MovingAverage,No Additional Data,70107.14651357419
+1777,MovingAverage,Any Data,70107.14651357419
+1778,Poisson,No Additional Data,116251.83503682494
+1779,Poisson,Any Data,116251.83503682494
+1780,RandomForest,No Additional Data,38115.72951147642
+1781,RandomForest,Any Data,27962.931969085763
+1782,Linear,No Additional Data,52469.79416643862
+1783,Linear,Any Data,52436.37194837537
+1784,Ridge,No Additional Data,52931.13449698256
+1785,Ridge,Any Data,52893.881923286055
+1786,Lasso,No Additional Data,52195.43580952674
+1787,Lasso,Any Data,52195.43580952674
+1788,GradientBoost,No Additional Data,48224.39696020866
+1789,GradientBoost,Any Data,33261.12291503242
+1790,SupportVector,No Additional Data,85724.8102770742
+1791,SupportVector,Any Data,85721.79969567098
+1792,MultilayerPerceptron,No Additional Data,38807.34937678071
+1793,MultilayerPerceptron,Any Data,36561.78695542915
+1794,kNearestNeighbor,No Additional Data,35755.54773050958
+1795,kNearestNeighbor,Any Data,35755.54773050958
+1796,MovingAverage,No Additional Data,67739.59927813345
+1797,MovingAverage,Any Data,67739.59927813345
+1798,Poisson,No Additional Data,122891.17146108857
+1799,Poisson,Any Data,122891.17146108857
+1800,RandomForest,No Additional Data,38972.54642038093
+1801,RandomForest,Any Data,29269.01778225672
+1802,Linear,No Additional Data,51833.112965809785
+1803,Linear,Any Data,51768.99463116091
+1804,Ridge,No Additional Data,51115.60126231799
+1805,Ridge,Any Data,51115.60126231799
+1806,Lasso,No Additional Data,49988.53711696891
+1807,Lasso,Any Data,49988.53711696891
+1808,GradientBoost,No Additional Data,55504.5253270863
+1809,GradientBoost,Any Data,36454.00073876863
+1810,SupportVector,No Additional Data,85017.58895546666
+1811,SupportVector,Any Data,85003.92718886006
+1812,MultilayerPerceptron,No Additional Data,39735.52747684903
+1813,MultilayerPerceptron,Any Data,35485.62895995068
+1814,kNearestNeighbor,No Additional Data,37157.78141841027
+1815,kNearestNeighbor,Any Data,37157.78141841027
+1816,MovingAverage,No Additional Data,70052.15458004322
+1817,MovingAverage,Any Data,70052.15458004322
+1818,Poisson,No Additional Data,123999.24366992932
+1819,Poisson,Any Data,123999.24366992932
+1820,RandomForest,No Additional Data,41304.02281303454
+1821,RandomForest,Any Data,31435.82964423599
+1822,Linear,No Additional Data,51999.456046520674
+1823,Linear,Any Data,51999.456046520674
+1824,Ridge,No Additional Data,52119.53860853577
+1825,Ridge,Any Data,52119.53860853577
+1826,Lasso,No Additional Data,53400.102097067975
+1827,Lasso,Any Data,53291.026594444964
+1828,GradientBoost,No Additional Data,52518.77780792149
+1829,GradientBoost,Any Data,34239.74850040753
+1830,SupportVector,No Additional Data,90364.8664798257
+1831,SupportVector,Any Data,90364.50950015384
+1832,MultilayerPerceptron,No Additional Data,38541.25201579001
+1833,MultilayerPerceptron,Any Data,35230.44178258743
+1834,kNearestNeighbor,No Additional Data,37207.84006613755
+1835,kNearestNeighbor,Any Data,37207.84006613755
+1836,MovingAverage,No Additional Data,69043.75766431274
+1837,MovingAverage,Any Data,69043.75766431274
+1838,Poisson,No Additional Data,116326.97537113742
+1839,Poisson,Any Data,116326.97537113742
+1840,RandomForest,No Additional Data,36053.888934767114
+1841,RandomForest,Any Data,28081.500844265436
+1842,Linear,No Additional Data,52566.65260128985
+1843,Linear,Any Data,52566.65260128985
+1844,Ridge,No Additional Data,54112.50132748257
+1845,Ridge,Any Data,53829.78566664525
+1846,Lasso,No Additional Data,53488.726261775926
+1847,Lasso,Any Data,53488.726261775926
+1848,GradientBoost,No Additional Data,49599.29841827184
+1849,GradientBoost,Any Data,32812.09856573156
+1850,SupportVector,No Additional Data,86470.95610295514
+1851,SupportVector,Any Data,86470.95610295514
+1852,MultilayerPerceptron,No Additional Data,39072.48395455356
+1853,MultilayerPerceptron,Any Data,37696.22885215276
+1854,kNearestNeighbor,No Additional Data,40789.2013851653
+1855,kNearestNeighbor,Any Data,40789.2013851653
+1856,MovingAverage,No Additional Data,69630.8739363258
+1857,MovingAverage,Any Data,69630.8739363258
+1858,Poisson,No Additional Data,115066.49036771971
+1859,Poisson,Any Data,115066.49036771971
+1860,RandomForest,No Additional Data,38393.54716030778
+1861,RandomForest,Any Data,31637.020570221255
+1862,Linear,No Additional Data,49059.77602797197
+1863,Linear,Any Data,49059.77602797197
+1864,Ridge,No Additional Data,51985.572204232616
+1865,Ridge,Any Data,51754.731817680775
+1866,Lasso,No Additional Data,52515.82471417605
+1867,Lasso,Any Data,52515.82471417605
+1868,GradientBoost,No Additional Data,47489.966121759826
+1869,GradientBoost,Any Data,29179.711303791282
+1870,SupportVector,No Additional Data,85168.99203091815
+1871,SupportVector,Any Data,85168.99203091815
+1872,MultilayerPerceptron,No Additional Data,42279.128969141246
+1873,MultilayerPerceptron,Any Data,36837.5435134926
+1874,kNearestNeighbor,No Additional Data,34543.25728794227
+1875,kNearestNeighbor,Any Data,34543.25728794227
+1876,MovingAverage,No Additional Data,68298.74340624076
+1877,MovingAverage,Any Data,68298.74340624076
+1878,Poisson,No Additional Data,121817.60762648364
+1879,Poisson,Any Data,121817.60762648364
+1880,RandomForest,No Additional Data,42028.55587093722
+1881,RandomForest,Any Data,33213.56142726665
+1882,Linear,No Additional Data,52465.14785599349
+1883,Linear,Any Data,52465.14785599349
+1884,Ridge,No Additional Data,52161.19163830797
+1885,Ridge,Any Data,52087.96654643322
+1886,Lasso,No Additional Data,53305.405477042055
+1887,Lasso,Any Data,53305.405477042055
+1888,GradientBoost,No Additional Data,50080.852609262634
+1889,GradientBoost,Any Data,31982.26525965237
+1890,SupportVector,No Additional Data,84259.82639964699
+1891,SupportVector,Any Data,84259.82639964699
+1892,MultilayerPerceptron,No Additional Data,37722.8929773266
+1893,MultilayerPerceptron,Any Data,36293.886494844584
+1894,kNearestNeighbor,No Additional Data,38247.729755174216
+1895,kNearestNeighbor,Any Data,38247.729755174216
+1896,MovingAverage,No Additional Data,68984.54593961862
+1897,MovingAverage,Any Data,68984.54593961862
+1898,Poisson,No Additional Data,124766.39365072105
+1899,Poisson,Any Data,124766.39365072105
+1900,RandomForest,No Additional Data,39063.53851326033
+1901,RandomForest,Any Data,30361.75742819262
+1902,Linear,No Additional Data,51161.310961003604
+1903,Linear,Any Data,51161.310961003604
+1904,Ridge,No Additional Data,51991.39580805172
+1905,Ridge,Any Data,51991.39580805172
+1906,Lasso,No Additional Data,54499.497912825
+1907,Lasso,Any Data,54372.0097147477
+1908,GradientBoost,No Additional Data,49544.60611408524
+1909,GradientBoost,Any Data,36771.30065042787
+1910,SupportVector,No Additional Data,86959.84052835128
+1911,SupportVector,Any Data,86951.67490635076
+1912,MultilayerPerceptron,No Additional Data,39679.309004745905
+1913,MultilayerPerceptron,Any Data,34307.94188552687
+1914,kNearestNeighbor,No Additional Data,39945.560436047715
+1915,kNearestNeighbor,Any Data,39945.560436047715
+1916,MovingAverage,No Additional Data,69669.91071604063
+1917,MovingAverage,Any Data,69669.91071604063
+1918,Poisson,No Additional Data,118286.2859978245
+1919,Poisson,Any Data,118286.2859978245
+1920,RandomForest,No Additional Data,38809.21129296995
+1921,RandomForest,Any Data,28648.03459159389
+1922,Linear,No Additional Data,51313.980855517606
+1923,Linear,Any Data,51313.980855517606
+1924,Ridge,No Additional Data,51008.81843451546
+1925,Ridge,Any Data,49374.03407321512
+1926,Lasso,No Additional Data,52521.76543945755
+1927,Lasso,Any Data,52407.282334035524
+1928,GradientBoost,No Additional Data,51514.913989093235
+1929,GradientBoost,Any Data,33244.220547606514
+1930,SupportVector,No Additional Data,85999.55415921318
+1931,SupportVector,Any Data,85980.7917729534
+1932,MultilayerPerceptron,No Additional Data,40731.580276478235
+1933,MultilayerPerceptron,Any Data,36183.269959824946
+1934,kNearestNeighbor,No Additional Data,39646.453057024664
+1935,kNearestNeighbor,Any Data,39646.453057024664
+1936,MovingAverage,No Additional Data,69668.37640265508
+1937,MovingAverage,Any Data,69668.37640265508
+1938,Poisson,No Additional Data,117402.98476445148
+1939,Poisson,Any Data,117402.98476445148
+1940,RandomForest,No Additional Data,45780.167940707324
+1941,RandomForest,Any Data,32532.05823940809
+1942,Linear,No Additional Data,52594.86744108552
+1943,Linear,Any Data,52529.98219473019
+1944,Ridge,No Additional Data,50987.08717236432
+1945,Ridge,Any Data,50987.08717236432
+1946,Lasso,No Additional Data,51815.393030594496
+1947,Lasso,Any Data,51772.91673558251
+1948,GradientBoost,No Additional Data,55018.95850357719
+1949,GradientBoost,Any Data,37360.31191966981
+1950,SupportVector,No Additional Data,84036.87219801171
+1951,SupportVector,Any Data,84034.9339238452
+1952,MultilayerPerceptron,No Additional Data,42942.4384796051
+1953,MultilayerPerceptron,Any Data,38071.0414569907
+1954,kNearestNeighbor,No Additional Data,40093.26107732972
+1955,kNearestNeighbor,Any Data,40093.26107732972
+1956,MovingAverage,No Additional Data,70368.29981902888
+1957,MovingAverage,Any Data,70368.29981902888
+1958,Poisson,No Additional Data,117802.5353562237
+1959,Poisson,Any Data,117802.5353562237
+1960,RandomForest,No Additional Data,39007.80573303327
+1961,RandomForest,Any Data,27125.820348045665
+1962,Linear,No Additional Data,53752.7728186256
+1963,Linear,Any Data,51782.16204767907
+1964,Ridge,No Additional Data,52487.045377182876
+1965,Ridge,Any Data,50733.85447583536
+1966,Lasso,No Additional Data,52376.33364775108
+1967,Lasso,Any Data,52376.33364775108
+1968,GradientBoost,No Additional Data,52080.739004609444
+1969,GradientBoost,Any Data,31541.06966518835
+1970,SupportVector,No Additional Data,87516.05357994304
+1971,SupportVector,Any Data,87507.46646683686
+1972,MultilayerPerceptron,No Additional Data,38674.141450267794
+1973,MultilayerPerceptron,Any Data,37150.47969815392
+1974,kNearestNeighbor,No Additional Data,37799.46636526921
+1975,kNearestNeighbor,Any Data,37799.46636526921
+1976,MovingAverage,No Additional Data,71583.94512513462
+1977,MovingAverage,Any Data,71583.94512513462
+1978,Poisson,No Additional Data,120956.87370357075
+1979,Poisson,Any Data,120956.87370357075
+1980,RandomForest,No Additional Data,40930.96156431738
+1981,RandomForest,Any Data,29293.819164817894
+1982,Linear,No Additional Data,53646.971360025265
+1983,Linear,Any Data,52644.5331664012
+1984,Ridge,No Additional Data,52068.602642446465
+1985,Ridge,Any Data,52056.2275079654
+1986,Lasso,No Additional Data,54019.42903732261
+1987,Lasso,Any Data,54019.42903732261
+1988,GradientBoost,No Additional Data,52637.01507128962
+1989,GradientBoost,Any Data,32218.787591758257
+1990,SupportVector,No Additional Data,87716.51672332006
+1991,SupportVector,Any Data,87688.43761419693
+1992,MultilayerPerceptron,No Additional Data,41786.71055037706
+1993,MultilayerPerceptron,Any Data,38395.97802859384
+1994,kNearestNeighbor,No Additional Data,37214.47593803837
+1995,kNearestNeighbor,Any Data,37214.47593803837
+1996,MovingAverage,No Additional Data,70102.45328405897
+1997,MovingAverage,Any Data,70102.45328405897
+1998,Poisson,No Additional Data,120060.79240336955
+1999,Poisson,Any Data,120060.79240336955
