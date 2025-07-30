@@ -78,7 +78,7 @@ def display_data(data,title,xlabel,ylabel,name):
     plt.xticks(rotation=45, ha='right')
     plt.legend(loc='upper right', bbox_to_anchor=(1.1, 1.1))
     plt.tight_layout()
-    plt.savefig(f"../../output/results/{name}.png")
+    plt.savefig(f"../../output/results/{name}_original.png")
 
 # compute average percentage decrease in RMSE for models with additional data
 def compute_improvement(data,name):

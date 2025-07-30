@@ -15,4 +15,16 @@ python select_best_model.py delay
 python select_best_model.py gse
 echo "selection done, testing best model, graphing residuals and placing in output/results"
 python test_model.py 5 0.8 > ../../output/results/predictor_summary.txt
+if [ -z "$1" ]; then
+  echo "By default, skipping bootstrap computation and proceeding with pre-computed values."
+  echo "Specify COMPUTE_BOOTSTRAP to compute bootstraps from scratch."
+  echo "For example, ./master_script.sh NO_ENV COMPUTE_BOOTSTRAP"
+  echo "Or ./analysis_script COMPUTE_BOOTSTRAP"
+  echo "Be warned this takes very long (often hours) on a standard computer."
+else
+  echo $1
+  python bootstrapping.py
+fi
+echo "bootstrap computation done, building graphs with confidence intervals"
+python bootstrap_display.py
 echo "testing done, analysis script done!"
