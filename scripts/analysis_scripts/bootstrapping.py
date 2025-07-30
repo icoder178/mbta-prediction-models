@@ -13,7 +13,7 @@ def run_model(index, model, seed):
 
 def compute_raw_results():
     run_count = 1000
-    worker_count = 8
+    worker_count = 16
     check_count = 5
     results = np.zeros((run_count, 4))
     start_time = time.perf_counter()
