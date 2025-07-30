@@ -1,12 +1,11 @@
 #!/bin/bash
-# script for running just analysis scripts; run in the directory it is in. 
-# note that this does not ignore errors like with the master script to make debugging a little easier
-echo "Starting model training; this will occupy significant computational resources and take 5-30 minutes"
+# script for running just analysis scripts; run in the directory it is in.
+echo "Starting model training; this will occupy significant computational resources and take 1-10 minutes"
 # edit if models change
 models=("RandomForest" "Linear" "Ridge" "Lasso" "GradientBoost" "SupportVector" "MultilayerPerceptron" "kNearestNeighbor" "MovingAverage" "Poisson")
 for model in "${models[@]}"
 do
-  python -W ignore models.py $model &
+  python -W ignore models.py $model 5 0.8 NO_BOOTSTRAP &
 done
 wait
 echo "model training done, outputting final results to output/results/"
@@ -15,5 +14,5 @@ echo "output done, selecting best model and placing in output/data_appendix_outp
 python select_best_model.py delay
 python select_best_model.py gse
 echo "selection done, testing best model, graphing residuals and placing in output/results"
-python test_model.py > ../../output/results/predictor_summary.txt
+python test_model.py 5 0.8 > ../../output/results/predictor_summary.txt
 echo "testing done, analysis script done!"

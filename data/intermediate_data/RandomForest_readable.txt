@@ -1,0 +1,56 @@
+GSE data:
+Using model (RandomForest), inputs of previous 5-day (target metric) to predict target metric: RMSE is 37723.33699498289.
+Using model (RandomForest), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 33071.859527374276.
+Using model (RandomForest), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 33306.97290014679.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 33043.46950212397.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 33269.172140034716.
+Using model (RandomForest), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 34725.78095060553.
+Using model (RandomForest), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 35075.290369440125.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 34721.081256790545.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 35075.290369440125.
+Using model (RandomForest), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 37249.747617469264.
+Using model (RandomForest), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 37475.11727524293.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 37239.22224341616.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 37475.11727524293.
+Using model (RandomForest), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 37965.9859538452.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 37957.55039727472.
+Using model (RandomForest), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 33768.41292649094.
+Using model (RandomForest), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 34927.1364702568.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 33706.460380257784.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 34927.1364702568.
+Using model (RandomForest), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 32907.57744073728.
+Using model (RandomForest), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 33827.314293520205.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 32898.2015682387.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 33801.22248315932.
+Using model (RandomForest), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 37923.01141566564.
+Using model (RandomForest), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 37990.660763810665.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 37943.2320351496.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 38004.82394944899.
+Delay data:
+Using model (RandomForest), inputs of previous 5-day (target metric) to predict target metric: RMSE is 37.30060688345263.
+Using model (RandomForest), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 29.711386771806932.
+Using model (RandomForest), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 31.312265147201483.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 29.76157058159874.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 31.324804671181713.
+Using model (RandomForest), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 30.994321895950392.
+Using model (RandomForest), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 30.90506471316514.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 30.99099159530169.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 30.90506471316514.
+Using model (RandomForest), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 37.77063044250154.
+Using model (RandomForest), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 37.64894485438667.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 37.80040834661937.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 37.64894485438667.
+Using model (RandomForest), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 40.11411824510895.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 40.166445990197886.
+Using model (RandomForest), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 30.722257667954946.
+Using model (RandomForest), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 30.83367701780698.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 30.721294533887047.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 30.83367701780698.
+Using model (RandomForest), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 29.701925802822895.
+Using model (RandomForest), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 31.47904741452838.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 29.753545295605658.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 31.505791898048255.
+Using model (RandomForest), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 39.32322444536791.
+Using model (RandomForest), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 39.25686086055054.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 39.33291259891026.
+Using model (RandomForest), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 39.269713792200236.

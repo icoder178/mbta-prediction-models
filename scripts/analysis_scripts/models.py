@@ -11,6 +11,7 @@ from sklearn.neighbors import KNeighborsRegressor
 import copy
 import sys
 import joblib
+import random
 
 # wrapper for moving average, to fit sklearn format
 class MovingAverage:
@@ -21,9 +22,9 @@ class MovingAverage:
     def predict(self,input):
         return_value = np.zeros((len(input),1))
         for i in range(len(input)):
-            interval = round(len(input[i])/5)
+            interval = round((len(input[i]))/int(sys.argv[2]))
             for j in range(0,len(input[i]),interval):
-                return_value[i][0] += input[i][j]/5
+                return_value[i][0] += input[i][j]/int(sys.argv[2])
         return return_value
 
 # list of models
@@ -105,9 +106,15 @@ def process_data(_source,_input_rows,_input_len,_output_len,_input_cols,_output_
             cnt += 1
         input[i] = input_curr
         output[i] = output_curr
+    if sys.argv[3] != "NO_BOOTSTRAP":
+        random.seed(sys.argv[3])
+        selections = np.array([random.randint(0,len(input)-1) for _ in range(len(input))])
+        selections.sort()
+        input = input[selections]
+        output = output[selections]
     return input,output
 
-# split data into train and test sets (prop is set to 0.9, or 90% train 10% test, when used); test set is the later segment of the data
+# split data into train and test sets
 def split_data(input,output,prop):
     input_split = round(prop*len(input))
     _input = np.split(input,[input_split])
@@ -151,7 +158,7 @@ def run_by_name(_source,_inputs,_model_name,_base_model):
     for input_name in _inputs:
         if input_name not in corresponding_cols:
             raise ValueError("Data name does not exist.")
-    description = f"Using model ({_model_name}), inputs of previous 5-day ("
+    description = f"Using model ({_model_name}), inputs of previous {int(sys.argv[2])}-day ("
     for i in range(len(_inputs)):
         if i > 0:
             description += ', '
@@ -162,12 +169,12 @@ def run_by_name(_source,_inputs,_model_name,_base_model):
         input_cols += corresponding_cols[input_name]
     rmse, result_model = try_running(
     _source = current_source,
-    _input_rows = 5,
+    _input_rows = int(sys.argv[2]),
     _input_cols = input_cols,
     _output_cols = [1],
-    _input_len = len(input_cols)*5,
+    _input_len = len(input_cols)*int(sys.argv[2]),
     _output_len = 1,
-    _split_prop = 0.9,
+    _split_prop = float(sys.argv[3]),
     _base_model = current_model
     )
     rmse = float(rmse)
@@ -249,9 +256,11 @@ def run_tests(_source,_model_name,_model):
                    +["target metric","scaled season OHE","scaled weather"])
 
     descriptions = ""
+    rmse_array = []
     for x in results:
         descriptions += x[2]
         descriptions += "\n"
+        rmse_array.append(x[0])
     min_rmse = results[0][0]
     min_rmse_data = results[0]
     for i in range(1,len(results)):
@@ -264,7 +273,7 @@ def run_tests(_source,_model_name,_model):
     for i in range(3,len(min_rmse_data)):
         best_model_data += corresponding_cols[min_rmse_data[i]]
 
-    return descriptions, best_model_data, best_model
+    return descriptions, best_model_data, best_model, rmse_array
 
 
 # run tests on both gated station entry and delay data
@@ -273,31 +282,39 @@ def main():
     target_path = model_dict[sys.argv[1]][0]
     target_model = model_dict[sys.argv[1]][1]
     descriptions = "GSE data:\n"
-    current_desc,gse_model_data,gse_model = run_tests("../../data/analysis_data/GSE_inputs.csv",target_name,target_model)
+    current_desc,gse_model_data,gse_model,gse_rmse = run_tests("../../data/analysis_data/GSE_inputs.csv",target_name,target_model)
     descriptions += current_desc+"Delay data:\n"
-    current_desc,delay_model_data,delay_model = run_tests("../../data/analysis_data/delay_inputs.csv",target_name,target_model)
+    current_desc,delay_model_data,delay_model,delay_rmse = run_tests("../../data/analysis_data/delay_inputs.csv",target_name,target_model)
     descriptions += current_desc
 
-    #output readable results
-    with open(target_path+"_readable.txt","w") as f:
-        print(descriptions,end='',file=f)
-    
-    #output gse model metadata
-    with open(target_path+"_gse_model_data.txt","w") as f:
-        for x in gse_model_data:
-            print(x,end=' ',file=f)
-    
-    #output delay model metadata
-    with open(target_path+"_delay_model_data.txt","w") as f:
-        for x in delay_model_data:
-            print(x,end=' ',file=f)
-    
-    #output gse model
-    joblib.dump(gse_model,target_path+"_gse_model.txt")
+    if sys.argv[3] == 'NO_BOOTSTRAP':
+        #output readable results
+        with open(target_path+"_readable.txt","w") as f:
+            print(descriptions,end='',file=f)
+        
+        #output gse model metadata
+        with open(target_path+"_gse_model_data.txt","w") as f:
+            for x in gse_model_data:
+                print(x,end=' ',file=f)
+        
+        #output delay model metadata
+        with open(target_path+"_delay_model_data.txt","w") as f:
+            for x in delay_model_data:
+                print(x,end=' ',file=f)
+        
+        #output gse model
+        joblib.dump(gse_model,target_path+"_gse_model.txt")
 
-    #output delay model
-    joblib.dump(delay_model,target_path+"_delay_model.txt")
+        #output delay model
+        joblib.dump(delay_model,target_path+"_delay_model.txt")
 
-    print(f"{target_name} done!")
+        print(f"{target_name} done!")
+    
+    else:
+        gse_rmse_no_ad = gse_rmse[0] 
+        gse_rmse_ad = min(gse_rmse)
+        delay_rmse_no_ad = delay_rmse[0]
+        delay_rmse_ad = min(delay_rmse)
+        print(gse_rmse_no_ad,gse_rmse_ad,delay_rmse_no_ad,delay_rmse_ad)
 
 main()

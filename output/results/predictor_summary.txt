@@ -1,2 +1,2 @@
-Fitted normal distribution to Delay predictor: mean -3.481137724550899, stddev 29.31287402721751
-Fitted normal distribution to GSE predictor: mean -1244.885143675373, stddev 29959.086660118483
+Fitted normal distribution to Delay predictor: mean -1.8499096385542164, stddev 30.804567984744967
+Fitted normal distribution to GSE predictor: mean -5063.341908146056, stddev 29156.832366091727

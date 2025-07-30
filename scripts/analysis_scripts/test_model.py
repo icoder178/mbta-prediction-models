@@ -25,9 +25,9 @@ class PredictiveModel:
         def predict(self,input):
             return_value = np.zeros((len(input),1))
             for i in range(len(input)):
-                interval = round(len(input[i])/5)
+                interval = round(len(input[i])/int(sys.argv[1]))
                 for j in range(0,len(input[i]),interval):
-                    return_value[i][0] += input[i][j]/5
+                    return_value[i][0] += input[i][j]/int(sys.argv[1])
             return return_value
     def __init__(self,_model_path,_metadata_path):
         self.model = joblib.load(_model_path)
@@ -37,11 +37,11 @@ class PredictiveModel:
             for i in range(1,len(metadata_arr)):
                 self.columns.append(int(metadata_arr[i]))
 
-    # takes a DataFrame with 5 rows of required data and returns prediction result
+    # takes a DataFrame with rows of required data and returns prediction result
     def predict(self,data):
         input_data = []
         cnt = 0
-        for i in range(5):
+        for i in range(int(sys.argv[1])):
             for j in self.columns:
                 input_data.append(data.iloc[i,j])
         input_data = np.array(input_data).reshape(1,len(input_data))
@@ -52,8 +52,8 @@ def find_residuals(_model_path,_metadata_path,_file_path,_test_arr,_name,_save_p
     residuals = []
     model = PredictiveModel(_model_path,_metadata_path)
     for test_value in _test_arr:
-        test_case = raw_data.iloc[test_value:test_value+5]
-        test_answer = raw_data.iloc[test_value+5,1]
+        test_case = raw_data.iloc[test_value:test_value+int(sys.argv[1])]
+        test_answer = raw_data.iloc[test_value+int(sys.argv[1]),1]
         predict_answer = model.predict(test_case)[0]
         residuals.append(predict_answer-test_answer)
     residuals = np.array(residuals)
@@ -90,17 +90,22 @@ def find_residuals(_model_path,_metadata_path,_file_path,_test_arr,_name,_save_p
 
     print(f"Fitted normal distribution to {_name} predictor: mean {np.mean(residuals)}, stddev {np.std(residuals)}")
 
+def compute_range(_dataset_size,_row_count,_split_prop):
+    data_points = _dataset_size-_row_count
+    train_size = round(_split_prop*data_points)
+    return range(train_size+1,data_points)
+
 def main():
     find_residuals("../../output/data_appendix_output/delay_model.txt",
                 "../../output/data_appendix_output/delay_model_data.txt",
                 "../../data/analysis_data/delay_inputs.csv",
-                range(1499,1666),
+                compute_range(1671,int(sys.argv[1]),float(sys.argv[2])),
                 "Delay",
                 "../../output/results/delay_predictor_residuals")
     find_residuals("../../output/data_appendix_output/gse_model.txt",
                 "../../output/data_appendix_output/gse_model_data.txt",
                 "../../data/analysis_data/gse_inputs.csv",
-                range(3775,4194),
+                compute_range(4199,int(sys.argv[1]),float(sys.argv[2])),
                 "GSE",
                 "../../output/results/gse_predictor_residuals")
 
