@@ -106,4 +106,5 @@ def main():
     compute_improvement(gse_data,"Improvement on gated station entry data:")
     compute_improvement(delay_data,"Improvement on delay data:")
 
-main()
+if __name__ == "__main__":
+    main()

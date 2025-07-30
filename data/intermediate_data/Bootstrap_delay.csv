@@ -1,0 +1,41 @@
+,Model,Data,RMSE
+0,RandomForest,No Additional Data,38.64357174533996
+1,RandomForest,Any Data,30.272697175743925
+2,Linear,No Additional Data,45.67051642813025
+3,Linear,Any Data,29.74064490756015
+4,Ridge,No Additional Data,43.84441624749237
+5,Ridge,Any Data,30.923601565900135
+6,Lasso,No Additional Data,43.03612296384813
+7,Lasso,Any Data,31.263654115993653
+8,GradientBoost,No Additional Data,44.585830123015626
+9,GradientBoost,Any Data,35.82636353165047
+10,SupportVector,No Additional Data,41.57831483992781
+11,SupportVector,Any Data,41.57831483992781
+12,MultilayerPerceptron,No Additional Data,40.04662573135668
+13,MultilayerPerceptron,Any Data,32.96957696080592
+14,kNearestNeighbor,No Additional Data,39.55537267562408
+15,kNearestNeighbor,Any Data,39.45743135188718
+16,MovingAverage,No Additional Data,53.3656118537821
+17,MovingAverage,Any Data,53.3656118537821
+18,Poisson,No Additional Data,46.845172915192755
+19,Poisson,Any Data,32.206559488389054
+20,RandomForest,No Additional Data,36.77340743791082
+21,RandomForest,Any Data,30.586748043161695
+22,Linear,No Additional Data,44.93988084046466
+23,Linear,Any Data,30.18310611355234
+24,Ridge,No Additional Data,47.41556503452615
+25,Ridge,Any Data,33.42524316556768
+26,Lasso,No Additional Data,46.609952000661416
+27,Lasso,Any Data,34.957786330138646
+28,GradientBoost,No Additional Data,39.98266151540335
+29,GradientBoost,Any Data,30.815357872170267
+30,SupportVector,No Additional Data,44.58670781240873
+31,SupportVector,Any Data,44.58670781240873
+32,MultilayerPerceptron,No Additional Data,39.0195327529508
+33,MultilayerPerceptron,Any Data,31.49346378906229
+34,kNearestNeighbor,No Additional Data,43.49433845315362
+35,kNearestNeighbor,Any Data,43.341336752244636
+36,MovingAverage,No Additional Data,57.84345135678597
+37,MovingAverage,Any Data,57.84345135678597
+38,Poisson,No Additional Data,48.26640003265709
+39,Poisson,Any Data,32.47899849030837
