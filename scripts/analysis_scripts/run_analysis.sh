@@ -14,4 +14,6 @@ python performance_display.py > ../../output/results/performance_summary.txt
 echo "output done, selecting best model and placing in output/data_appendix_output"
 python select_best_model.py delay
 python select_best_model.py gse
-echo "selection done, analysis script done!"
+echo "selection done, testing best model, graphing residuals and placing in output/results"
+python test_model.py > ../../output/results/predictor_summary.txt
+echo "testing done, analysis script done!"
