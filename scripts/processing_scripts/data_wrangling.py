@@ -41,7 +41,7 @@ def compute_season_ohe(data):
     one_hot_encoding = pd.DataFrame(one_hot_encoding,columns = ['Is_Winter','Is_Spring','Is_Summer','Is_Autumn'])
     return one_hot_encoding
 
-# loads GSE data and does aggregation and rearrangement
+# loads GSE data and does aggregation and rearrangement to get a pandas series of total delays in each date
 def gse_data():
     gse_file_names = [f"../../data/input_data/GSE_by_year/GSE_{year}.csv" for year in range(2014,2026)]
     totals_by_day = pd.DataFrame()
@@ -56,7 +56,7 @@ def gse_data():
     totals_by_day['Gated_Station_Entries'] = totals_by_day['Gated_Station_Entries'].round().astype(int)
     return totals_by_day
 
-# loads weather data and rearranges to necessary format
+# loads weather data and rearranges to necessary format. Returns cleaned weather data
 def weather_data():
     weather_file = pd.read_csv("../../data/input_data/boston_weather_data.csv")
     needed_names = ['time','pres','wspd','tavg','prcp']
@@ -81,9 +81,11 @@ def delay_data():
     totaled_delays['Total_Delays'] = []
     days = {}
     for i in range(len(service_alerts['notif_start'])):
+        #Finds MBTA transportation effected by delays
         if service_alerts['effect_name'].iloc[i] == 'Delay':
             current_datetime = service_alerts['notif_start'].iloc[i]
             end_datetime = service_alerts['notif_end'].iloc[i]
+            #Keeps going while the current date is before the end date
             while current_datetime <= end_datetime:
                 datetime_str = current_datetime.strftime("%Y-%m-%d")
                 if datetime_str not in days:
