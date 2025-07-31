@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+from scipy.stats import sem, t
 
 model_list = [
     "RandomForest",
@@ -17,7 +18,7 @@ model_list = [
 ]
 
 # saves data recieved to bar plot
-def display_data(data,title,xlabel,ylabel,name):
+def display_ranking_data(data,title,xlabel,ylabel,name):
     # compute order
     mean_values = {x:[0.0,0.0] for x in model_list}
     for i in range(len(data)):
@@ -42,12 +43,47 @@ def display_data(data,title,xlabel,ylabel,name):
     plt.tight_layout()
     plt.savefig(f"../../output/results/{name}_bootstrapped.png")
 
+def display_improvement_data(data,name):
+    plt.figure(figsize=(14,8))
+    sns.barplot(data,x='Data',y='RMSE',estimator=np.mean,errorbar=("ci",95))
+    sns.despine()
+    plt.title(f"Model Improvement Given Additional Data", fontsize=24)
+    plt.xlabel(f"Additional Data", fontsize=18)
+    plt.ylabel(f"Percentage Decrease in RMSE", fontsize=18)
+    plt.xticks(rotation=45, ha='right')
+    plt.tight_layout()
+    plt.savefig(f"../../output/results/{name}_improvement.png")
+
+    # compute CIs
+    grouped_data = data.groupby('Data')['RMSE']
+    summary = grouped_data.agg(['mean', 'count', 'std']).reset_index()
+    summary['sem'] = summary['std'] / np.sqrt(summary['count'])  # Standard error
+    confidence = 0.95
+    summary['t_crit'] = summary['count'].apply(lambda n: t.ppf((1 + confidence) / 2, df=n-1))
+    summary['ci95'] = summary['t_crit'] * summary['sem']
+    summary['ci_lower'] = summary['mean'] - summary['ci95']
+    summary['ci_upper'] = summary['mean'] + summary['ci95']
+    
+    # output CIs
+    for i in range(len(summary)):
+        print(f"{summary['Data'].iloc[i]}: mean {summary['mean'].iloc[i]}, 95% CI [{summary['ci_lower'].iloc[i]}, {summary['ci_upper'].iloc[i]}]")
+
 # run on both gated station entry data and delay data
 def main():
     gse_data = pd.read_csv("../../data/intermediate_data/Bootstrap_gse.csv")
     delay_data = pd.read_csv("../../data/intermediate_data/Bootstrap_delay.csv")
-    display_data(gse_data,"Model Performance on Gated Station Entry Data, Bootstrapped","Model Name","Model RMSE","gse_data")
-    display_data(delay_data,"Model Performance on MBTA Delay Data, Bootstrapped","Model Name","Model RMSE","delay_data")
+
+    gse_data_ranking = gse_data[((gse_data['Data'] == 'Any Data') | (gse_data['Data'] == 'No Additional Data'))]
+    delay_data_ranking = delay_data[((delay_data['Data'] == 'Any Data') | (delay_data['Data'] == 'No Additional Data'))]
+    display_ranking_data(gse_data_ranking,"Model Performance on Gated Station Entry Data","Model Name","Model RMSE","gse_data")
+    display_ranking_data(delay_data_ranking,"Model Performance on MBTA Delay Data","Model Name","Model RMSE","delay_data")
+
+    gse_data_improvement = gse_data[((gse_data['Data'] != 'Any Data') & (gse_data['Data'] != 'No Additional Data'))]
+    delay_data_improvement = delay_data[((delay_data['Data'] != 'Any Data') & (delay_data['Data'] != 'No Additional Data'))]
+    print("GSE data:")
+    display_improvement_data(gse_data_improvement,"gse_data")
+    print("Delay data:")
+    display_improvement_data(delay_data_improvement,"delay_data")
 
 if __name__ == "__main__":
     main()

@@ -26,5 +26,5 @@ else
   python bootstrapping.py
 fi
 echo "bootstrap computation done, building graphs with confidence intervals"
-python bootstrap_display.py
+python bootstrap_display.py > ../../output/results/bootstrap_summary.txt
 echo "testing done, analysis script done!"

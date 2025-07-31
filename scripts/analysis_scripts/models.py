@@ -322,9 +322,9 @@ def main():
 
         delay_rmse_no_ad = delay_rmse[0]
         delay_rmse_ad = min(delay_rmse)
-        delay_rmse_day_of_week = min(gse_rmse[1:5])
-        delay_rmse_season = min(gse_rmse[5:9])
-        delay_rmse_weather = min(gse_rmse[9:10])
+        delay_rmse_day_of_week = min(delay_rmse[1:5])
+        delay_rmse_season = min(delay_rmse[5:9])
+        delay_rmse_weather = min(delay_rmse[9:10])
         delay_improvement_ad = 100-100*delay_rmse_ad/delay_rmse_no_ad
         delay_improvement_day_of_week = 100-100*delay_rmse_day_of_week/delay_rmse_no_ad
         delay_improvement_season = 100-100*delay_rmse_season/delay_rmse_no_ad
