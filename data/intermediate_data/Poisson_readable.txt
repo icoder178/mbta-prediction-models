@@ -27,35 +27,6 @@ Using model (Poisson), inputs of previous 5-day (target metric, season OHE, weat
 Using model (Poisson), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 118289.74908879356.
 Using model (Poisson), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 118289.74908879356.
 Delay data:
-<<<<<<< HEAD
-Using model (Poisson), inputs of previous 5-day (target metric) to predict target metric: RMSE is 47.89065178065302.
-Using model (Poisson), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 41.96853804763316.
-Using model (Poisson), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 46.235840503457474.
-Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 37.69764200472895.
-Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 40.01591851414819.
-Using model (Poisson), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 44.14340314105107.
-Using model (Poisson), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 34.11195404482486.
-Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 35.32250003484274.
-Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 34.36717271636564.
-Using model (Poisson), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 47.88039979222526.
-Using model (Poisson), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 47.84716967454222.
-Using model (Poisson), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 47.966975547841415.
-Using model (Poisson), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 48.21924421992456.
-Using model (Poisson), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 48.12636307759673.
-Using model (Poisson), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 48.32241563818377.
-Using model (Poisson), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 45.771586580756235.
-Using model (Poisson), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 34.14656725386673.
-Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 36.46583248491844.
-Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 36.058250684290655.
-Using model (Poisson), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 41.40789368270232.
-Using model (Poisson), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 46.49050503614221.
-Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 36.86909233879448.
-Using model (Poisson), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 34.606072461405255.
-Using model (Poisson), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 48.189233253921486.
-Using model (Poisson), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 48.13884404440467.
-Using model (Poisson), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 48.67388380954465.
-Using model (Poisson), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 50.19353986213833.
-=======
 Using model (Poisson), inputs of previous 5-day (target metric) to predict target metric: RMSE is 47.89065178065122.
 Using model (Poisson), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 41.251969614177426.
 Using model (Poisson), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 46.71977885000415.
@@ -83,4 +54,3 @@ Using model (Poisson), inputs of previous 5-day (target metric, season, weather)
 Using model (Poisson), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 48.20708334239498.
 Using model (Poisson), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 48.67489077503522.
 Using model (Poisson), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 49.929159550409935.
->>>>>>> 6652caa92a8f3c1d93273346d83e5986d4459bcc
