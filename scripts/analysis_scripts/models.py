@@ -317,4 +317,5 @@ def main():
         delay_rmse_ad = min(delay_rmse)
         print(gse_rmse_no_ad,gse_rmse_ad,delay_rmse_no_ad,delay_rmse_ad)
 
-main()
+if __name__ == "__main__":
+    main()

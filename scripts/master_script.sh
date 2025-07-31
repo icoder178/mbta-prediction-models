@@ -26,5 +26,9 @@ echo "data loading done, starting data processing; this may take a minute"
 python data_wrangling.py no_debug no_cheatsheet
 cd ../analysis_scripts
 echo "data processing done, starting analysis script"
-./run_analysis.sh
+if [ -z "$2" ]; then
+  ./run_analysis.sh
+else
+  ./run_analysis.sh COMPUTE_BOOTSTRAP
+fi
 echo "analysis script done, master script done!"

@@ -35,4 +35,5 @@ def main():
     shutil.copy(file_path_data,f"../../output/data_appendix_output/{sys.argv[1]}_model_data.txt")
     shutil.copy(file_path_model,f"../../output/data_appendix_output/{sys.argv[1]}_model.txt")
 
-main()
+if __name__ == "__main__":
+    main()

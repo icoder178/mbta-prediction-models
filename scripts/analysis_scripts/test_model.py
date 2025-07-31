@@ -109,4 +109,5 @@ def main():
                 "GSE",
                 "../../output/results/gse_predictor_residuals")
 
-main()
+if __name__ == "__main__":
+    main()

@@ -1,4 +1,5 @@
 GSE data:
+<<<<<<< HEAD
 Using model (Linear), inputs of previous 5-day (target metric) to predict target metric: RMSE is 52061.087602961205.
 Using model (Linear), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 56261.05465433506.
 Using model (Linear), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 54293.45825732076.
@@ -13,10 +14,27 @@ Using model (Linear), inputs of previous 5-day (target metric, season OHE) to pr
 Using model (Linear), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 52009.156645052666.
 Using model (Linear), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 52174.63685947449.
 Using model (Linear), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 53880.63476525045.
+=======
+Using model (Linear), inputs of previous 5-day (target metric) to predict target metric: RMSE is 52061.08760296118.
+Using model (Linear), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 56261.054654335036.
+Using model (Linear), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 54293.458257320766.
+Using model (Linear), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 56261.05465466425.
+Using model (Linear), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 54293.45825674176.
+Using model (Linear), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 55847.69276561659.
+Using model (Linear), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 53822.159682464015.
+Using model (Linear), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 55847.692766097374.
+Using model (Linear), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 53822.15968227129.
+Using model (Linear), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 52009.156645044815.
+Using model (Linear), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 52174.636859280705.
+Using model (Linear), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 52009.156645052666.
+Using model (Linear), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 52174.63685947449.
+Using model (Linear), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 53880.63476525042.
+>>>>>>> 6652caa92a8f3c1d93273346d83e5986d4459bcc
 Using model (Linear), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 53880.634765347604.
 Using model (Linear), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 55819.6515539667.
 Using model (Linear), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 53969.90415359231.
 Using model (Linear), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 55819.65155548305.
+<<<<<<< HEAD
 Using model (Linear), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 53969.90415347221.
 Using model (Linear), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 56295.17561844652.
 Using model (Linear), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 54162.556368504636.
@@ -44,13 +62,50 @@ Using model (Linear), inputs of previous 5-day (target metric, weather) to predi
 Using model (Linear), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 45.264540560582894.
 Using model (Linear), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 32.94970614022219.
 Using model (Linear), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 32.077883261793296.
+=======
+Using model (Linear), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 53969.904153472206.
+Using model (Linear), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 56295.17561844654.
+Using model (Linear), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 54162.55636850461.
+Using model (Linear), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 56295.17561854772.
+Using model (Linear), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 54162.556367429686.
+Using model (Linear), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 53812.22248476752.
+Using model (Linear), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 53982.25562861007.
+Using model (Linear), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 53812.222484759186.
+Using model (Linear), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 53982.25562861393.
+Delay data:
+Using model (Linear), inputs of previous 5-day (target metric) to predict target metric: RMSE is 45.239960003514916.
+Using model (Linear), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 33.13929782592252.
+Using model (Linear), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 32.21234290597518.
+Using model (Linear), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 33.13929782592262.
+Using model (Linear), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 32.212342905975085.
+Using model (Linear), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 32.94136559463474.
+Using model (Linear), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 32.073639586995235.
+Using model (Linear), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 32.94136559463491.
+Using model (Linear), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 32.073639586995114.
+Using model (Linear), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 45.19420689975719.
+Using model (Linear), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 45.35584843228187.
+Using model (Linear), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 45.19420689975717.
+Using model (Linear), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 45.35584843228192.
+Using model (Linear), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 45.26454056058293.
+Using model (Linear), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 45.26454056058289.
+Using model (Linear), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 32.94970614022219.
+Using model (Linear), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 32.07788326179329.
+>>>>>>> 6652caa92a8f3c1d93273346d83e5986d4459bcc
 Using model (Linear), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 32.94970614022224.
 Using model (Linear), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 32.07788326179315.
 Using model (Linear), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 33.10385480788822.
 Using model (Linear), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 32.149574742413456.
+<<<<<<< HEAD
 Using model (Linear), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 33.10385480788791.
 Using model (Linear), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 32.1495747424134.
 Using model (Linear), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 45.28730248590288.
 Using model (Linear), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 45.39017234573504.
 Using model (Linear), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 45.28730248590287.
+=======
+Using model (Linear), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 33.103854807887906.
+Using model (Linear), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 32.1495747424134.
+Using model (Linear), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 45.287302485902885.
+Using model (Linear), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 45.39017234573504.
+Using model (Linear), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 45.28730248590286.
+>>>>>>> 6652caa92a8f3c1d93273346d83e5986d4459bcc
 Using model (Linear), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 45.39017234573506.
