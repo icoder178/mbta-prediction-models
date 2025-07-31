@@ -3,7 +3,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-model_list = ["RandomForest","Linear","Ridge","Lasso","GradientBoost","SupportVector","MultilayerPerceptron","kNearestNeighbor","MovingAverage","Poisson"]
+model_list = [
+    "RandomForest",
+    "Linear",
+    "Ridge",
+    "Lasso",
+    "GradientBoost",
+    "SupportVector",
+    "MultilayerPerceptron"
+    ,"kNearestNeighbor",
+    "MovingAverage",
+    "Poisson"
+]
 
 # saves data recieved to bar plot
 def display_data(data,title,xlabel,ylabel,name):

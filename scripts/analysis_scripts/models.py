@@ -275,7 +275,6 @@ def run_tests(_source,_model_name,_model):
 
     return descriptions, best_model_data, best_model, rmse_array
 
-
 # run tests on both gated station entry and delay data
 def main():
     target_name = sys.argv[1]
@@ -313,9 +312,26 @@ def main():
     else:
         gse_rmse_no_ad = gse_rmse[0] 
         gse_rmse_ad = min(gse_rmse)
+        gse_rmse_day_of_week = min(gse_rmse[1:5])
+        gse_rmse_season = min(gse_rmse[5:9])
+        gse_rmse_weather = min(gse_rmse[9:10])
+        gse_improvement_ad = 100-100*gse_rmse_ad/gse_rmse_no_ad
+        gse_improvement_day_of_week = 100-100*gse_rmse_day_of_week/gse_rmse_no_ad
+        gse_improvement_season = 100-100*gse_rmse_season/gse_rmse_no_ad
+        gse_improvement_weather = 100-100*gse_rmse_weather/gse_rmse_no_ad
+
         delay_rmse_no_ad = delay_rmse[0]
         delay_rmse_ad = min(delay_rmse)
-        print(gse_rmse_no_ad,gse_rmse_ad,delay_rmse_no_ad,delay_rmse_ad)
+        delay_rmse_day_of_week = min(gse_rmse[1:5])
+        delay_rmse_season = min(gse_rmse[5:9])
+        delay_rmse_weather = min(gse_rmse[9:10])
+        delay_improvement_ad = 100-100*delay_rmse_ad/delay_rmse_no_ad
+        delay_improvement_day_of_week = 100-100*delay_rmse_day_of_week/delay_rmse_no_ad
+        delay_improvement_season = 100-100*delay_rmse_season/delay_rmse_no_ad
+        delay_improvement_weather = 100-100*delay_rmse_weather/delay_rmse_no_ad
+
+        print(gse_rmse_no_ad,gse_rmse_ad,gse_improvement_ad,gse_improvement_day_of_week,gse_improvement_season,gse_improvement_weather,
+              delay_rmse_no_ad,delay_rmse_ad,delay_improvement_ad,delay_improvement_day_of_week,delay_improvement_season,delay_improvement_weather)
 
 if __name__ == "__main__":
     main()
