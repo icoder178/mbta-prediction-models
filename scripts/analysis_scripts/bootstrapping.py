@@ -29,7 +29,7 @@ def compute_raw_results():
     results = np.zeros((run_count, 12))
     start_time = time.perf_counter()
     with ProcessPoolExecutor(max_workers=worker_count) as executor:
-        futures = {executor.submit(run_model,i,model_list[i%len(model_list)],i/len(model_list)):i for i in range(run_count)}
+        futures = {executor.submit(run_model,i,model_list[i%len(model_list)],int(i)//int(len(model_list))):i for i in range(run_count)}
         cnt = 0
         for future in as_completed(futures):
             index, values = future.result()
