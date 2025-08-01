@@ -43,11 +43,11 @@ def display_ranking_data(data,title,xlabel,ylabel,name):
     plt.tight_layout()
     plt.savefig(f"../../output/results/{name}_bootstrapped.png")
 
-def display_improvement_data(data,name):
+def display_improvement_data(data,name,title):
     plt.figure(figsize=(14,8))
     sns.barplot(data,x='Data',y='RMSE',estimator=np.mean,errorbar=("ci",95))
     sns.despine()
-    plt.title(f"Model Improvement Given Additional Data", fontsize=24)
+    plt.title(title, fontsize=24)
     plt.xlabel(f"Additional Data", fontsize=18)
     plt.ylabel(f"Percentage Decrease in RMSE", fontsize=18)
     plt.xticks(rotation=45, ha='right')
@@ -81,9 +81,9 @@ def main():
     gse_data_improvement = gse_data[((gse_data['Data'] != 'Any Data') & (gse_data['Data'] != 'No Additional Data'))]
     delay_data_improvement = delay_data[((delay_data['Data'] != 'Any Data') & (delay_data['Data'] != 'No Additional Data'))]
     print("GSE data:")
-    display_improvement_data(gse_data_improvement,"gse_data")
+    display_improvement_data(gse_data_improvement,"gse_data","GSE Model Improvement Given Additional Data")
     print("Delay data:")
-    display_improvement_data(delay_data_improvement,"delay_data")
+    display_improvement_data(delay_data_improvement,"delay_data","Delay Model Improvement Given Additional Data")
 
 if __name__ == "__main__":
     main()
