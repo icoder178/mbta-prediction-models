@@ -11,8 +11,8 @@ model_list = [
     "Lasso",
     "GradientBoost",
     "SupportVector",
-    "MultilayerPerceptron"
-    ,"kNearestNeighbor",
+    "MultilayerPerceptron",
+    "kNearestNeighbor",
     "MovingAverage",
     "Poisson"
 ]

@@ -11,8 +11,8 @@ model_list = [
     "Lasso",
     "GradientBoost",
     "SupportVector",
-    "MultilayerPerceptron"
-    ,"kNearestNeighbor",
+    "MultilayerPerceptron",
+    "kNearestNeighbor",
     "MovingAverage",
     "Poisson"
 ]
@@ -38,7 +38,7 @@ def display_ranking_data(data,title,xlabel,ylabel,name):
     plt.title(title, fontsize=24)
     plt.xlabel(xlabel, fontsize=18)
     plt.ylabel(ylabel, fontsize=18)
-    plt.xticks(rotation=45, ha='right')
+    plt.xticks(rotation=45, ha='right', fontsize=16)
     plt.legend(loc='upper right', bbox_to_anchor=(1.1, 1.1))
     plt.tight_layout()
     plt.savefig(f"../../output/results/{name}_bootstrapped.png")
@@ -50,7 +50,7 @@ def display_improvement_data(data,name,title):
     plt.title(title, fontsize=24)
     plt.xlabel(f"Additional Data", fontsize=18)
     plt.ylabel(f"Percentage Decrease in RMSE", fontsize=18)
-    plt.xticks(rotation=45, ha='right')
+    plt.xticks(rotation=45, ha='right', fontsize=16)
     plt.tight_layout()
     plt.savefig(f"../../output/results/{name}_improvement.png")
 
