@@ -43,6 +43,21 @@ def display_ranking_data(data,title,xlabel,ylabel,name):
     plt.tight_layout()
     plt.savefig(f"../../output/results/{name}_bootstrapped.png")
 
+    # compute CIs
+    grouped_data = data.groupby(['Model','Data'])['RMSE']
+    summary = grouped_data.agg(['mean', 'count', 'std']).reset_index()
+    summary['sem'] = summary['std'] / np.sqrt(summary['count'])  # Standard error
+    confidence = 0.95
+    summary['t_crit'] = summary['count'].apply(lambda n: t.ppf((1 + confidence) / 2, df=n-1))
+    summary['ci95'] = summary['t_crit'] * summary['sem']
+    summary['ci_lower'] = summary['mean'] - summary['ci95']
+    summary['ci_upper'] = summary['mean'] + summary['ci95']
+    
+    # output CIs
+    for i in range(0,len(summary),2):
+        print(f"{summary['Model'].iloc[i]}, Any Data: mean {summary['mean'].iloc[i]}, 95% CI [{summary['ci_lower'].iloc[i]}, {summary['ci_upper'].iloc[i]}]")
+        print(f"{summary['Model'].iloc[i+1]}, No Additional Data: mean {summary['mean'].iloc[i+1]}, 95% CI [{summary['ci_lower'].iloc[i+1]}, {summary['ci_upper'].iloc[i+1]}]")
+
 def display_improvement_data(data,name,title):
     plt.figure(figsize=(14,8))
     sns.barplot(data,x='Data',y='RMSE',estimator=np.mean,errorbar=("ci",95))
@@ -75,7 +90,9 @@ def main():
 
     gse_data_ranking = gse_data[((gse_data['Data'] == 'Any Data') | (gse_data['Data'] == 'No Additional Data'))]
     delay_data_ranking = delay_data[((delay_data['Data'] == 'Any Data') | (delay_data['Data'] == 'No Additional Data'))]
+    print("GSE data:")
     display_ranking_data(gse_data_ranking,"Model Performance on Gated Station Entry Data","Model Name","Model RMSE","gse_data")
+    print("Delay data:")
     display_ranking_data(delay_data_ranking,"Model Performance on MBTA Delay Data","Model Name","Model RMSE","delay_data")
 
     gse_data_improvement = gse_data[((gse_data['Data'] != 'Any Data') & (gse_data['Data'] != 'No Additional Data'))]
