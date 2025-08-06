@@ -24,6 +24,7 @@ unzip -o GSE_by_year.zip > /dev/null
 unzip -o MBTA_Service_Alerts.csv.zip > /dev/null
 cd ../../scripts/processing_scripts
 echo "data loading done, starting data processing; this may take a minute"
+python point_process_data_wrangling.py
 python data_wrangling.py no_debug no_cheatsheet
 cd ../analysis_scripts
 echo "data processing done, starting analysis script"

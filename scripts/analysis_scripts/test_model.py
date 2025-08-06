@@ -86,7 +86,7 @@ def find_residuals(_model_path,_metadata_path,_file_path,_test_arr,_name,_save_p
     p = norm.pdf(x, np.mean(residuals), np.std(residuals))
     plt.plot(x, p, color='red', linewidth=2, label='Normal PDF')
     # output
-    plt.savefig(_save_path+"_histplot.png")
+    plt.savefig(_save_path+"_residuals_histplot.png")
 
     # basic plot 
     plt.figure(figsize=(14,8))
@@ -101,7 +101,7 @@ def find_residuals(_model_path,_metadata_path,_file_path,_test_arr,_name,_save_p
     p = norm.cdf(x, np.mean(residuals), np.std(residuals))
     plt.plot(x, p, color='red', linewidth=2, label='Normal PDF')
     # output
-    plt.savefig(_save_path+"_ecdf.png")
+    plt.savefig(_save_path+"_residuals_ecdf.png")
 
     print(f"Fitted normal distribution to {_name} predictor: mean {np.mean(residuals)}, stddev {np.std(residuals)}")
 
@@ -116,13 +116,13 @@ def main():
                 "../../data/analysis_data/delay_inputs.csv",
                 compute_range(1671,int(sys.argv[1]),float(sys.argv[2])),
                 "Delay",
-                "../../output/results/delay_predictor_residuals")
+                "../../output/results/delay_predictor")
     find_residuals("../../output/data_appendix_output/gse_model.txt",
                 "../../output/data_appendix_output/gse_model_data.txt",
                 "../../data/analysis_data/gse_inputs.csv",
                 compute_range(4199,int(sys.argv[1]),float(sys.argv[2])),
                 "GSE",
-                "../../output/results/gse_predictor_residuals")
+                "../../output/results/gse_predictor")
 
 if __name__ == "__main__":
     main()
