@@ -13,7 +13,7 @@ python performance_display.py > ../../output/results/performance_summary.txt
 echo "output done, selecting best model and placing in output/data_appendix_output"
 python select_best_model.py delay
 python select_best_model.py gse
-echo "selection done, testing best model, graphing residuals and placing in output/results"
+echo "selection done, testing best model, graphing residuals and feature importance, and placing in output/results"
 python test_model.py 5 0.8 > ../../output/results/predictor_summary.txt
 if [ -z "$1" ]; then
   echo "By default, skipping bootstrap computation and proceeding with pre-computed values."

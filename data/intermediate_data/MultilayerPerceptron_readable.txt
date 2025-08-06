@@ -1,56 +1,56 @@
 GSE data:
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric) to predict target metric: RMSE is 41128.34275401475.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 36537.114764327715.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 37664.562622263635.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 37664.56262226364.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 38445.52170352579.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 40221.69843871669.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 36564.39872520529.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 43255.140056101445.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 36564.3987252053.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 43255.14005610144.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 36618.36547342223.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 43239.262399219.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 36602.61775078087.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 36602.617750780875.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 39656.97685370432.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 36588.03642592036.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 36588.036425920356.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 39739.53342498991.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 37655.769522944865.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 39720.182714614195.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 42310.63629502129.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 37655.76952294486.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 39720.18271461419.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 42310.636295021286.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 39270.77012471139.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 42355.01234741973.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 39210.494909558445.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 37243.19019083066.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 39210.49490955843.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 37243.19019083067.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 37199.97861815694.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 40052.30032654039.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 39265.43442682006.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 37234.45655521181.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 39265.43442682007.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 37234.4565552118.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 36991.98492588443.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 40105.21762521088.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 40105.217625210884.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 38794.645847859705.
 Delay data:
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric) to predict target metric: RMSE is 39.15814343195795.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 36.78074545259126.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 33.623347512944406.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 34.81242125557844.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 31.76112490118215.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 33.6233475129444.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 34.812421255578435.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 31.761124901182143.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 33.6387380358574.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 31.933282350276926.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 34.32293478251205.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 31.191197114427894.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 39.47552649296028.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 31.191197114427897.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 39.47552649296027.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 38.61288567624112.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 39.39825528131416.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 39.066077315295146.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 42.13084177903884.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 39.410208187913135.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 39.41020818791313.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 34.22289535343209.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 32.00300418844757.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 34.71555952528809.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 32.00300418844756.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 34.7155595252881.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 31.22569657921978.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 37.96980865786512.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 31.726099138367033.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 34.54222434471557.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 31.726099138367037.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 34.542224344715564.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 31.34818639642893.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 42.16261798395933.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 42.162617983959336.
 Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 43.12188621443193.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 39.304626026690556.
-Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 39.75271934972221.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 39.30462602669056.
+Using model (MultilayerPerceptron), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 39.75271934972222.

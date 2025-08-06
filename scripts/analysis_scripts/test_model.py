@@ -14,6 +14,7 @@ import joblib
 import seaborn as sns
 import matplotlib.pyplot as plt
 from scipy.stats import norm
+import shap
 
 class PredictiveModel:
     # wrapper for moving average, to fit sklearn format
@@ -37,25 +38,39 @@ class PredictiveModel:
             for i in range(1,len(metadata_arr)):
                 self.columns.append(int(metadata_arr[i]))
 
-    # takes a DataFrame with rows of required data and returns prediction result
+    # returns prediction result
     def predict(self,data):
-        input_data = []
-        cnt = 0
-        for i in range(int(sys.argv[1])):
-            for j in self.columns:
-                input_data.append(data.iloc[i,j])
-        input_data = np.array(input_data).reshape(1,len(input_data))
-        return self.model.predict(input_data)
+        return self.model.predict(np.array(data).reshape(1,len(data)))
+
+def display_violin_plot(model, data, raw_data,save_path):
+    explainer = shap.Explainer(model.model)
+    shap_values = explainer.shap_values(data)
+    data_names = []
+    for i in range(1,6):
+        for x in model.columns:
+            data_names.append(raw_data.columns[x]+f"\n{6-i}d before")
+    plt.figure(figsize=(14,8))
+    shap.plots.violin(shap_values,feature_names=data_names,max_display=10,show=False,plot_size=[28,16])
+    plt.savefig(save_path+"_importance.png")
 
 def find_residuals(_model_path,_metadata_path,_file_path,_test_arr,_name,_save_path):
     raw_data = pd.read_csv(_file_path)
     residuals = []
     model = PredictiveModel(_model_path,_metadata_path)
+    full_inputs = []
     for test_value in _test_arr:
         test_case = raw_data.iloc[test_value:test_value+int(sys.argv[1])]
         test_answer = raw_data.iloc[test_value+int(sys.argv[1]),1]
-        predict_answer = model.predict(test_case)[0]
+        input_data = []
+        cnt = 0
+        for i in range(int(sys.argv[1])):
+            for j in model.columns:
+                input_data.append(test_case.iloc[i,j])
+        full_inputs.append(input_data)
+        predict_answer = model.predict(input_data)[0]
         residuals.append(predict_answer-test_answer)
+    full_inputs = np.array(full_inputs)
+    display_violin_plot(model,full_inputs,raw_data,_save_path)
     residuals = np.array(residuals)
     
     # basic plot 

@@ -19,7 +19,7 @@ GradientBoost         31.268708           39.130499         31.880058    38.1957
 Linear                32.073640           45.239960         32.073640    45.194207     45.264541
 Ridge                 32.074462           45.239963         32.074462    45.191308     45.260691
 Lasso                 32.591791           45.248531         32.680503    45.183790     45.145665
-Poisson               34.085036           47.890652         34.085036    47.755328     47.783127
+Poisson               34.111954           47.890652         34.111954    47.847170     48.126363
 kNearestNeighbor      40.041889           40.740463         40.210632    40.517889     40.814977
 SupportVector         44.718863           44.718863         46.253807    46.321043     46.882160
 MovingAverage         56.093567           56.093567         56.093567    56.093567     56.093567
@@ -33,5 +33,5 @@ Percentage improvement off No Additional Data for Weather Data: -1.2%.
 Improvement on delay data:
 Percentage improvement off No Additional Data for Any Data: 17.2%.
 Percentage improvement off No Additional Data for Day of Week Data: 16.6%.
-Percentage improvement off No Additional Data for Season Data: 0.0%.
-Percentage improvement off No Additional Data for Weather Data: -1.5%.
+Percentage improvement off No Additional Data for Season Data: -0.0%.
+Percentage improvement off No Additional Data for Weather Data: -1.6%.

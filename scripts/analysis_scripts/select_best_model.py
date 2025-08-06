@@ -1,6 +1,6 @@
 import sys
 import shutil
-#selects best model out of list and copies to results/data_appendix_output
+#selects best model out of list and copies to output/data_appendix_output
 file_list = [
 ["../../data/intermediate_data/RandomForest","RandomForest"],
 ["../../data/intermediate_data/Linear","Linear"],

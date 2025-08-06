@@ -9,11 +9,12 @@ fi
 cd ..
 if [ "$1" != "NO_ENV" ]; then
     echo "building conda environment"
-    eval "$($1 shell.bash hook)" > /dev/null
+    __conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+    eval "$__conda_setup"
     conda deactivate > /dev/null
     conda create -n mbta-prediction-models --file environment.txt -y > /dev/null
     conda activate mbta-prediction-models > /dev/null
-    pip install --force-reinstall meteostat > /dev/null
+    pip install --no-deps meteostat > /dev/null
 fi
 echo "conda environment done, starting data loading"
 cd scripts/processing_scripts
