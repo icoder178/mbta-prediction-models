@@ -50,7 +50,13 @@ def display_violin_plot(model, data, raw_data,save_path):
         for x in model.columns:
             data_names.append(raw_data.columns[x]+f"\n{6-i}d before")
     plt.figure(figsize=(14,8))
-    shap.plots.violin(shap_values,feature_names=data_names,max_display=10,show=False,plot_size=[28,16])
+    shap.plots.violin(shap_values,feature_names=data_names,max_display=10,show=False,plot_size=[14,8])
+    plt.tick_params(axis='x', labelsize=16)  # Adjust x-axis tick label size
+    plt.tick_params(axis='y', labelsize=16)
+    ax = plt.gca()
+    ax.set_xlabel("SHAP Value (Impact on Model Output)", fontsize=24)
+    ax.set_ylabel("Feature Name", fontsize=24)
+    plt.tight_layout()
     plt.savefig(save_path+"_importance.png")
 
 def find_residuals(_model_path,_metadata_path,_file_path,_test_arr,_name,_save_path):
