@@ -39,6 +39,7 @@ def display_ranking_data(data,title,xlabel,ylabel,name):
     plt.xlabel(xlabel, fontsize=18)
     plt.ylabel(ylabel, fontsize=18)
     plt.xticks(rotation=45, ha='right', fontsize=16)
+    plt.yticks(fontsize=16)
     plt.legend(loc='upper right', bbox_to_anchor=(1.1, 1.1))
     plt.tight_layout()
     plt.savefig(f"../../output/results/{name}_bootstrapped.png")
@@ -66,6 +67,7 @@ def display_improvement_data(data,name,title):
     plt.xlabel(f"Additional Data", fontsize=18)
     plt.ylabel(f"Percentage Decrease in RMSE", fontsize=18)
     plt.xticks(rotation=45, ha='right', fontsize=16)
+    plt.yticks(fontsize=16)
     plt.tight_layout()
     plt.savefig(f"../../output/results/{name}_improvement.png")
 
@@ -98,9 +100,9 @@ def main():
     gse_data_improvement = gse_data[((gse_data['Data'] != 'Any Data') & (gse_data['Data'] != 'No Additional Data'))]
     delay_data_improvement = delay_data[((delay_data['Data'] != 'Any Data') & (delay_data['Data'] != 'No Additional Data'))]
     print("GSE data:")
-    display_improvement_data(gse_data_improvement,"gse_data","GSE Model Improvement Given Additional Data")
+    display_improvement_data(gse_data_improvement,"gse_data","GSE Model")
     print("Delay data:")
-    display_improvement_data(delay_data_improvement,"delay_data","Delay Model Improvement Given Additional Data")
+    display_improvement_data(delay_data_improvement,"delay_data","Delay Model")
 
 if __name__ == "__main__":
     main()
