@@ -60,6 +60,7 @@ def display_ranking_data(data,title,xlabel,ylabel,name):
         print(f"{summary['Model'].iloc[i+1]}, No Additional Data: mean {summary['mean'].iloc[i+1]}, 95% CI [{summary['ci_lower'].iloc[i+1]}, {summary['ci_upper'].iloc[i+1]}]")
 
 def display_improvement_data(data,name,title):
+    data.loc[:,'Data'] = data['Data'].str[:-17]
     plt.figure(figsize=(14,8))
     sns.barplot(data,x='Data',y='RMSE',estimator=np.mean,errorbar=("ci",95))
     sns.despine()
@@ -100,9 +101,9 @@ def main():
     gse_data_improvement = gse_data[((gse_data['Data'] != 'Any Data') & (gse_data['Data'] != 'No Additional Data'))]
     delay_data_improvement = delay_data[((delay_data['Data'] != 'Any Data') & (delay_data['Data'] != 'No Additional Data'))]
     print("GSE data:")
-    display_improvement_data(gse_data_improvement,"gse_data","GSE Model")
+    display_improvement_data(gse_data_improvement,"gse_data","GSE Model Improvement Given Additional Data")
     print("Delay data:")
-    display_improvement_data(delay_data_improvement,"delay_data","Delay Model")
+    display_improvement_data(delay_data_improvement,"delay_data","Delay Model Improvement Given Additional Data")
 
 if __name__ == "__main__":
     main()
