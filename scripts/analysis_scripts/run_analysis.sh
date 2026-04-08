@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 # script for running just analysis scripts; run in the directory it is in.
 echo "Starting model training; this will occupy significant computational resources and take 1-10 minutes"
 # edit if models change

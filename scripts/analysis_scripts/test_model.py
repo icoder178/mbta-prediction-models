@@ -43,8 +43,12 @@ class PredictiveModel:
         return self.model.predict(np.array(data).reshape(1,len(data)))
 
 def display_violin_plot(model, data, raw_data,save_path):
-    explainer = shap.Explainer(model.model)
-    shap_values = explainer.shap_values(data)
+    try:
+        explainer = shap.Explainer(model.model)
+        shap_values = explainer.shap_values(data)
+    except Exception as e:
+        print(f"Unable to compute SHAP importance for {type(model.model).__name__}: {e}")
+        return
     data_names = []
     for i in range(1,int(sys.argv[1])+1):
         for x in model.columns:

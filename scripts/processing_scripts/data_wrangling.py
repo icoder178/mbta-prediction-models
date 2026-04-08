@@ -72,9 +72,12 @@ def delay_data():
     service_alerts = pd.read_csv("../../data/input_data/MBTA_Service_Alerts.csv")
     service_alerts['notif_start'] = service_alerts['notif_start'].str[:10]
     service_alerts['notif_end'] = service_alerts['notif_end'].str[:10]
+    ongoing_mask = service_alerts['notif_end'] == '9999/12/31'
     service_alerts['notif_start'] = pd.to_datetime(service_alerts['notif_start'],format="%Y/%m/%d",errors='coerce')
     service_alerts['notif_end'] = pd.to_datetime(service_alerts['notif_end'],format="%Y/%m/%d",errors='coerce')
     service_alerts = service_alerts.dropna(subset=['notif_start','notif_end'])
+    max_finite_delay_end = service_alerts[(service_alerts['effect_name'] == 'Delay') & (~ongoing_mask)]['notif_end'].max()
+    service_alerts.loc[ongoing_mask,'notif_end'] = max_finite_delay_end
     cycle_cnt = 0
     display_when = 10000
     totaled_delays = pd.DataFrame()
@@ -111,8 +114,7 @@ def merge_func(arr):
 # splits data into train and test sets
 def split_data(data,prop):
     data_split = round(prop*len(data))
-    return_data = np.split(data,[data_split])
-    return return_data[0],return_data[1]
+    return data.iloc[:data_split].copy(),data.iloc[data_split:].copy()
 
 # collects all additional data and merges it together
 def additional_data():
