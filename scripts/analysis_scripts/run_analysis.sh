@@ -5,7 +5,7 @@ echo "Starting model training; this will occupy significant computational resour
 models=("RandomForest" "Linear" "Ridge" "Lasso" "GradientBoost" "SupportVector" "MultilayerPerceptron" "kNearestNeighbor" "MovingAverage" "Poisson")
 for model in "${models[@]}"
 do
-  python -W ignore models.py $model 5 0.8 NO_BOOTSTRAP &
+  python -W ignore models.py $model 5 NO_BOOTSTRAP &
 done
 wait
 echo "model training done, outputting final results to output/results/"
@@ -14,7 +14,7 @@ echo "output done, selecting best model and placing in output/data_appendix_outp
 python select_best_model.py delay
 python select_best_model.py gse
 echo "selection done, testing best model, graphing residuals and feature importance, and placing in output/results"
-python test_model.py 5 0.8 > ../../output/results/predictor_summary.txt
+python test_model.py 5 > ../../output/results/predictor_summary.txt
 if [ -z "$1" ]; then
   echo "By default, skipping bootstrap computation and proceeding with pre-computed values."
   echo "Specify COMPUTE_BOOTSTRAP to compute bootstraps from scratch."

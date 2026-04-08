@@ -108,6 +108,12 @@ def merge_func(arr):
         return_value = pd.merge(return_value, arr[i], left_index=True, right_index=True, how='outer')
     return return_value.dropna()
 
+# splits data into train and test sets
+def split_data(data,prop):
+    data_split = round(prop*len(data))
+    return_data = np.split(data,[data_split])
+    return return_data[0],return_data[1]
+
 # collects all additional data and merges it together
 def additional_data():
     weather = weather_data()
@@ -122,12 +128,14 @@ def additional_data():
     return_value = merge_func([day_of_week,season,weather,day_of_week_ohe,season_ohe])
     return return_value.set_index('Date')
 
-# scales data recieved
-def scaled_data(data):
+# scales train and test data recieved using train data only
+def scaled_data(train_data,test_data):
     scaler = StandardScaler()
-    scaled = pd.DataFrame(scaler.fit_transform(data),columns="S_"+data.columns)
-    scaled.index = data.index
-    return scaled
+    train_scaled = pd.DataFrame(scaler.fit_transform(train_data),columns="S_"+train_data.columns)
+    train_scaled.index = train_data.index
+    test_scaled = pd.DataFrame(scaler.transform(test_data),columns="S_"+test_data.columns)
+    test_scaled.index = test_data.index
+    return train_scaled,test_scaled
 
 # cheatsheet for easier writing of data positions in neural net training
 def output_cheatsheet(data):
@@ -139,19 +147,30 @@ def output_cheatsheet(data):
 
 # gets data, processes and outputs for gated station entries and delay counts
 def main():
+    split_prop = 0.8
     print_debug("Gated Station Entries:")
     gse = gse_data()
     print_debug("Delay:")
     delay = delay_data()
     print_debug("Additional Data:")
     additional = additional_data()
-    scaled = scaled_data(additional)
 
-    gse_result = merge_func([gse,additional,scaled])
-    gse_result.to_csv("../../data/analysis_data/GSE_inputs.csv")
-    output_cheatsheet(gse_result)
-    delay_result = merge_func([delay,additional,scaled])
-    delay_result.to_csv("../../data/analysis_data/delay_inputs.csv")
-    output_cheatsheet(delay_result)
+    gse_result = merge_func([gse,additional])
+    gse_train,gse_test = split_data(gse_result,split_prop)
+    gse_train_scaled,gse_test_scaled = scaled_data(gse_train.iloc[:,1:],gse_test.iloc[:,1:])
+    gse_train_result = merge_func([gse_train,gse_train_scaled])
+    gse_train_result.to_csv("../../data/analysis_data/GSE_train_inputs.csv")
+    gse_test_result = merge_func([gse_test,gse_test_scaled])
+    gse_test_result.to_csv("../../data/analysis_data/GSE_test_inputs.csv")
+    output_cheatsheet(gse_train_result)
+
+    delay_result = merge_func([delay,additional])
+    delay_train,delay_test = split_data(delay_result,split_prop)
+    delay_train_scaled,delay_test_scaled = scaled_data(delay_train.iloc[:,1:],delay_test.iloc[:,1:])
+    delay_train_result = merge_func([delay_train,delay_train_scaled])
+    delay_train_result.to_csv("../../data/analysis_data/delay_train_inputs.csv")
+    delay_test_result = merge_func([delay_test,delay_test_scaled])
+    delay_test_result.to_csv("../../data/analysis_data/delay_test_inputs.csv")
+    output_cheatsheet(delay_train_result)
 
 main()

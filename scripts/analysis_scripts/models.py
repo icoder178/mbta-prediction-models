@@ -86,8 +86,8 @@ corresponding_cols = {
     "scaled season OHE": [32,33,34,35]
 }
 
-# read analysis data and convert into format required for ML training
-def process_data(_source,_input_rows,_input_len,_output_len,_input_cols,_output_cols):
+# read 1 analysis data file and convert into format required for ML training
+def process_single_data(_source,_input_rows,_input_len,_output_len,_input_cols,_output_cols):
     df = pd.read_csv(_source).to_numpy()
     data_len = len(df)-_input_rows
     input = np.ones((data_len,_input_len))
@@ -106,21 +106,24 @@ def process_data(_source,_input_rows,_input_len,_output_len,_input_cols,_output_
             cnt += 1
         input[i] = input_curr
         output[i] = output_curr
-    if sys.argv[4] != "NO_BOOTSTRAP":
-        random.seed(sys.argv[4])
-        selections = np.array([random.randint(0,len(input)-1) for _ in range(len(input))])
-        selections.sort()
-        input = input[selections]
-        output = output[selections]
     return input,output
 
-# split data into train and test sets
-def split_data(input,output,prop):
-    input_split = round(prop*len(input))
-    _input = np.split(input,[input_split])
-    output_split = round(prop*len(output))
-    _output = np.split(output,[output_split])
-    return _input[0],_input[1],_output[0],_output[1]
+# read train and test analysis data and convert into format required for ML training
+def process_data(_train_source,_test_source,_input_rows,_input_len,_output_len,_input_cols,_output_cols):
+    train_input,train_output = process_single_data(_train_source,_input_rows,_input_len,_output_len,_input_cols,_output_cols)
+    test_input,test_output = process_single_data(_test_source,_input_rows,_input_len,_output_len,_input_cols,_output_cols)
+    if sys.argv[3] != "NO_BOOTSTRAP":
+        random.seed(sys.argv[3]+" train")
+        selections = np.array([random.randint(0,len(train_input)-1) for _ in range(len(train_input))])
+        selections.sort()
+        train_input = train_input[selections]
+        train_output = train_output[selections]
+        random.seed(sys.argv[3]+" test")
+        selections = np.array([random.randint(0,len(test_input)-1) for _ in range(len(test_input))])
+        selections.sort()
+        test_input = test_input[selections]
+        test_output = test_output[selections]
+    return train_input,test_input,train_output,test_output
 
 # train model
 def train_model(input,output,base_model):
@@ -136,24 +139,22 @@ def test_model(input,output,model):
 
 # try running model with some set of specs
 # return rmse, model
-def try_running(_source,
+def try_running(_train_source,
+                _test_source,
                 _input_rows,
                 _input_cols,
                 _output_cols,
                 _input_len,
                 _output_len,
-                _split_prop,
                 _base_model):
-    raw_input,raw_output = process_data(_source,_input_rows,_input_len,_output_len,_input_cols,_output_cols)
-    train_input,test_input,train_output,test_output = split_data(raw_input,raw_output,_split_prop)
+    train_input,test_input,train_output,test_output = process_data(_train_source,_test_source,_input_rows,_input_len,_output_len,_input_cols,_output_cols)
     current_model = train_model(train_input,train_output,_base_model)
     rmse = test_model(test_input,test_output,current_model)
     return rmse,current_model
 
 # run given an array of strings corresponding to inputs
 # return rmse, model, output string
-def run_by_name(_source,_inputs,_model_name,_base_model):
-    current_source = _source
+def run_by_name(_train_source,_test_source,_inputs,_model_name,_base_model):
     current_model = _base_model
     for input_name in _inputs:
         if input_name not in corresponding_cols:
@@ -168,13 +169,13 @@ def run_by_name(_source,_inputs,_model_name,_base_model):
     for input_name in _inputs:
         input_cols += corresponding_cols[input_name]
     rmse, result_model = try_running(
-    _source = current_source,
+    _train_source = _train_source,
+    _test_source = _test_source,
     _input_rows = int(sys.argv[2]),
     _input_cols = input_cols,
     _output_cols = [1],
     _input_len = len(input_cols)*int(sys.argv[2]),
     _output_len = 1,
-    _split_prop = float(sys.argv[3]),
     _base_model = current_model
     )
     rmse = float(rmse)
@@ -183,76 +184,76 @@ def run_by_name(_source,_inputs,_model_name,_base_model):
 
 # run a series of tests with differing specs on the same model
 # return .out file output, data on best model, best model
-def run_tests(_source,_model_name,_model):
+def run_tests(_train_source,_test_source,_model_name,_model):
     results = []
     # test with no additional data
-    results.append(run_by_name(_source,["target metric"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric"],_model_name,copy.deepcopy(_model))
                    +["target metric"])
 
     # test with all additional data
-    results.append(run_by_name(_source,["target metric","day of week","season","weather"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","day of week","season","weather"],_model_name,copy.deepcopy(_model))
                    +["target metric","day of week","season","weather"])
-    results.append(run_by_name(_source,["target metric","day of week OHE","season OHE","weather"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","day of week OHE","season OHE","weather"],_model_name,copy.deepcopy(_model))
                    +["target metric","day of week OHE","season OHE","weather"])
-    results.append(run_by_name(_source,["target metric","scaled day of week","scaled season","scaled weather"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","scaled day of week","scaled season","scaled weather"],_model_name,copy.deepcopy(_model))
                    +["target metric","scaled day of week","scaled season","scaled weather"])
-    results.append(run_by_name(_source,["target metric","scaled day of week OHE","scaled season OHE","scaled weather"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","scaled day of week OHE","scaled season OHE","scaled weather"],_model_name,copy.deepcopy(_model))
                    +["target metric","scaled day of week OHE","scaled season OHE","scaled weather"])
 
     # test with additional day of week data
-    results.append(run_by_name(_source,["target metric","day of week"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","day of week"],_model_name,copy.deepcopy(_model))
                    +["target metric","day of week"])
-    results.append(run_by_name(_source,["target metric","day of week OHE"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","day of week OHE"],_model_name,copy.deepcopy(_model))
                    +["target metric","day of week OHE"])
-    results.append(run_by_name(_source,["target metric","scaled day of week"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","scaled day of week"],_model_name,copy.deepcopy(_model))
                    +["target metric","scaled day of week"])
-    results.append(run_by_name(_source,["target metric","scaled day of week OHE"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","scaled day of week OHE"],_model_name,copy.deepcopy(_model))
                    +["target metric","scaled day of week OHE"])
 
     # test with additional season data
-    results.append(run_by_name(_source,["target metric","season"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","season"],_model_name,copy.deepcopy(_model))
                    +["target metric","season"])
-    results.append(run_by_name(_source,["target metric","season OHE"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","season OHE"],_model_name,copy.deepcopy(_model))
                    +["target metric","season OHE"])
-    results.append(run_by_name(_source,["target metric","scaled season"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","scaled season"],_model_name,copy.deepcopy(_model))
                    +["target metric","scaled season"])
-    results.append(run_by_name(_source,["target metric","scaled season OHE"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","scaled season OHE"],_model_name,copy.deepcopy(_model))
                    +["target metric","scaled season OHE"])
 
     # test with additional weather data
-    results.append(run_by_name(_source,["target metric","weather"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","weather"],_model_name,copy.deepcopy(_model))
                    +["target metric","weather"])
-    results.append(run_by_name(_source,["target metric","scaled weather"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","scaled weather"],_model_name,copy.deepcopy(_model))
                    +["target metric","scaled weather"])
 
     # test with additional day of week, season data
-    results.append(run_by_name(_source,["target metric","day of week","season"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","day of week","season"],_model_name,copy.deepcopy(_model))
                    +["target metric","day of week","season"])
-    results.append(run_by_name(_source,["target metric","day of week OHE","season OHE"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","day of week OHE","season OHE"],_model_name,copy.deepcopy(_model))
                    +["target metric","day of week OHE","season OHE"])
-    results.append(run_by_name(_source,["target metric","scaled day of week","scaled season"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","scaled day of week","scaled season"],_model_name,copy.deepcopy(_model))
                    +["target metric","scaled day of week","scaled season"])
-    results.append(run_by_name(_source,["target metric","scaled day of week OHE","scaled season OHE"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","scaled day of week OHE","scaled season OHE"],_model_name,copy.deepcopy(_model))
                    +["target metric","scaled day of week OHE","scaled season OHE"])
 
     # test with additional day of week, weather data
-    results.append(run_by_name(_source,["target metric","day of week","weather"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","day of week","weather"],_model_name,copy.deepcopy(_model))
                    +["target metric","day of week","weather"])
-    results.append(run_by_name(_source,["target metric","day of week OHE","weather"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","day of week OHE","weather"],_model_name,copy.deepcopy(_model))
                    +["target metric","day of week OHE","weather"])
-    results.append(run_by_name(_source,["target metric","scaled day of week","scaled weather"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","scaled day of week","scaled weather"],_model_name,copy.deepcopy(_model))
                    +["target metric","scaled day of week","scaled weather"])
-    results.append(run_by_name(_source,["target metric","scaled day of week OHE","scaled weather"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","scaled day of week OHE","scaled weather"],_model_name,copy.deepcopy(_model))
                    +["target metric","scaled day of week OHE","scaled weather"])
     
     # test with additional season, weather data
-    results.append(run_by_name(_source,["target metric","season","weather"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","season","weather"],_model_name,copy.deepcopy(_model))
                    +["target metric","season","weather"])
-    results.append(run_by_name(_source,["target metric","season OHE","weather"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","season OHE","weather"],_model_name,copy.deepcopy(_model))
                    +["target metric","season OHE","weather"])
-    results.append(run_by_name(_source,["target metric","scaled season","scaled weather"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","scaled season","scaled weather"],_model_name,copy.deepcopy(_model))
                    +["target metric","scaled season","scaled weather"])
-    results.append(run_by_name(_source,["target metric","scaled season OHE","scaled weather"],_model_name,copy.deepcopy(_model))
+    results.append(run_by_name(_train_source,_test_source,["target metric","scaled season OHE","scaled weather"],_model_name,copy.deepcopy(_model))
                    +["target metric","scaled season OHE","scaled weather"])
 
     descriptions = ""
@@ -281,12 +282,12 @@ def main():
     target_path = model_dict[sys.argv[1]][0]
     target_model = model_dict[sys.argv[1]][1]
     descriptions = "GSE data:\n"
-    current_desc,gse_model_data,gse_model,gse_rmse = run_tests("../../data/analysis_data/GSE_inputs.csv",target_name,target_model)
+    current_desc,gse_model_data,gse_model,gse_rmse = run_tests("../../data/analysis_data/GSE_train_inputs.csv","../../data/analysis_data/GSE_test_inputs.csv",target_name,target_model)
     descriptions += current_desc+"Delay data:\n"
-    current_desc,delay_model_data,delay_model,delay_rmse = run_tests("../../data/analysis_data/delay_inputs.csv",target_name,target_model)
+    current_desc,delay_model_data,delay_model,delay_rmse = run_tests("../../data/analysis_data/delay_train_inputs.csv","../../data/analysis_data/delay_test_inputs.csv",target_name,target_model)
     descriptions += current_desc
 
-    if sys.argv[4] == 'NO_BOOTSTRAP':
+    if sys.argv[3] == 'NO_BOOTSTRAP':
         #output readable results
         with open(target_path+"_readable.txt","w") as f:
             print(descriptions,end='',file=f)

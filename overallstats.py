@@ -5,8 +5,14 @@ from sklearn.mixture import GaussianMixture
 import numpy as np
 from scipy.optimize import curve_fit
 
-delay_inputs=pd.read_csv('~/mbta-prediction-models/data/analysis_data/delay_inputs.csv')
-gse_inputs=pd.read_csv('~/mbta-prediction-models/data/analysis_data/GSE_inputs.csv')
+delay_inputs=pd.concat([
+    pd.read_csv('~/mbta-prediction-models/data/analysis_data/delay_train_inputs.csv'),
+    pd.read_csv('~/mbta-prediction-models/data/analysis_data/delay_test_inputs.csv')
+],ignore_index=True)
+gse_inputs=pd.concat([
+    pd.read_csv('~/mbta-prediction-models/data/analysis_data/GSE_train_inputs.csv'),
+    pd.read_csv('~/mbta-prediction-models/data/analysis_data/GSE_test_inputs.csv')
+],ignore_index=True)
 
 
 #Rice Rule- 2*n^(1/3) for bins
@@ -50,7 +56,6 @@ y=gamma.pdf(x,a=shape,loc=loc,scale=scale)
 print(shape,loc,scale)
 plt.plot(x,y)
 plt.show()
-
 
 
 

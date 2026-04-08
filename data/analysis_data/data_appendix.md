@@ -1,6 +1,6 @@
 # Analysis Data
-Processed data contains two files; delay_inputs.csv and GSE_inputs.csv. They contain data for delay count prediction and data for gated station entry prediction, respectively. Both contain each day where data is available for all metrics. For delay inputs, this is from January 1, 2019 to July 29, 2023 (1671 days); for gated station entry inputs, this is from January 1, 2014 to June 30, 2025 (4199 days).
-Columns contain, for both files:
+Processed data contains four files; delay_train_inputs.csv, delay_test_inputs.csv, GSE_train_inputs.csv and GSE_test_inputs.csv. They contain train and test data for delay count prediction and gated station entry prediction, respectively. All files contain each day where data is available for the target metric and all additional metrics. For delay inputs, the full date range is from January 1, 2019 to July 29, 2023 (1671 days); for gated station entry inputs, the full date range is from January 1, 2014 to June 30, 2025 (4199 days). Each task is split chronologically into 80% train rows and 20% test rows before scaling. Scaled columns in the test files are transformed using the scaler fit on the corresponding train file.
+Columns contain, for all four files:
 * Column 1: Date, in format YYYY-MM-DD; labeled ```Date```.
 * Column 2: The metric to predict, labeled ```Total_Delays``` or ```Gated_Station_Entries``` depending on file.
 * Column 3: Day of week, labeled ```Day_of_Week```. Monday is 0, Tuesday is 1, ... Sunday is 6.

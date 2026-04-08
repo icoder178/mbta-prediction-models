@@ -46,9 +46,9 @@ def display_violin_plot(model, data, raw_data,save_path):
     explainer = shap.Explainer(model.model)
     shap_values = explainer.shap_values(data)
     data_names = []
-    for i in range(1,6):
+    for i in range(1,int(sys.argv[1])+1):
         for x in model.columns:
-            data_names.append(raw_data.columns[x]+f"\n{6-i}d before")
+            data_names.append(raw_data.columns[x]+f"\n{int(sys.argv[1])+1-i}d before")
     plt.figure(figsize=(14,8))
     shap.plots.violin(shap_values,feature_names=data_names,max_display=10,show=False,plot_size=[14,8])
     plt.tick_params(axis='x', labelsize=16)  # Adjust x-axis tick label size
@@ -59,12 +59,12 @@ def display_violin_plot(model, data, raw_data,save_path):
     plt.tight_layout()
     plt.savefig(save_path+"_importance.png")
 
-def find_residuals(_model_path,_metadata_path,_file_path,_test_arr,_name,_save_path):
+def find_residuals(_model_path,_metadata_path,_file_path,_name,_save_path):
     raw_data = pd.read_csv(_file_path)
     residuals = []
     model = PredictiveModel(_model_path,_metadata_path)
     full_inputs = []
-    for test_value in _test_arr:
+    for test_value in range(len(raw_data)-int(sys.argv[1])):
         test_case = raw_data.iloc[test_value:test_value+int(sys.argv[1])]
         test_answer = raw_data.iloc[test_value+int(sys.argv[1]),1]
         input_data = []
@@ -111,22 +111,15 @@ def find_residuals(_model_path,_metadata_path,_file_path,_test_arr,_name,_save_p
 
     print(f"Fitted normal distribution to {_name} predictor: mean {np.mean(residuals)}, stddev {np.std(residuals)}")
 
-def compute_range(_dataset_size,_row_count,_split_prop):
-    data_points = _dataset_size-_row_count
-    train_size = round(_split_prop*data_points)
-    return range(train_size+1,data_points)
-
 def main():
     find_residuals("../../output/data_appendix_output/delay_model.txt",
                 "../../output/data_appendix_output/delay_model_data.txt",
-                "../../data/analysis_data/delay_inputs.csv",
-                compute_range(1671,int(sys.argv[1]),float(sys.argv[2])),
+                "../../data/analysis_data/delay_test_inputs.csv",
                 "Delay",
                 "../../output/results/delay_predictor")
     find_residuals("../../output/data_appendix_output/gse_model.txt",
                 "../../output/data_appendix_output/gse_model_data.txt",
-                "../../data/analysis_data/gse_inputs.csv",
-                compute_range(4199,int(sys.argv[1]),float(sys.argv[2])),
+                "../../data/analysis_data/GSE_test_inputs.csv",
                 "GSE",
                 "../../output/results/gse_predictor")
 
