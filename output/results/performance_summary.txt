@@ -1,0 +1,37 @@
+gse data:
+Data                       Any Data  No Additional Data  Day of Week Data    Season Data   Weather Data
+RandomForest           27712.502373        37164.300026      28280.416376   36926.226885   37551.737240
+GradientBoost          31238.517338        49499.236491      32545.521001   50242.429302   54439.003080
+kNearestNeighbor       35378.125143        35378.125143      35378.125143   35378.125143   35378.125143
+MultilayerPerceptron   35817.512242        39079.617140      38423.345753   38356.794030   36402.657974
+Linear                 52003.752442        52056.600861      53832.260976   52003.752442   53972.718995
+Lasso                  52004.596934        52056.600862      53830.651876   52004.596934   53970.743937
+Ridge                  52005.505489        52056.600861      53800.743254   52005.505489   53968.226737
+MovingAverage          69070.058173        69070.058173      69070.058173   69070.058173   69070.058173
+SupportVector          83756.808982        83756.808982      83762.912374   83762.912466   83781.278464
+Poisson               118447.398554       118447.398554     118447.398554  118447.398554  118447.398554
+
+Delay data:
+Data                   Any Data  No Additional Data  Day of Week Data  Season Data  Weather Data
+MultilayerPerceptron  31.219015           39.343324         31.471150    39.056769     39.877948
+RandomForest          31.332316           38.619134         32.296991    38.777458     39.231266
+GradientBoost         31.839971           39.755887         32.139104    39.365703     42.626480
+Linear                32.247528           45.442109         32.247528    45.409626     45.463943
+Ridge                 32.248358           45.442112         32.248358    45.407137     45.459983
+Lasso                 32.776593           45.450867         32.858929    45.388409     45.343750
+Poisson               34.404814           48.179357         34.404814    47.893612     48.432430
+kNearestNeighbor      40.633853           41.234073         40.917650    40.974853     41.357801
+SupportVector         45.520585           45.520585         46.845220    46.905416     47.392068
+MovingAverage         56.265895           56.265895         56.265895    56.265895     56.265895
+
+Improvement on gated station entry data:
+Percentage improvement off No Additional Data for Any Data: 5.3%.
+Percentage improvement off No Additional Data for Day of Week Data: 3.6%.
+Percentage improvement off No Additional Data for Season Data: 0.1%.
+Percentage improvement off No Additional Data for Weather Data: -1.4%.
+
+Improvement on delay data:
+Percentage improvement off No Additional Data for Any Data: 17.2%.
+Percentage improvement off No Additional Data for Day of Week Data: 16.5%.
+Percentage improvement off No Additional Data for Season Data: -0.0%.
+Percentage improvement off No Additional Data for Weather Data: -1.4%.

@@ -1,56 +1,56 @@
 GSE data:
-Using model (Lasso), inputs of previous 5-day (target metric) to predict target metric: RMSE is 52061.08760394611.
-Using model (Lasso), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 56260.19766647461.
-Using model (Lasso), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 54284.451091602205.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 56257.801884301014.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 54289.558016460855.
-Using model (Lasso), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 55846.405935672585.
-Using model (Lasso), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 53820.5360980749.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 55845.11881508782.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 53821.7934117237.
-Using model (Lasso), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 52009.9970288341.
-Using model (Lasso), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 52168.72105980249.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 52010.08963308442.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 52172.1208186183.
-Using model (Lasso), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 53880.377013180696.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 53878.63959512979.
-Using model (Lasso), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 55819.02714292616.
-Using model (Lasso), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 53961.19846611434.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 55817.8127082835.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 53966.43276714071.
-Using model (Lasso), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 56293.68484161321.
-Using model (Lasso), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 54160.69374636808.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 56291.19115745599.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 54161.76581805111.
-Using model (Lasso), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 53812.340871321714.
-Using model (Lasso), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 53976.09714730141.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 53810.63784070565.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 53977.94520570774.
+Using model (Lasso), inputs of previous 5-day (target metric) to predict target metric: RMSE is 52056.60086245631.
+Using model (Lasso), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 56191.837717110655.
+Using model (Lasso), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 54257.99680992569.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 56189.45088898613.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 54263.153500089116.
+Using model (Lasso), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 55799.48805902781.
+Using model (Lasso), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 53830.65187631326.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 55798.20485011557.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 53831.8966016644.
+Using model (Lasso), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 52004.59693377669.
+Using model (Lasso), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 52166.2676462658.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 52004.69932533514.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 52169.661726473554.
+Using model (Lasso), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 53972.46077611135.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 53970.74393715269.
+Using model (Lasso), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 55770.95820507946.
+Using model (Lasso), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 53971.281924183626.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 55769.75565747061.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 53976.51095675612.
+Using model (Lasso), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 56225.81943143104.
+Using model (Lasso), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 54134.17796253076.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 56223.32673087015.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 54135.275596202075.
+Using model (Lasso), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 53905.79394364104.
+Using model (Lasso), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 54072.80081359772.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 53904.11469280821.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 54074.644149952626.
 Delay data:
-Using model (Lasso), inputs of previous 5-day (target metric) to predict target metric: RMSE is 45.248531047919286.
-Using model (Lasso), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 33.34688133043488.
-Using model (Lasso), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 33.516572824372965.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 33.81433445439972.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 32.591791481136354.
-Using model (Lasso), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 33.351455599804126.
-Using model (Lasso), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 33.57124218641798.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 33.87507542574216.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 32.68050254266194.
-Using model (Lasso), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 45.183789655758545.
-Using model (Lasso), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 45.24853152202806.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 45.18953296886287.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 45.215992339013226.
-Using model (Lasso), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 45.14566545489942.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 45.17680318739931.
-Using model (Lasso), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 33.33459384367598.
-Using model (Lasso), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 33.57124377066037.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 33.86070599767427.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 32.67950855520414.
-Using model (Lasso), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 33.34687629445288.
-Using model (Lasso), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 33.51656998416533.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 33.81922966061228.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 32.59689539892817.
-Using model (Lasso), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 45.142537713342726.
-Using model (Lasso), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 45.14566461164109.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 45.14514777085008.
-Using model (Lasso), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 45.151547478322975.
+Using model (Lasso), inputs of previous 5-day (target metric) to predict target metric: RMSE is 45.45086653451771.
+Using model (Lasso), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 33.52779375721618.
+Using model (Lasso), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 33.70106972595543.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 33.9991008210876.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 32.77659330715737.
+Using model (Lasso), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 33.53184101374265.
+Using model (Lasso), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 33.75385469387907.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 34.059955392112485.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 32.858928675959774.
+Using model (Lasso), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 45.388408915651645.
+Using model (Lasso), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 45.45086700464434.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 45.39200202774411.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 45.42053238932156.
+Using model (Lasso), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 45.343749557186975.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 45.3784761687494.
+Using model (Lasso), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 33.51580641210085.
+Using model (Lasso), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 33.75385628005197.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 34.04446364480538.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 32.853291322464464.
+Using model (Lasso), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 33.52778832461549.
+Using model (Lasso), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 33.701067406208324.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 34.00474598782422.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 32.78451338703056.
+Using model (Lasso), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 45.340355015816.
+Using model (Lasso), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 45.34374968592747.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 45.344302602225156.
+Using model (Lasso), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 45.35212320722977.
