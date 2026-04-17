@@ -22,7 +22,7 @@ def display_ranking_data(data,title,xlabel,ylabel,name):
     # compute order
     mean_values = {x:[0.0,0.0] for x in model_list}
     for i in range(len(data)):
-        if data.iloc[i,2] == 'Any Data':
+        if data.iloc[i,2] == 'Best Added-Feature Set':
             mean_values[data.iloc[i,1]][0] += data.iloc[i,3]
             mean_values[data.iloc[i,1]][1] += 1
     mean_array = []
@@ -33,7 +33,7 @@ def display_ranking_data(data,title,xlabel,ylabel,name):
     for x in mean_array:
         order.append(x[1])
     plt.figure(figsize=(14,8))
-    sns.barplot(data,x='Model',y='RMSE',hue='Data',estimator=np.mean,errorbar=("ci",95),order=order,hue_order=['Any Data','No Additional Data'])
+    sns.barplot(data,x='Model',y='RMSE',hue='Data',estimator=np.mean,errorbar=("ci",95),order=order,hue_order=['Best Added-Feature Set','No Additional Data'])
     sns.despine()
     plt.title(title, fontsize=24)
     plt.xlabel(xlabel, fontsize=18)
@@ -56,7 +56,7 @@ def display_ranking_data(data,title,xlabel,ylabel,name):
     
     # output CIs
     for i in range(0,len(summary),2):
-        print(f"{summary['Model'].iloc[i]}, Any Data: mean {summary['mean'].iloc[i]}, 95% CI [{summary['ci_lower'].iloc[i]}, {summary['ci_upper'].iloc[i]}]")
+        print(f"{summary['Model'].iloc[i]}, Best Added-Feature Set: mean {summary['mean'].iloc[i]}, 95% CI [{summary['ci_lower'].iloc[i]}, {summary['ci_upper'].iloc[i]}]")
         print(f"{summary['Model'].iloc[i+1]}, No Additional Data: mean {summary['mean'].iloc[i+1]}, 95% CI [{summary['ci_lower'].iloc[i+1]}, {summary['ci_upper'].iloc[i+1]}]")
 
 def display_improvement_data(data,name,title):
@@ -91,15 +91,15 @@ def main():
     gse_data = pd.read_csv("../../data/intermediate_data/Bootstrap_gse.csv")
     delay_data = pd.read_csv("../../data/intermediate_data/Bootstrap_delay.csv")
 
-    gse_data_ranking = gse_data[((gse_data['Data'] == 'Any Data') | (gse_data['Data'] == 'No Additional Data'))]
-    delay_data_ranking = delay_data[((delay_data['Data'] == 'Any Data') | (delay_data['Data'] == 'No Additional Data'))]
+    gse_data_ranking = gse_data[((gse_data['Data'] == 'Best Added-Feature Set') | (gse_data['Data'] == 'No Additional Data'))]
+    delay_data_ranking = delay_data[((delay_data['Data'] == 'Best Added-Feature Set') | (delay_data['Data'] == 'No Additional Data'))]
     print("GSE data:")
     display_ranking_data(gse_data_ranking,"Model Performance on Gated Station Entry Data","Model Name","Model RMSE","gse_data")
     print("Delay data:")
     display_ranking_data(delay_data_ranking,"Model Performance on MBTA Delay Data","Model Name","Model RMSE","delay_data")
 
-    gse_data_improvement = gse_data[((gse_data['Data'] != 'Any Data') & (gse_data['Data'] != 'No Additional Data'))]
-    delay_data_improvement = delay_data[((delay_data['Data'] != 'Any Data') & (delay_data['Data'] != 'No Additional Data'))]
+    gse_data_improvement = gse_data[((gse_data['Data'] != 'Best Added-Feature Set') & (gse_data['Data'] != 'No Additional Data'))]
+    delay_data_improvement = delay_data[((delay_data['Data'] != 'Best Added-Feature Set') & (delay_data['Data'] != 'No Additional Data'))]
     print("GSE data:")
     display_improvement_data(gse_data_improvement,"gse_data","GSE Model Improvement Given Additional Data")
     print("Delay data:")

@@ -51,12 +51,12 @@ def find_data():
     gse_array.sort()
     delay_array.sort()
     gse_data = pd.DataFrame()
-    gse_data['Data'] = ['Any Data','No Additional Data','Day of Week Data','Season Data','Weather Data']
+    gse_data['Data'] = ['Best Added-Feature Set','No Additional Data','Day of Week Data','Season Data','Weather Data']
     gse_data = gse_data.set_index('Data')
     for x in gse_array:
         gse_data[x[1][0]] = x[1][1]
     delay_data = pd.DataFrame()
-    delay_data['Data'] = ['Any Data','No Additional Data','Day of Week Data','Season Data','Weather Data']
+    delay_data['Data'] = ['Best Added-Feature Set','No Additional Data','Day of Week Data','Season Data','Weather Data']
     delay_data = delay_data.set_index('Data')
     for x in delay_array:
         delay_data[x[1][0]] = x[1][1]
@@ -67,7 +67,7 @@ def find_data():
 # saves data recieved to bar plot
 def display_data(data,title,xlabel,ylabel,name):
     _data = data.reset_index()
-    _data.columns = ['Data','Any Data','No Additional Data']
+    _data.columns = ['Data','Best Added-Feature Set','No Additional Data']
     _data = _data.melt(id_vars='Data', var_name='Condition', value_name='Value')
     plt.figure(figsize=(14,8))
     sns.barplot(_data,x='Data',y='Value',hue='Condition',errorbar=None)
@@ -84,7 +84,7 @@ def display_data(data,title,xlabel,ylabel,name):
 def compute_improvement(data,name):
     _data = data.transpose()
     _data.iloc[[0,1]] = _data.iloc[[1,0]]
-    _data = _data.rename({'No Additional Data':'Any Data', 'Any Data':'No Additional Data'})
+    _data = _data.rename({'No Additional Data':'Best Added-Feature Set', 'Best Added-Feature Set':'No Additional Data'})
     print(f"\n{name}")
     for i in range(1,len(_data)):
         percentage_value = 100-_data.iloc[i].mean()/_data.iloc[0].mean()*100

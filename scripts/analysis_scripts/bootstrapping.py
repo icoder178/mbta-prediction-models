@@ -44,8 +44,8 @@ def compute_raw_results():
 def write_to_file(data):
     names = [
         "No Additional Data",
-        "Any Data",
-        "Any Data Improvement",
+        "Best Added-Feature Set",
+        "Best Added-Feature Set Improvement",
         "Day of Week Data Improvement",
         "Season Data Improvement",
         "Weather Data Improvement"

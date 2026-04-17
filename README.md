@@ -21,4 +21,5 @@ git clone https://github.com/icoder178/mbta-prediction-models.git &&\
  cd mbta-prediction-models/scripts &&\
  ./master_script.sh /opt/anaconda3/bin/conda 
 ```
+The checked-in weather file is used directly during reproduction; the master script does not fetch weather data from Meteostat.
 Results will appear in output/results; two bar graphs of model performance on the two tasks as well as a table of performance rankings will appear.
