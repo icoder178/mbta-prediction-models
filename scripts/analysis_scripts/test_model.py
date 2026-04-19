@@ -42,7 +42,20 @@ class PredictiveModel:
     def predict(self,data):
         return self.model.predict(np.array(data).reshape(1,len(data)))
 
-def display_violin_plot(model, data, raw_data,save_path):
+# builds lagged model inputs from raw data
+def build_inputs(model, raw_data):
+    full_inputs = []
+    for test_value in range(len(raw_data)-int(sys.argv[1])):
+        test_case = raw_data.iloc[test_value:test_value+int(sys.argv[1])]
+        input_data = []
+        for i in range(int(sys.argv[1])):
+            for j in model.columns:
+                input_data.append(test_case.iloc[i,j])
+        full_inputs.append(input_data)
+    return np.array(full_inputs)
+
+def display_violin_plot(model, raw_data,save_path):
+    data = build_inputs(model,raw_data)
     try:
         explainer = shap.Explainer(model.model)
         shap_values = explainer.shap_values(data)
@@ -63,24 +76,19 @@ def display_violin_plot(model, data, raw_data,save_path):
     plt.tight_layout()
     plt.savefig(save_path+"_importance.png")
 
-def find_residuals(_model_path,_metadata_path,_file_path,_name,_save_path):
+def find_residuals(_model_path,_metadata_path,_file_path,_name,_save_path,_shap_model_path,_shap_metadata_path):
     raw_data = pd.read_csv(_file_path)
     residuals = []
     model = PredictiveModel(_model_path,_metadata_path)
-    full_inputs = []
-    for test_value in range(len(raw_data)-int(sys.argv[1])):
-        test_case = raw_data.iloc[test_value:test_value+int(sys.argv[1])]
+    full_inputs = build_inputs(model,raw_data)
+    for test_value in range(len(full_inputs)):
         test_answer = raw_data.iloc[test_value+int(sys.argv[1]),1]
-        input_data = []
-        cnt = 0
-        for i in range(int(sys.argv[1])):
-            for j in model.columns:
-                input_data.append(test_case.iloc[i,j])
-        full_inputs.append(input_data)
+        input_data = full_inputs[test_value]
         predict_answer = model.predict(input_data)[0]
         residuals.append(predict_answer-test_answer)
-    full_inputs = np.array(full_inputs)
-    display_violin_plot(model,full_inputs,raw_data,_save_path)
+    shap_model = PredictiveModel(_shap_model_path,_shap_metadata_path)
+    print(f"Computing SHAP importance for {_name} using RandomForestRegressor.")
+    display_violin_plot(shap_model,raw_data,_save_path)
     residuals = np.array(residuals)
     
     # basic plot 
@@ -120,12 +128,16 @@ def main():
                 "../../output/data_appendix_output/delay_model_data.txt",
                 "../../data/analysis_data/delay_test_inputs.csv",
                 "Delay",
-                "../../output/results/delay_predictor")
+                "../../output/results/delay_predictor",
+                "../../data/intermediate_data/RandomForest_delay_model.txt",
+                "../../data/intermediate_data/RandomForest_delay_model_data.txt")
     find_residuals("../../output/data_appendix_output/gse_model.txt",
                 "../../output/data_appendix_output/gse_model_data.txt",
                 "../../data/analysis_data/GSE_test_inputs.csv",
                 "GSE",
-                "../../output/results/gse_predictor")
+                "../../output/results/gse_predictor",
+                "../../data/intermediate_data/RandomForest_gse_model.txt",
+                "../../data/intermediate_data/RandomForest_gse_model_data.txt")
 
 if __name__ == "__main__":
     main()

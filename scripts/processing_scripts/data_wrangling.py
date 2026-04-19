@@ -116,6 +116,12 @@ def split_data(data,prop):
     data_split = round(prop*len(data))
     return data.iloc[:data_split].copy(),data.iloc[data_split:].copy()
 
+# splits data into inner-train, validation, and test sets
+def split_tuning_data(data,inner_prop,train_prop):
+    inner_split = round(inner_prop*len(data))
+    train_split = round(train_prop*len(data))
+    return data.iloc[:inner_split].copy(),data.iloc[inner_split:train_split].copy(),data.iloc[train_split:].copy()
+
 # collects all additional data and merges it together
 def additional_data():
     weather = weather_data()
@@ -139,6 +145,15 @@ def scaled_data(train_data,test_data):
     test_scaled.index = test_data.index
     return train_scaled,test_scaled
 
+# scales inner-train and validation data recieved using inner-train data only
+def scaled_tuning_data(inner_data,validation_data):
+    scaler = StandardScaler()
+    inner_scaled = pd.DataFrame(scaler.fit_transform(inner_data),columns="S_"+inner_data.columns)
+    inner_scaled.index = inner_data.index
+    validation_scaled = pd.DataFrame(scaler.transform(validation_data),columns="S_"+validation_data.columns)
+    validation_scaled.index = validation_data.index
+    return inner_scaled,validation_scaled
+
 # cheatsheet for easier writing of data positions in neural net training
 def output_cheatsheet(data):
     if "no_cheatsheet" in sys.argv:
@@ -149,6 +164,7 @@ def output_cheatsheet(data):
 
 # gets data, processes and outputs for gated station entries and delay counts
 def main():
+    inner_prop = 0.7
     split_prop = 0.8
     print_debug("Gated Station Entries:")
     gse = gse_data()
@@ -158,6 +174,12 @@ def main():
     additional = additional_data()
 
     gse_result = merge_func([gse,additional])
+    gse_inner_train,gse_validation,_ = split_tuning_data(gse_result,inner_prop,split_prop)
+    gse_inner_train_scaled,gse_validation_scaled = scaled_tuning_data(gse_inner_train.iloc[:,1:],gse_validation.iloc[:,1:])
+    gse_inner_train_result = merge_func([gse_inner_train,gse_inner_train_scaled])
+    gse_inner_train_result.to_csv("../../data/analysis_data/GSE_inner_train_inputs.csv")
+    gse_validation_result = merge_func([gse_validation,gse_validation_scaled])
+    gse_validation_result.to_csv("../../data/analysis_data/GSE_validation_inputs.csv")
     gse_train,gse_test = split_data(gse_result,split_prop)
     gse_train_scaled,gse_test_scaled = scaled_data(gse_train.iloc[:,1:],gse_test.iloc[:,1:])
     gse_train_result = merge_func([gse_train,gse_train_scaled])
@@ -167,6 +189,12 @@ def main():
     output_cheatsheet(gse_train_result)
 
     delay_result = merge_func([delay,additional])
+    delay_inner_train,delay_validation,_ = split_tuning_data(delay_result,inner_prop,split_prop)
+    delay_inner_train_scaled,delay_validation_scaled = scaled_tuning_data(delay_inner_train.iloc[:,1:],delay_validation.iloc[:,1:])
+    delay_inner_train_result = merge_func([delay_inner_train,delay_inner_train_scaled])
+    delay_inner_train_result.to_csv("../../data/analysis_data/delay_inner_train_inputs.csv")
+    delay_validation_result = merge_func([delay_validation,delay_validation_scaled])
+    delay_validation_result.to_csv("../../data/analysis_data/delay_validation_inputs.csv")
     delay_train,delay_test = split_data(delay_result,split_prop)
     delay_train_scaled,delay_test_scaled = scaled_data(delay_train.iloc[:,1:],delay_test.iloc[:,1:])
     delay_train_result = merge_func([delay_train,delay_train_scaled])

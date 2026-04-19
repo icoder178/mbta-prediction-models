@@ -19,11 +19,13 @@ model_list = [
 
 def run_model(index, model, seed):
     result = subprocess.run([f"python -W ignore models.py {model} 5 {seed}"],shell=True,capture_output=True,text=True)
+    if result.returncode != 0:
+        raise RuntimeError(result.stderr)
     values = result.stdout.strip().split()
     return index, values
 
 def compute_raw_results():
-    run_count = 1000
+    run_count = 32*len(model_list)
     worker_count = 16
     check_count = 5
     results = np.zeros((run_count, 12))
