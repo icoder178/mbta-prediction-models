@@ -1,32 +1,48 @@
 #!/bin/bash
 set -e
 # script for running just analysis scripts; run in the directory it is in.
+pids=()
+
+cleanup() {
+  if [ ${#pids[@]} -gt 0 ]; then
+    kill "${pids[@]}" 2> /dev/null || true
+    wait "${pids[@]}" 2> /dev/null || true
+  fi
+  exit 130
+}
+
+wait_for_pids() {
+  for pid in "${pids[@]}"
+  do
+    if ! wait "$pid"; then
+      kill "${pids[@]}" 2> /dev/null || true
+      wait "${pids[@]}" 2> /dev/null || true
+      exit 1
+    fi
+  done
+  pids=()
+}
+
+trap cleanup INT TERM
+
 echo "Starting analysis; hyperparameter tuning and model training will occupy significant computational resources"
 # edit if models change
 models=("RandomForest" "Linear" "Ridge" "Lasso" "GradientBoost" "SupportVector" "MultilayerPerceptron" "kNearestNeighbor" "MovingAverage" "Poisson")
 echo "Starting hyperparameter tuning; this will occupy significant computational resources"
-pids=()
 for model in "${models[@]}"
 do
   python -W ignore hyperparameter_tuning.py $model 5 &
   pids+=($!)
 done
-for pid in "${pids[@]}"
-do
-  wait "$pid"
-done
+wait_for_pids
 python combine_tuning_results.py
 echo "hyperparameter tuning done, starting final model training"
-pids=()
 for model in "${models[@]}"
 do
   python -W ignore models.py $model 5 NO_BOOTSTRAP &
   pids+=($!)
 done
-for pid in "${pids[@]}"
-do
-  wait "$pid"
-done
+wait_for_pids
 echo "model training done, outputting final results to output/results/"
 python performance_display.py > ../../output/results/performance_summary.txt
 echo "output done, selecting best model and placing in output/data_appendix_output"
