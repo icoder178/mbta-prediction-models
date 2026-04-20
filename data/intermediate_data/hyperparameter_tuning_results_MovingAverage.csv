@@ -1,0 +1,55 @@
+task,model,feature_set,candidate_index,validation_rmse,params,random_seed,error,selected
+gse,MovingAverage,target metric,0,66558.68584345843,{},3046196711,,True
+gse,MovingAverage,target metric + day of week + season + weather,0,66558.68584345843,{},1388394748,,True
+gse,MovingAverage,target metric + day of week OHE + season OHE + weather,0,66558.68584345843,{},811610440,,True
+gse,MovingAverage,target metric + scaled day of week + scaled season + scaled weather,0,66558.68584345843,{},2900069342,,True
+gse,MovingAverage,target metric + scaled day of week OHE + scaled season OHE + scaled weather,0,66558.68584345843,{},1618181330,,True
+gse,MovingAverage,target metric + day of week,0,66558.68584345843,{},848257419,,True
+gse,MovingAverage,target metric + day of week OHE,0,66558.68584345843,{},3245127563,,True
+gse,MovingAverage,target metric + scaled day of week,0,66558.68584345843,{},1961782041,,True
+gse,MovingAverage,target metric + scaled day of week OHE,0,66558.68584345843,{},1900049698,,True
+gse,MovingAverage,target metric + season,0,66558.68584345843,{},3154455443,,True
+gse,MovingAverage,target metric + season OHE,0,66558.68584345843,{},101333120,,True
+gse,MovingAverage,target metric + scaled season,0,66558.68584345843,{},675373411,,True
+gse,MovingAverage,target metric + scaled season OHE,0,66558.68584345843,{},402308384,,True
+gse,MovingAverage,target metric + weather,0,66558.68584345843,{},3946145187,,True
+gse,MovingAverage,target metric + scaled weather,0,66558.68584345843,{},363193595,,True
+gse,MovingAverage,target metric + day of week + season,0,66558.68584345843,{},2348169770,,True
+gse,MovingAverage,target metric + day of week OHE + season OHE,0,66558.68584345843,{},1884471280,,True
+gse,MovingAverage,target metric + scaled day of week + scaled season,0,66558.68584345843,{},2857976175,,True
+gse,MovingAverage,target metric + scaled day of week OHE + scaled season OHE,0,66558.68584345843,{},1748507055,,True
+gse,MovingAverage,target metric + day of week + weather,0,66558.68584345843,{},4269845329,,True
+gse,MovingAverage,target metric + day of week OHE + weather,0,66558.68584345843,{},2133184183,,True
+gse,MovingAverage,target metric + scaled day of week + scaled weather,0,66558.68584345843,{},1453270777,,True
+gse,MovingAverage,target metric + scaled day of week OHE + scaled weather,0,66558.68584345843,{},2878302381,,True
+gse,MovingAverage,target metric + season + weather,0,66558.68584345843,{},694682262,,True
+gse,MovingAverage,target metric + season OHE + weather,0,66558.68584345843,{},3076942560,,True
+gse,MovingAverage,target metric + scaled season + scaled weather,0,66558.68584345843,{},1723212520,,True
+gse,MovingAverage,target metric + scaled season OHE + scaled weather,0,66558.68584345843,{},3280122565,,True
+delay,MovingAverage,target metric,0,42.69178080319616,{},357441280,,True
+delay,MovingAverage,target metric + day of week + season + weather,0,42.69178080319616,{},458601151,,True
+delay,MovingAverage,target metric + day of week OHE + season OHE + weather,0,42.69178080319616,{},3578848514,,True
+delay,MovingAverage,target metric + scaled day of week + scaled season + scaled weather,0,42.69178080319616,{},4058208903,,True
+delay,MovingAverage,target metric + scaled day of week OHE + scaled season OHE + scaled weather,0,42.69178080319616,{},4202782549,,True
+delay,MovingAverage,target metric + day of week,0,42.69178080319616,{},159288800,,True
+delay,MovingAverage,target metric + day of week OHE,0,42.69178080319616,{},3861342333,,True
+delay,MovingAverage,target metric + scaled day of week,0,42.69178080319616,{},598389194,,True
+delay,MovingAverage,target metric + scaled day of week OHE,0,42.69178080319616,{},3321936151,,True
+delay,MovingAverage,target metric + season,0,42.69178080319616,{},2639020619,,True
+delay,MovingAverage,target metric + season OHE,0,42.69178080319616,{},3041039038,,True
+delay,MovingAverage,target metric + scaled season,0,42.69178080319616,{},3463047947,,True
+delay,MovingAverage,target metric + scaled season OHE,0,42.69178080319616,{},184302011,,True
+delay,MovingAverage,target metric + weather,0,42.69178080319616,{},2179311027,,True
+delay,MovingAverage,target metric + scaled weather,0,42.69178080319616,{},4294655344,,True
+delay,MovingAverage,target metric + day of week + season,0,42.69178080319616,{},4149798194,,True
+delay,MovingAverage,target metric + day of week OHE + season OHE,0,42.69178080319616,{},4030577735,,True
+delay,MovingAverage,target metric + scaled day of week + scaled season,0,42.69178080319616,{},816864763,,True
+delay,MovingAverage,target metric + scaled day of week OHE + scaled season OHE,0,42.69178080319616,{},245724277,,True
+delay,MovingAverage,target metric + day of week + weather,0,42.69178080319616,{},3193081950,,True
+delay,MovingAverage,target metric + day of week OHE + weather,0,42.69178080319616,{},3595511383,,True
+delay,MovingAverage,target metric + scaled day of week + scaled weather,0,42.69178080319616,{},3635559862,,True
+delay,MovingAverage,target metric + scaled day of week OHE + scaled weather,0,42.69178080319616,{},2995201827,,True
+delay,MovingAverage,target metric + season + weather,0,42.69178080319616,{},2411776505,,True
+delay,MovingAverage,target metric + season OHE + weather,0,42.69178080319616,{},542412433,,True
+delay,MovingAverage,target metric + scaled season + scaled weather,0,42.69178080319616,{},2278510699,,True
+delay,MovingAverage,target metric + scaled season OHE + scaled weather,0,42.69178080319616,{},1411557477,,True

@@ -1,0 +1,55 @@
+task,model,feature_set,candidate_index,validation_rmse,params,random_seed,error,selected
+gse,Linear,target metric,0,51760.527370462325,{},2942291020,,True
+gse,Linear,target metric + day of week + season + weather,0,59535.055516448265,{},1865051500,,True
+gse,Linear,target metric + day of week OHE + season OHE + weather,0,59210.09069665358,{},810844536,,True
+gse,Linear,target metric + scaled day of week + scaled season + scaled weather,0,59535.055515826,{},2398434108,,True
+gse,Linear,target metric + scaled day of week OHE + scaled season OHE + scaled weather,0,59210.09069953526,{},708813865,,True
+gse,Linear,target metric + day of week,0,60553.99969152365,{},2777128349,,True
+gse,Linear,target metric + day of week OHE,0,59843.21147888897,{},2396080841,,True
+gse,Linear,target metric + scaled day of week,0,60553.99969149714,{},2154604570,,True
+gse,Linear,target metric + scaled day of week OHE,0,59843.21147945145,{},2639429895,,True
+gse,Linear,target metric + season,0,51750.18312626264,{},2779834208,,True
+gse,Linear,target metric + season OHE,0,51646.03614611626,{},1715123551,,True
+gse,Linear,target metric + scaled season,0,51750.183126433905,{},677388467,,True
+gse,Linear,target metric + scaled season OHE,0,51646.03614616487,{},893477125,,True
+gse,Linear,target metric + weather,0,51795.73854663171,{},3662453293,,True
+gse,Linear,target metric + scaled weather,0,51795.7385466073,{},1096962105,,True
+gse,Linear,target metric + day of week + season,0,60646.673005793426,{},1827569827,,True
+gse,Linear,target metric + day of week OHE + season OHE,0,60070.98779011813,{},2074004420,,True
+gse,Linear,target metric + scaled day of week + scaled season,0,60646.673006185076,{},3347626792,,True
+gse,Linear,target metric + scaled day of week OHE + scaled season OHE,0,60070.98779098783,{},2719047530,,True
+gse,Linear,target metric + day of week + weather,0,59445.327733651255,{},2365269492,,True
+gse,Linear,target metric + day of week OHE + weather,0,58932.93669177463,{},2327841015,,True
+gse,Linear,target metric + scaled day of week + scaled weather,0,59445.32773393238,{},1489391921,,True
+gse,Linear,target metric + scaled day of week OHE + scaled weather,0,58932.93669292208,{},1565739137,,True
+gse,Linear,target metric + season + weather,0,51717.3103491008,{},1330357948,,True
+gse,Linear,target metric + season OHE + weather,0,51617.633753740396,{},2784225494,,True
+gse,Linear,target metric + scaled season + scaled weather,0,51717.31034908937,{},3772205378,,True
+gse,Linear,target metric + scaled season OHE + scaled weather,0,51617.633753842805,{},3487278744,,True
+delay,Linear,target metric,0,35.34072822602896,{},2416487344,,True
+delay,Linear,target metric + day of week + season + weather,0,23.309570283976257,{},785335376,,True
+delay,Linear,target metric + day of week OHE + season OHE + weather,0,21.736922921179072,{},2211353861,,True
+delay,Linear,target metric + scaled day of week + scaled season + scaled weather,0,23.309570283976218,{},3605667910,,True
+delay,Linear,target metric + scaled day of week OHE + scaled season OHE + scaled weather,0,21.736922921179048,{},2405353324,,True
+delay,Linear,target metric + day of week,0,22.80442435529337,{},3147775094,,True
+delay,Linear,target metric + day of week OHE,0,21.019916484533574,{},63469083,,True
+delay,Linear,target metric + scaled day of week,0,22.80442435529347,{},3788289057,,True
+delay,Linear,target metric + scaled day of week OHE,0,21.019916484533578,{},1198592242,,True
+delay,Linear,target metric + season,0,35.44727308652676,{},2863928373,,True
+delay,Linear,target metric + season OHE,0,35.393353396199565,{},3934573913,,True
+delay,Linear,target metric + scaled season,0,35.44727308652673,{},1897314631,,True
+delay,Linear,target metric + scaled season OHE,0,35.3933533961995,{},3548448926,,True
+delay,Linear,target metric + weather,0,35.88603351877487,{},262929077,,True
+delay,Linear,target metric + scaled weather,0,35.88603351877483,{},3807377495,,True
+delay,Linear,target metric + day of week + season,0,22.886487834723408,{},1616503521,,True
+delay,Linear,target metric + day of week OHE + season OHE,0,21.174392044740294,{},3495634881,,True
+delay,Linear,target metric + scaled day of week + scaled season,0,22.886487834723287,{},416606370,,True
+delay,Linear,target metric + scaled day of week OHE + scaled season OHE,0,21.174392044740358,{},1514628758,,True
+delay,Linear,target metric + day of week + weather,0,23.23931368945016,{},1020403203,,True
+delay,Linear,target metric + day of week OHE + weather,0,21.659689530109155,{},973464883,,True
+delay,Linear,target metric + scaled day of week + scaled weather,0,23.239313689450068,{},1063898994,,True
+delay,Linear,target metric + scaled day of week OHE + scaled weather,0,21.659689530109166,{},2546992658,,True
+delay,Linear,target metric + season + weather,0,36.026994489178165,{},2047993608,,True
+delay,Linear,target metric + season OHE + weather,0,35.97871338368578,{},1857845016,,True
+delay,Linear,target metric + scaled season + scaled weather,0,36.02699448917812,{},3140064536,,True
+delay,Linear,target metric + scaled season OHE + scaled weather,0,35.97871338368568,{},3004375318,,True

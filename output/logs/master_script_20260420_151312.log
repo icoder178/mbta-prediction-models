@@ -1,0 +1,3 @@
+Logging output to /home/aiden/mbta-prediction-models/output/logs/master_script_20260420_151312.log
+conda environment done, starting data loading
+data loading done, starting data processing; this may take a minute

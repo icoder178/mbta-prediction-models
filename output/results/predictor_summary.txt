@@ -1,3 +1,4 @@
-Unable to compute SHAP importance for MLPRegressor: The passed model is not callable and cannot be analyzed directly with the given masker! Model: MLPRegressor(random_state=0)
-Fitted normal distribution to Delay predictor: mean -1.5628868872755768, stddev 31.179870101679153
-Fitted normal distribution to GSE predictor: mean -971.7012574850296, stddev 27695.46144108384
+Computing SHAP importance for Delay using RandomForestRegressor.
+Fitted normal distribution to Delay predictor: mean -2.242414427366112, stddev 30.222521795759334
+Computing SHAP importance for GSE using RandomForestRegressor.
+Fitted normal distribution to GSE predictor: mean -1552.2023415053302, stddev 27016.110529762085
