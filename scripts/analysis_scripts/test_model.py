@@ -5,7 +5,6 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import root_mean_squared_error
 from sklearn.linear_model import LinearRegression, Ridge, Lasso, PoissonRegressor
 from sklearn.ensemble import GradientBoostingRegressor
-from sklearn.svm import SVR
 from sklearn.neural_network import MLPRegressor
 from sklearn.neighbors import KNeighborsRegressor
 import copy

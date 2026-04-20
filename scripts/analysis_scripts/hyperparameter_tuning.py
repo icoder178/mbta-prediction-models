@@ -33,6 +33,14 @@ tuned_models = {
 
 processed_data = {}
 
+display_names = {
+    "SupportVector": "Linear Support Vector Regression"
+}
+
+# returns user-facing model name
+def display_model_name(_model_name):
+    return display_names.get(_model_name,_model_name)
+
 # returns stable deterministic seed
 def stable_seed(*parts):
     seed_text = "|".join([str(part) for part in parts])
@@ -95,19 +103,9 @@ def sample_hyperparameters(_model_name,rng):
         })
         return params
     if _model_name == "SupportVector":
-        kernel_sample = rng.random()
-        if kernel_sample < 0.70:
-            kernel = "rbf"
-        elif kernel_sample < 0.90:
-            kernel = "linear"
-        else:
-            kernel = "poly"
         return {
-            "kernel": kernel,
             "C": loguniform(rng,1e-2,1e2),
-            "epsilon": loguniform(rng,1e-3,1e1),
-            "gamma": rng.choice(["scale","auto"]).item(),
-            "degree": int(rng.choice([2,3,4]).item())
+            "epsilon": loguniform(rng,1e-3,1e1)
         }
     if _model_name == "MultilayerPerceptron":
         if rng.random() < 2/3:
@@ -175,7 +173,7 @@ def tune_feature_set(_model_name,_base_model,_task_name,_train_source,_validatio
         rng = np.random.default_rng(current_seed)
         params = sample_hyperparameters(_model_name,rng)
         if count > 1:
-            print(f"Tuning {_model_name}, {_task_name}, {feature_name}, candidate {i+1}/{count}",flush=True)
+            print(f"Tuning {display_model_name(_model_name)}, {_task_name}, {feature_name}, candidate {i+1}/{count}",flush=True)
         error = ""
         try:
             rmse = evaluate_candidate(_model_name,_base_model,params,train_input,train_output,validation_input,validation_output)
@@ -212,7 +210,7 @@ def main():
         train_source,validation_source = task_sources[task_name]
         for i in range(len(models.input_sets)):
             current_inputs = models.input_sets[i]
-            print(f"Tuning {target_name}, {task_name}, feature set {i+1}/{len(models.input_sets)}: {models.feature_set_name(current_inputs)}",flush=True)
+            print(f"Tuning {display_model_name(target_name)}, {task_name}, feature set {i+1}/{len(models.input_sets)}: {models.feature_set_name(current_inputs)}",flush=True)
             current_rows,current_selected = tune_feature_set(
                 target_name,
                 target_model,
@@ -229,7 +227,7 @@ def main():
     os.makedirs("../../data/intermediate_data",exist_ok=True)
     pd.DataFrame(result_rows).to_csv(f"../../data/intermediate_data/hyperparameter_tuning_results_{target_name}.csv",index=False)
     pd.DataFrame(selected_rows).to_csv(f"../../data/intermediate_data/selected_hyperparameters_{target_name}.csv",index=False)
-    print(f"{target_name} tuning done!",flush=True)
+    print(f"{display_model_name(target_name)} tuning done!",flush=True)
 
 if __name__ == "__main__":
     main()

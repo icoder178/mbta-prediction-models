@@ -1,10 +1,21 @@
 #!/bin/bash
 set -e
-# Runs only SupportVector hyperparameter tuning. Run from any directory.
+# Runs only Linear Support Vector Regression hyperparameter tuning. Run from any directory.
 
 lookback="${1:-5}"
 script_dir="$(cd "$(dirname "$0")" && pwd)"
 cd "$script_dir"
+pid=""
+
+cleanup() {
+  if [ -n "$pid" ]; then
+    kill "$pid" 2> /dev/null || true
+    wait "$pid" 2> /dev/null || true
+  fi
+  exit 130
+}
+
+trap cleanup INT TERM
 
 required_files=(
   "../../data/analysis_data/GSE_inner_train_inputs.csv"
@@ -23,11 +34,15 @@ do
 done
 
 start_time="$(date +%s)"
-echo "Starting SupportVector tuning only, lookback=${lookback}."
-python -u -W ignore hyperparameter_tuning.py SupportVector "$lookback"
+echo "Starting Linear Support Vector Regression tuning only, lookback=${lookback}."
+python -u -W ignore hyperparameter_tuning.py SupportVector "$lookback" &
+pid=$!
+wait "$pid"
+pid=""
 end_time="$(date +%s)"
 
-echo "SupportVector tuning done in $((end_time-start_time)) seconds."
+echo "Linear Support Vector Regression tuning done in $((end_time-start_time)) seconds."
 echo "Outputs:"
+echo "The output files keep the internal SupportVector prefix for compatibility:"
 echo "../../data/intermediate_data/hyperparameter_tuning_results_SupportVector.csv"
 echo "../../data/intermediate_data/selected_hyperparameters_SupportVector.csv"

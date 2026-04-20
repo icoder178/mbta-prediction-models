@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import root_mean_squared_error
 from sklearn.linear_model import LinearRegression, Ridge, Lasso, PoissonRegressor
 from sklearn.ensemble import GradientBoostingRegressor
-from sklearn.svm import SVR
+from sklearn.svm import LinearSVR
 from sklearn.neural_network import MLPRegressor
 from sklearn.neighbors import KNeighborsRegressor
 import copy
@@ -53,7 +53,7 @@ model_dict = {
     ),
     "SupportVector": (
         "../../data/intermediate_data/SupportVector",
-        SVR()
+        LinearSVR(random_state=0)
     ),
     "MultilayerPerceptron": (
         "../../data/intermediate_data/MultilayerPerceptron",
@@ -120,6 +120,14 @@ input_sets = [
 ]
 
 selected_hyperparameters = {}
+
+display_names = {
+    "SupportVector": "Linear Support Vector Regression"
+}
+
+# returns user-facing model name
+def display_model_name(_model_name):
+    return display_names.get(_model_name,_model_name)
 
 # returns stable name for a feature set
 def feature_set_name(_inputs):
@@ -233,7 +241,7 @@ def run_by_name(_train_source,_test_source,_inputs,_model_name,_base_model,_task
     for input_name in _inputs:
         if input_name not in corresponding_cols:
             raise ValueError("Data name does not exist.")
-    description = f"Using model ({_model_name}), inputs of previous {int(sys.argv[2])}-day ("
+    description = f"Using model ({display_model_name(_model_name)}), inputs of previous {int(sys.argv[2])}-day ("
     for i in range(len(_inputs)):
         if i > 0:
             description += ', '
@@ -317,7 +325,7 @@ def main():
         #output delay model
         joblib.dump(delay_model,target_path+"_delay_model.txt")
 
-        print(f"{target_name} done!")
+        print(f"{display_model_name(target_name)} done!")
     
     else:
         gse_rmse_no_ad = gse_rmse[0] 

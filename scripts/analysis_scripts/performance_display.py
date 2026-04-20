@@ -35,7 +35,7 @@ def find_data():
     ["../../data/intermediate_data/Ridge_readable.txt","Ridge"],
     ["../../data/intermediate_data/Lasso_readable.txt","Lasso"],
     ["../../data/intermediate_data/GradientBoost_readable.txt","GradientBoost"],
-    ["../../data/intermediate_data/SupportVector_readable.txt","SupportVector"],
+    ["../../data/intermediate_data/SupportVector_readable.txt","Linear Support Vector Regression"],
     ["../../data/intermediate_data/MultilayerPerceptron_readable.txt","MultilayerPerceptron"],
     ["../../data/intermediate_data/kNearestNeighbor_readable.txt","kNearestNeighbor"],
     ["../../data/intermediate_data/MovingAverage_readable.txt","MovingAverage"],

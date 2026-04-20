@@ -10,12 +10,22 @@ model_list = [
     "Ridge",
     "Lasso",
     "GradientBoost",
-    "SupportVector",
+    "Linear Support Vector Regression",
     "MultilayerPerceptron",
     "kNearestNeighbor",
     "MovingAverage",
     "Poisson"
 ]
+
+display_names = {
+    "SupportVector": "Linear Support Vector Regression"
+}
+
+# replaces internal model names with display names for plots
+def apply_display_names(data):
+    data = data.copy()
+    data['Model'] = data['Model'].replace(display_names)
+    return data
 
 # saves data recieved to bar plot
 def display_ranking_data(data,title,xlabel,ylabel,name):
@@ -90,6 +100,8 @@ def display_improvement_data(data,name,title):
 def main():
     gse_data = pd.read_csv("../../data/intermediate_data/Bootstrap_gse.csv")
     delay_data = pd.read_csv("../../data/intermediate_data/Bootstrap_delay.csv")
+    gse_data = apply_display_names(gse_data)
+    delay_data = apply_display_names(delay_data)
 
     gse_data_ranking = gse_data[((gse_data['Data'] == 'Best Added-Feature Set') | (gse_data['Data'] == 'No Additional Data'))]
     delay_data_ranking = delay_data[((delay_data['Data'] == 'Best Added-Feature Set') | (delay_data['Data'] == 'No Additional Data'))]
