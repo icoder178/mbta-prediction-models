@@ -94,8 +94,8 @@ def find_residuals(_model_path,_metadata_path,_file_path,_name,_save_path,_shap_
     plt.figure(figsize=(14,8))
     sns.histplot(residuals,stat="density")
     sns.despine()
-    plt.xlabel("Frequency",fontsize=18)
-    plt.ylabel("Residual",fontsize=18)
+    plt.xlabel("Residual",fontsize=18)
+    plt.ylabel("Density",fontsize=18)
     plt.title(f"Residuals for Best Predictor, {_name} Data, Histogram",fontsize=24)
     # add normal pdf
     xmin, xmax = plt.xlim()
@@ -109,8 +109,8 @@ def find_residuals(_model_path,_metadata_path,_file_path,_name,_save_path,_shap_
     plt.figure(figsize=(14,8))
     sns.ecdfplot(residuals)
     sns.despine()
-    plt.xlabel("Frequency",fontsize=18)
-    plt.ylabel("Residual",fontsize=18)
+    plt.xlabel("Residual",fontsize=18)
+    plt.ylabel("Cumulative Probability",fontsize=18)
     plt.title(f"Residuals for Best Predictor, {_name} Data, ECDF",fontsize=24)
     # add normal pdf
     xmin, xmax = plt.xlim()
