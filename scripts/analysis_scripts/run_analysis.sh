@@ -58,7 +58,7 @@ if [ -z "$1" ]; then
   echo "Be warned this takes very long (often hours) on a standard computer."
 else
   echo $1
-  python bootstrapping.py
+  python -u bootstrapping.py
 fi
 echo "bootstrap computation done, building graphs with confidence intervals"
 python bootstrap_display.py > ../../output/results/bootstrap_summary.txt

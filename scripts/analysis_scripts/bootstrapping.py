@@ -40,7 +40,7 @@ def compute_raw_results():
             if cnt%check_count == 0:
                 end_time = time.perf_counter()
                 elapsed_time = end_time - start_time
-                print(f"{cnt}/{run_count} processes done! Time elapsed so far: {round(elapsed_time)}s.")
+                print(f"{cnt}/{run_count} processes done! Time elapsed so far: {round(elapsed_time)}s.",flush=True)
     return results
 
 def write_to_file(data):
