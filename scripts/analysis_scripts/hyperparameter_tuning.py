@@ -109,10 +109,9 @@ def sample_hyperparameters(_model_name,rng):
         }
     if _model_name == "MultilayerPerceptron":
         if rng.random() < 2/3:
-            hidden_layer_sizes = (rounded_loguniform(rng,25,400),)
+            hidden_layer_sizes = (rounded_loguniform(rng,25,100),)
         else:
-            hidden_layer_sizes = (rounded_loguniform(rng,25,400),rounded_loguniform(rng,25,400))
-        batch_size = "auto" if rng.random() < 0.25 else rounded_loguniform(rng,16,128)
+            hidden_layer_sizes = (rounded_loguniform(rng,10,50),rounded_loguniform(rng,10,50))
         return {
             "hidden_layer_sizes": hidden_layer_sizes,
             "activation": rng.choice(["relu","tanh"]).item(),
@@ -120,8 +119,8 @@ def sample_hyperparameters(_model_name,rng):
             "alpha": loguniform(rng,1e-6,1e-2),
             "learning_rate_init": loguniform(rng,1e-5,1e-1),
             "learning_rate": rng.choice(["constant","adaptive"]).item(),
-            "batch_size": batch_size,
-            "max_iter": 100,
+            "batch_size": "auto",
+            "max_iter": 50,
             "early_stopping": False
         }
     if _model_name == "kNearestNeighbor":

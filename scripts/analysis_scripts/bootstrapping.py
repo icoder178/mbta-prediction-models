@@ -25,8 +25,8 @@ def run_model(index, model, seed):
     return index, values
 
 def compute_raw_results():
-    run_count = 32*len(model_list)
-    worker_count = 16
+    run_count = 16*len(model_list)
+    worker_count = 8
     check_count = 5
     results = np.zeros((run_count, 12))
     start_time = time.perf_counter()
