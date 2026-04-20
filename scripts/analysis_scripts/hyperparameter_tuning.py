@@ -174,6 +174,8 @@ def tune_feature_set(_model_name,_base_model,_task_name,_train_source,_validatio
         current_seed = stable_seed(_model_name,_task_name,feature_name,i)
         rng = np.random.default_rng(current_seed)
         params = sample_hyperparameters(_model_name,rng)
+        if count > 1:
+            print(f"Tuning {_model_name}, {_task_name}, {feature_name}, candidate {i+1}/{count}",flush=True)
         error = ""
         try:
             rmse = evaluate_candidate(_model_name,_base_model,params,train_input,train_output,validation_input,validation_output)
@@ -210,7 +212,7 @@ def main():
         train_source,validation_source = task_sources[task_name]
         for i in range(len(models.input_sets)):
             current_inputs = models.input_sets[i]
-            print(f"Tuning {target_name}, {task_name}, feature set {i+1}/{len(models.input_sets)}: {models.feature_set_name(current_inputs)}")
+            print(f"Tuning {target_name}, {task_name}, feature set {i+1}/{len(models.input_sets)}: {models.feature_set_name(current_inputs)}",flush=True)
             current_rows,current_selected = tune_feature_set(
                 target_name,
                 target_model,
@@ -227,7 +229,7 @@ def main():
     os.makedirs("../../data/intermediate_data",exist_ok=True)
     pd.DataFrame(result_rows).to_csv(f"../../data/intermediate_data/hyperparameter_tuning_results_{target_name}.csv",index=False)
     pd.DataFrame(selected_rows).to_csv(f"../../data/intermediate_data/selected_hyperparameters_{target_name}.csv",index=False)
-    print(f"{target_name} tuning done!")
+    print(f"{target_name} tuning done!",flush=True)
 
 if __name__ == "__main__":
     main()

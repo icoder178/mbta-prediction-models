@@ -18,7 +18,7 @@ model_list = [
 ]
 
 def run_model(index, model, seed):
-    result = subprocess.run([f"python -W ignore models.py {model} 5 {seed}"],shell=True,capture_output=True,text=True)
+    result = subprocess.run([f"python -u -W ignore models.py {model} 5 {seed}"],shell=True,capture_output=True,text=True)
     if result.returncode != 0:
         raise RuntimeError(result.stderr)
     values = result.stdout.strip().split()

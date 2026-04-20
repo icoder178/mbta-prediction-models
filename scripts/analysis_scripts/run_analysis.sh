@@ -31,7 +31,7 @@ models=("RandomForest" "Linear" "Ridge" "Lasso" "GradientBoost" "SupportVector" 
 echo "Starting hyperparameter tuning; this will occupy significant computational resources"
 for model in "${models[@]}"
 do
-  python -W ignore hyperparameter_tuning.py $model 5 &
+  python -u -W ignore hyperparameter_tuning.py $model 5 &
   pids+=($!)
 done
 wait_for_pids
@@ -39,7 +39,7 @@ python combine_tuning_results.py
 echo "hyperparameter tuning done, starting final model training"
 for model in "${models[@]}"
 do
-  python -W ignore models.py $model 5 NO_BOOTSTRAP &
+  python -u -W ignore models.py $model 5 NO_BOOTSTRAP &
   pids+=($!)
 done
 wait_for_pids
