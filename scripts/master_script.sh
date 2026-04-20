@@ -1,13 +1,20 @@
 #!/bin/bash
 set -e
 # master script; running it goes straight from raw data to final results. Run in the directory it is in, or else it will not work.
+script_dir="$(cd "$(dirname "$0")" && pwd)"
+repo_root="$(cd "$script_dir/.." && pwd)"
+mkdir -p "$repo_root/output/logs"
+log_file="$repo_root/output/logs/master_script_$(date +%Y%m%d_%H%M%S).log"
+exec > >(tee -a "$log_file") 2>&1
+echo "Logging output to $log_file"
+
 if [ -z "$1" ]; then
   echo "No anaconda path provided. Try:"
   echo "/opt/anaconda3/bin/conda if you have installed Anaconda system-wide on Mac."
   echo "NO_ENV if the environment for this analysis is already up and running."
   exit 1
 fi
-cd ..
+cd "$repo_root"
 if [ "$1" != "NO_ENV" ]; then
     echo "building conda environment"
     __conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
