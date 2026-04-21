@@ -7,7 +7,7 @@ import os
 import hashlib
 import models
 
-candidate_count = 32
+candidate_count = 100
 
 task_sources = {
     "gse": (
