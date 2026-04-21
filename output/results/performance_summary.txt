@@ -1,37 +1,37 @@
 gse data:
 Data                              Best Added-Feature Set  No Additional Data  Day of Week Data    Season Data   Weather Data
-RandomForest                                27060.664446        35416.645728      27119.205593   35729.487538   36301.071954
-GradientBoost                               28045.603680        37247.984215      29973.372429   38755.850704   40825.126642
-Ridge                                       33452.584098        52056.600861      33452.584098   52077.032470   52612.521336
-kNearestNeighbor                            34487.533531        35104.164664      34577.583870   34940.612983   34667.563449
-MultilayerPerceptron                        35186.743448        37535.924900      35504.796271   36977.241509   39791.356742
-Lasso                                       35629.797250        52056.600861      35629.797250   52043.257426   53123.299884
+RandomForest                                26759.932555        36612.667505      26759.932555   35707.126727   36301.071954
+GradientBoost                               28045.603680        40405.864465      28913.573576   37178.378568   42160.088189
+Ridge                                       33447.414048        52056.600861      33452.584098   52077.032470   52612.521336
+kNearestNeighbor                            34577.583043        34577.583881      34577.583790   34577.583863   34667.563449
+MultilayerPerceptron                        35504.796271        39339.899185      35504.796271   36346.326985   41885.160530
+Lasso                                       35911.030859        52056.600861      35911.030859   52042.246071   52079.584821
 Linear                                      52003.752442        52056.600861      53832.260976   52003.752442   53972.718995
-Linear Support Vector Regression            54897.018216        54899.680029      54897.040556   54899.675870   54899.661856
+Linear Support Vector Regression            54897.018227        54899.680034      54897.040561   54899.675870   54899.661867
 MovingAverage                               69070.058173        69070.058173      69070.058173   69070.058173   69070.058173
 Poisson                                    118447.398554       118447.398554     118447.398554  118447.398554  118447.398554
 
 Delay data:
 Data                              Best Added-Feature Set  No Additional Data  Day of Week Data  Season Data  Weather Data
-RandomForest                                   30.305598           37.494844         30.305598    37.832151     38.917173
-MultilayerPerceptron                           30.729472           40.724217         30.932423    40.017434     40.918796
-GradientBoost                                  30.750994           37.218313         30.750994    37.946453     39.049908
+RandomForest                                   30.305598           38.126280         30.305598    37.832151     38.917173
+GradientBoost                                  30.750994           38.997910         30.750994    37.982880     39.577779
+MultilayerPerceptron                           30.954497           39.459227         32.107257    40.017434     41.668474
 Linear                                         32.247528           45.442109         32.247528    45.409626     45.463943
-Ridge                                          32.247528           45.442109         32.247528    45.341266     45.367119
+Ridge                                          32.247528           45.442109         32.247528    45.341524     45.367119
 Lasso                                          32.247553           45.442110         32.247553    45.352873     45.385762
-Linear Support Vector Regression               33.276191           48.631753         33.276191    45.931630     44.506120
-Poisson                                        34.671351           48.179337         34.671351    48.069579     48.392048
-kNearestNeighbor                               35.684654           39.031966         35.684654    38.689165     38.722473
+Linear Support Vector Regression               34.001980           53.893237         34.001980    45.961344     44.506120
+Poisson                                        34.671351           48.179337         34.671351    48.129066     48.392048
+kNearestNeighbor                               35.684654           39.026109         35.684654    38.689165     38.923090
 MovingAverage                                  56.265895           56.265895         56.265895    56.265895     56.265895
 
 Improvement on gated station entry data:
-Percentage improvement off No Additional Data for Best Added-Feature Set: 10.2%.
-Percentage improvement off No Additional Data for Day of Week Data: 9.4%.
-Percentage improvement off No Additional Data for Season Data: -0.2%.
-Percentage improvement off No Additional Data for Weather Data: -1.8%.
+Percentage improvement off No Additional Data for Best Added-Feature Set: 11.1%.
+Percentage improvement off No Additional Data for Day of Week Data: 10.6%.
+Percentage improvement off No Additional Data for Season Data: 1.3%.
+Percentage improvement off No Additional Data for Weather Data: -1.2%.
 
 Improvement on delay data:
-Percentage improvement off No Additional Data for Best Added-Feature Set: 21.5%.
-Percentage improvement off No Additional Data for Day of Week Data: 21.5%.
-Percentage improvement off No Additional Data for Season Data: 0.7%.
-Percentage improvement off No Additional Data for Weather Data: 0.2%.
+Percentage improvement off No Additional Data for Best Added-Feature Set: 22.4%.
+Percentage improvement off No Additional Data for Day of Week Data: 22.2%.
+Percentage improvement off No Additional Data for Season Data: 2.1%.
+Percentage improvement off No Additional Data for Weather Data: 1.3%.

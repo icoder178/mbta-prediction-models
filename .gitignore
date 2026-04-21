@@ -1,3 +1,5 @@
 data/input_data/GSE_by_year
 data/input_data/MBTA_Service_Alerts.csv
 .DS_Store
+output/logs/*
+!output/logs/.gitkeep

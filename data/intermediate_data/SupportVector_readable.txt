@@ -1,56 +1,56 @@
 GSE data:
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric) to predict target metric: RMSE is 54899.68002894974.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 55066.11493079399.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 55067.06951214769.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 54899.34369894014.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 54897.018216361714.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 54898.32635801561.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric) to predict target metric: RMSE is 54899.68003427058.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 55066.10287726578.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 55067.069201616534.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 54899.34371267476.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 54897.01822714378.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 54898.326362942586.
 Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 54899.35751055264.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 54899.36324996106.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 54897.04055618653.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 54899.69702412201.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 54899.68040338844.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 54899.36325808469.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 54897.040561188005.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 54899.6970263305.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 54899.68041862833.
 Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 54899.67865784181.
 Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 54899.67587037487.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 55067.39445223299.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 54899.661855906474.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 55067.393259287855.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 54899.66186701649.
 Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 54898.34336373046.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 54899.357893796194.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 54899.36185179255.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 54899.35790283707.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 54899.36187489906.
 Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 54897.03639451036.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 55066.106240385045.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 55067.087281930064.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 55066.10267723883.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 55067.07065088835.
 Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 54899.34509029128.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 54897.02237436324.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 54897.02239631288.
 Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 55067.399373502485.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 55067.397998480774.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 54899.660486220964.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 54899.65766045792.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 55067.395735447484.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 54899.66049190649.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 54899.65770319019.
 Delay data:
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric) to predict target metric: RMSE is 48.6317528723329.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 44.37617677122282.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 47.26260153558428.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric) to predict target metric: RMSE is 53.893236707462556.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 47.31875206459896.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 109.75512060857754.
 Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 47.09124401371633.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 37.28990026765014.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 47.204001060397694.
 Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 39.28417778520699.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 35.0648742762163.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 36.631946570328786.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 33.27619100846049.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 45.93162977115868.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 45.95952779739702.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 34.001980129657106.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 43.508557609034874.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 34.344996915427444.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 50.844492508858984.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 45.961343946760216.
 Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 47.397905409698296.
 Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 46.303861406411826.
 Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 44.5061200915758.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 45.95895599704307.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 37.64674364000992.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 45.92113516025606.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 45.85087941122662.
 Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 35.97418866551412.
 Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 46.60051722500362.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 35.06004205544781.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 51.68389494969646.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 47.4475951425601.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 37.75227764384823.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 33.48337679196177.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 48.80136555289108.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 47.428280362229735.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 45.81037162815256.
-Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 45.850868116922356.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 40.472973893134146.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 63.09144280761443.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 65.52239282692074.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 37.2194182778628.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 34.12370657014276.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 61.142664961276964.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 45.272774498203134.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 45.8504057648092.
+Using model (Linear Support Vector Regression), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 46.12800472998713.

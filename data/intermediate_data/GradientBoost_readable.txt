@@ -1,56 +1,56 @@
 GSE data:
-Using model (GradientBoost), inputs of previous 5-day (target metric) to predict target metric: RMSE is 37247.984214914904.
-Using model (GradientBoost), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 30726.982849371914.
+Using model (GradientBoost), inputs of previous 5-day (target metric) to predict target metric: RMSE is 40405.86446506789.
+Using model (GradientBoost), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 31546.62720944486.
 Using model (GradientBoost), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 32965.24406253308.
 Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 31014.65687420211.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 31351.965372814815.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 30046.33174627914.
 Using model (GradientBoost), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 29973.37242901047.
-Using model (GradientBoost), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 31624.403929099426.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 31549.622291632855.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 32506.227914879397.
-Using model (GradientBoost), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 38917.28609892276.
-Using model (GradientBoost), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 47454.16129537432.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 38755.850703953125.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 43709.04806907825.
-Using model (GradientBoost), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 40825.12664194754.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 46729.50925920648.
+Using model (GradientBoost), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 28913.573576426803.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 30589.479607470093.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 29919.734219991686.
+Using model (GradientBoost), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 37271.93560443809.
+Using model (GradientBoost), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 37178.37856752391.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 38140.94262400015.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 40090.181899849165.
+Using model (GradientBoost), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 43176.35772459646.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 42160.08818930302.
 Using model (GradientBoost), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 28045.603679676842.
 Using model (GradientBoost), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 29518.794196321614.
 Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 28940.823554118928.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 34575.922763776405.
-Using model (GradientBoost), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 34485.87139098949.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 31142.88288241626.
+Using model (GradientBoost), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 30065.724394505567.
 Using model (GradientBoost), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 30294.214421156714.
 Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 29662.251463020686.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 29862.584812368717.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 30578.016960366193.
 Using model (GradientBoost), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 40742.61532730502.
-Using model (GradientBoost), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 45671.8811215689.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 41766.177608031285.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 55600.83836401354.
+Using model (GradientBoost), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 38649.35877507217.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 38084.929708956915.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 41913.545656011964.
 Delay data:
-Using model (GradientBoost), inputs of previous 5-day (target metric) to predict target metric: RMSE is 37.218312661704736.
+Using model (GradientBoost), inputs of previous 5-day (target metric) to predict target metric: RMSE is 38.99791023578746.
 Using model (GradientBoost), inputs of previous 5-day (target metric, day of week, season, weather) to predict target metric: RMSE is 34.01294663342357.
-Using model (GradientBoost), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 34.52358234746537.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 31.99799285713112.
+Using model (GradientBoost), inputs of previous 5-day (target metric, day of week OHE, season OHE, weather) to predict target metric: RMSE is 32.646527622110966.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week, scaled season, scaled weather) to predict target metric: RMSE is 31.732456175983298.
 Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE, scaled weather) to predict target metric: RMSE is 36.03261627895357.
 Using model (GradientBoost), inputs of previous 5-day (target metric, day of week) to predict target metric: RMSE is 31.708625856114967.
-Using model (GradientBoost), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 30.875372562433697.
+Using model (GradientBoost), inputs of previous 5-day (target metric, day of week OHE) to predict target metric: RMSE is 32.695972614776124.
 Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week) to predict target metric: RMSE is 30.750993841725208.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 31.353187582529465.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week OHE) to predict target metric: RMSE is 34.98460776153885.
 Using model (GradientBoost), inputs of previous 5-day (target metric, season) to predict target metric: RMSE is 38.59580682185168.
-Using model (GradientBoost), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 37.94645319375207.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 38.73819704157034.
+Using model (GradientBoost), inputs of previous 5-day (target metric, season OHE) to predict target metric: RMSE is 38.126463691724155.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled season) to predict target metric: RMSE is 37.982879807855866.
 Using model (GradientBoost), inputs of previous 5-day (target metric, scaled season OHE) to predict target metric: RMSE is 38.13019397944514.
-Using model (GradientBoost), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 42.501852870889365.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 39.04990769959372.
+Using model (GradientBoost), inputs of previous 5-day (target metric, weather) to predict target metric: RMSE is 39.577779020692155.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled weather) to predict target metric: RMSE is 40.90382262850652.
 Using model (GradientBoost), inputs of previous 5-day (target metric, day of week, season) to predict target metric: RMSE is 32.397657647250796.
-Using model (GradientBoost), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 31.068945269878167.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 31.375011122058.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 31.028384311250026.
-Using model (GradientBoost), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 33.06490434287433.
-Using model (GradientBoost), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 32.666813983242754.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 33.61997171663948.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 31.741491291533617.
-Using model (GradientBoost), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 40.654505341711065.
-Using model (GradientBoost), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 42.14948680911535.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 41.96791687340625.
-Using model (GradientBoost), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 41.67332444643418.
+Using model (GradientBoost), inputs of previous 5-day (target metric, day of week OHE, season OHE) to predict target metric: RMSE is 32.44106838005783.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week, scaled season) to predict target metric: RMSE is 31.713861488621067.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week OHE, scaled season OHE) to predict target metric: RMSE is 31.929394753104624.
+Using model (GradientBoost), inputs of previous 5-day (target metric, day of week, weather) to predict target metric: RMSE is 31.198513364209482.
+Using model (GradientBoost), inputs of previous 5-day (target metric, day of week OHE, weather) to predict target metric: RMSE is 31.680688678860772.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week, scaled weather) to predict target metric: RMSE is 35.18596809304827.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled day of week OHE, scaled weather) to predict target metric: RMSE is 32.567796684185524.
+Using model (GradientBoost), inputs of previous 5-day (target metric, season, weather) to predict target metric: RMSE is 40.9574726320267.
+Using model (GradientBoost), inputs of previous 5-day (target metric, season OHE, weather) to predict target metric: RMSE is 39.950404769654064.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled season, scaled weather) to predict target metric: RMSE is 42.360986997945055.
+Using model (GradientBoost), inputs of previous 5-day (target metric, scaled season OHE, scaled weather) to predict target metric: RMSE is 39.812123735437275.
